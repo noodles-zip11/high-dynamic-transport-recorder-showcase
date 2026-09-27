@@ -1,17 +1,32 @@
-# 高动态运输事件记录器
+# 高动态运输事件记录器 · STM32H743 + RT-Thread
 
-> Embedded project: evidence-backed high-dynamic transport event recorder on STM32H743 + RT-Thread, with high-rate IMU capture, triggered SPI NOR persistence, versioned UART export, PySide6 replay, and on-device four-class TinyML.
->
-> 嵌入式项目：基于 STM32H743 / RT-Thread 的高动态运输事件记录器，以 ICM45686 FIFO 完成高频采集，用 DMA 与固定内存池承接实时数据，经自然触发组装 EV03 并持久化到 W25Q64；通过 UART3 / TERP 导出，桌面端用 PySide6 回放，同时实现四分类 TinyML 推理与固件/模型 OTA 的软件核心链路（含模型 A/B 生命周期）。原有 V1 实板验证证据覆盖采集→触发→持久化→下载→回放→真实推理/WFI。
+这是一个嵌入式项目：针对运输冲击“持续时间短、事后难复盘”的问题，在 STM32H743 上连续采集 IMU 数据，触发后保存冲击前后窗口，再通过串口下载到桌面端回放，并在设备侧完成四分类 TinyML 推理。
 
-> **公开快照说明：** 本仓库由源仓库已提交 `main` 文件树重建，不包含原提交历史、分支、PR、标签或本机未提交改动；机器本地绝对路径已脱敏。项目源码、文档和验证数据按原快照保留。此次整理没有重新组装或复测硬件，文中验证状态只对应原有证据，不代表新增验证。
+## 面试官先看这里
+
+- **实时链路：** ICM45686 FIFO + SPI DMA，固定内存池和 pre-trigger ring 承接高频数据，不在 ISR 中做重处理。
+- **可靠保存：** 触发事件以固定格式写入 W25Q64 追加式日志，用 CRC、readback 和启动恢复约束提交边界。
+- **完整工具链：** UART3 分块下载、PySide6 回放、四分类推理，以及固件 OTA / 模型 A/B 生命周期均有源码与契约入口。
+
+| 可核查结果 | 当前证据 |
+|---|---|
+| 固定事件窗口 | `2400 samples`、`75 blocks`、`1.5 s` |
+| V1 实板主链 | 采集 → 触发 → 持久化 → 下载 → 回放 → 真实推理 / WFI 已闭环 |
+| 默认关闭软件门禁记录 | scripts `135 passed`；Host `178 passed, 1 skipped`；AI `78 passed`；native C / Bootloader / ARM Release `PASS` |
+| 资源记录 | Release ROM `136,528 B / 1,664 KiB`；primary RAM `271,396 B / 512 KiB`；D2 SRAM1 `2,144 B / 128 KiB` |
+
+<p align="center">
+  <img src="evidence/releases/v1.0.0/desktop/event-180.png" alt="V1 事件 180 的加速度与角速度桌面回放" width="900" />
+</p>
+
+<p align="center">已保存事件的桌面回放派生图；不是示波器原始测量，也不建立事件语义真值。</p>
 
 ## 当前状态
 
 | 维度 | 状态 |
 |---|---|
-| 发布基线 | `v1.0.0` released baseline；固定 EV03 事件（2400 samples；75 blocks，1.5 s）、持久化、TERP、桌面回放与四分类推理已形成 V1 主链 |
-| 当前 `main` | V1-compatible reliability source；Reliability Evidence 默认关闭，不称为 V2.0 |
+| 源仓库发布基线 | `v1.0.0`；固定事件、持久化、版本化传输、桌面回放与四分类推理已形成 V1 主链 |
+| 公开快照 `main` | 基于源仓库后续 `main` 文件树重建；兼容 V1，Reliability Evidence 默认关闭，不称为 V2.0 |
 | 硬件链 | STM32H743 + ICM45686 + W25Q64 + UART3 |
 | 软件栈 | RT-Thread / C11 / Python 3.12 / PySide6 / SCons |
 | V1 实板主链 | 已闭环（V1 physical chain closed） |
@@ -33,12 +48,12 @@ flowchart LR
 
 术语速览：EV03 是固定采样事件格式，EL01 是承载并支持恢复的 SPI NOR 事件日志封装，TERP 是 UART3 的版本化传输协议；H0–H5 是 Reliability Evidence 的六项 physical hardware gates（实板硬件门禁）。
 
-## 如何阅读这个项目
+## 阅读路线
 
-- 3–5 分钟：先看[当前概览与状态](#当前状态)，确认 V1 主链、发布边界和 Reliability-enabled Release 状态。
-- 10–20 分钟：再看[系统架构与关键工程取舍](docs/showcase/architecture.md)，沿数据链核查采集、事件、持久化、传输与 OTA 的设计。
-- 招聘者/面试官路线：最后按[招聘者与技术面试官阅读路线](docs/showcase/recruiter-walkthrough.md)进入源码、证据与限制；随后可继续到下方的真实运行证据、验证资源和[发布与证据入口](#发布与证据入口)。
-- 深入链路：阅读[项目主链图谱（project main-chain atlas）](docs/learning/project-chain-atlas.md)，按“谁通知谁、数据在哪里、谁持有它、失败后去哪”核查。
+- **30 秒：** 看首页的项目目标、四项结果和回放图。
+- **3–5 分钟：** 按[招聘者与技术面试官阅读路线](docs/showcase/recruiter-walkthrough.md)核对主链、关键取舍和证据边界。
+- **10–20 分钟：** 阅读[系统架构与关键工程取舍](docs/showcase/architecture.md)，沿采集、事件、持久化、传输、AI 与 OTA 深挖源码。
+- **继续追问：** 阅读[项目主链图谱](docs/learning/project-chain-atlas.md)，按“谁通知谁、数据在哪里、谁持有它、失败后去哪”核查。
 
 ## 工程亮点
 
@@ -116,6 +131,8 @@ $env:TRANSPORT_VENV_ROOT = '<shared-venv-path>'
 | [`evidence/`](evidence/) | V1 公开证据包与硬件/软件验证记录 |
 | [`docs/`](docs/) | 设计决策、协议/存储/AI 契约、发布说明与可靠性收口 |
 
+`learning-records/`、`lessons/`、`reference/` 与项目启动包属于历史学习和规划材料，不作为当前实现状态或发布能力的依据；面试核查以本 README 链接的源码、契约和证据入口为准。
+
 ## 版本边界与诚实声明
 
 - `v1.0.0` 是已发布、可回退的 V1 baseline；当前 `main` 是其后的开发基线，Reliability Evidence source 已实现但默认关闭，不是 V2.0。
@@ -130,3 +147,9 @@ $env:TRANSPORT_VENV_ROOT = '<shared-venv-path>'
 - [V1.0.0 release notes](docs/v1.0.0-release-notes.md)：发布能力、AI 结果边界、明确未声明项与构建身份。
 - [Reliability Evidence final closeout](docs/superpowers/reports/2026-08-29-reliability-evidence-closeout.md)：默认关闭状态、H0–H5 证据边界与 Reliability-enabled Release 锁定规则。
 - [项目主链图谱（project main-chain atlas）](docs/learning/project-chain-atlas.md)：从硬件采集到可恢复事件记录的源码与数据持有关系。
+
+## 公开快照说明
+
+本仓库由源仓库已提交的 `main` 文件树重建，不包含原提交历史、分支、PR、标签或本机未提交改动；机器本地绝对路径和 ST-Link 唯一设备序列号已替换为占位符。使用 SWD 工具时需要提供自己的设备序列号。源仓库的 `v1.0.0` 标签和 Release 没有复制到公开快照，相关能力与构建身份通过仓库内的 release notes 和证据包说明。
+
+此次公开整理没有重新组装或复测硬件。文中验证状态只对应原有证据，不代表新增验证；快速开始中的命令是复现入口，不代表本次发布已执行。

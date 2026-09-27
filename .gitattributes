@@ -16,3 +16,8 @@ SConscript text eol=lf
 evidence/hardware-bringup/**/*.bin binary
 evidence/hardware-bringup/**/*.log binary
 evidence/hardware-bringup/**/*-raw.txt binary
+
+# Keep GitHub language statistics focused on project code.
+高动态运输事件记录器_项目启动包/** linguist-documentation
+learning-records/** linguist-documentation
+lessons/** linguist-documentation
