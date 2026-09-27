@@ -1,0 +1,32 @@
+{
+  "artifact_note": "此文件是四分类 canonical evidence snapshot，不是对历史二分类 pilot-v1 manifest 的改写。",
+  "class_names": [
+    "background",
+    "impact",
+    "continuous_vibration",
+    "drop"
+  ],
+  "feature_version": "counts_v1",
+  "input_shape": [
+    6
+  ],
+  "model_crc32": "0xAD10980E",
+  "runtime_version": "feature_mlp_runtime_v2",
+  "snapshot_kind": "canonical-evidence-summary",
+  "source": {
+    "firmware_model_data": {
+      "path": "firmware/app/ai_inference/ai_model_data.c",
+      "sha256": "20ceac46b834bad20a50daf5a815763d36a959c8bb2eb31567f0845489ce92de"
+    },
+    "model_contract": {
+      "path": "docs/ai/model_contract_v1.md",
+      "sha256": "1bb4513d0b1ed7af6454f6709c6b14681ae12fb34c2cbc112c8ee304ebb0dcbb"
+    },
+    "pilot_report": {
+      "path": "evidence/phase2-ai/2026-08-23/real-ai-pilot.md",
+      "sha256": "093c1088c39f4db5bf72c6b9572534be5d62ea6be38016ea228566542f58dd4a"
+    }
+  },
+  "weights_sha256": "F4EF4C310F808F0DC76E59E4F2296FC97D5A90118C73506E34C995E47E53FB78",
+  "within_session_pilot": true
+}

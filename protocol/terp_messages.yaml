@@ -1,0 +1,130 @@
+protocol: TERP
+version: 1
+byte_order: little-endian
+messages:
+  - id: 0x0001
+    name: HELLO
+    request: [protocol_version_u8]
+    response: [protocol_version_u8, maximum_payload_u32, maximum_chunk_u32, capabilities_u32]
+  - id: 0x0002
+    name: GET_DEVICE_INFO
+    request: []
+    response: [model_lp_utf8, firmware_lp_utf8, hardware_lp_utf8, serial_lp_utf8, capabilities_u32]
+  - id: 0x0003
+    name: GET_HEALTH
+    request: []
+    response: [state_u8, storage_ready_u8, free_log_bytes_u32, storage_errors_u32, export_errors_u32]
+  - id: 0x0004
+    name: GET_TIME
+    request: []
+    response: [utc_unix_seconds_i64, epoch_id_u32]
+  - id: 0x0005
+    name: SET_TIME
+    request: [utc_unix_seconds_i64]
+    response: [utc_unix_seconds_i64, epoch_id_u32]
+  - id: 0x0006
+    name: LIST_EVENTS
+    request: [after_event_id_u32, maximum_count_u32]
+    response: [next_event_id_u32, event_count_u16, event_info_repeated]
+  - id: 0x0007
+    name: GET_EVENT_INFO
+    request: [event_id_u32]
+    response: [event_id_u32, total_length_u32, event_crc32_u32]
+  - id: 0x0008
+    name: READ_EVENT_CHUNK
+    request: [event_id_u32, offset_u32, requested_length_u32]
+    response: [event_id_u32, actual_offset_u32, total_length_u32, actual_length_u32, chunk_crc32_u32, data_bytes]
+  - id: 0x0009
+    name: DELETE_EVENT
+    request: [event_id_u32]
+    response: [empty]
+  - id: 0x000A
+    name: START_LIVE
+    request: []
+    response: [empty]
+  - id: 0x000B
+    name: STOP_LIVE
+    request: []
+    response: [empty]
+  - id: 0x0100
+    name: OTA_BEGIN
+    request: [package_length_u32]
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0101
+    name: OTA_WRITE_CHUNK
+    request: [offset_u32, chunk_crc32_u32, data_bytes]
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0102
+    name: OTA_QUERY
+    request: []
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0103
+    name: OTA_FINALIZE
+    request: []
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0104
+    name: OTA_CANCEL
+    request: []
+    response: [empty]
+  - id: 0x0105
+    name: OTA_RESULT
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0106
+    name: OTA_RECOVERY_BEGIN
+    request: [package_length_u32]
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0107
+    name: OTA_RECOVERY_WRITE_CHUNK
+    request: [offset_u32, chunk_crc32_u32, data_bytes]
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0108
+    name: OTA_RECOVERY_QUERY
+    request: []
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x0109
+    name: OTA_RECOVERY_FINALIZE
+    request: []
+    response: [total_length_u32, verified_length_u32, pending_install_u8]
+  - id: 0x010A
+    name: OTA_RECOVERY_CANCEL
+    request: []
+    response: [empty]
+  - id: 0x0110
+    name: MODEL_OTA_BEGIN
+    request: [package_length_u32]
+    response: [total_length_u32, verified_length_u32, pending_install_u8, active_slot_u8, model_valid_u8]
+  - id: 0x0111
+    name: MODEL_OTA_WRITE_CHUNK
+    request: [offset_u32, chunk_crc32_u32, data_bytes]
+    response: [total_length_u32, verified_length_u32, pending_install_u8, active_slot_u8, model_valid_u8]
+  - id: 0x0112
+    name: MODEL_OTA_QUERY
+    request: []
+    response: [total_length_u32, verified_length_u32, pending_install_u8, active_slot_u8, model_valid_u8]
+  - id: 0x0113
+    name: MODEL_OTA_FINALIZE
+    request: []
+    response: [total_length_u32, verified_length_u32, pending_install_u8, active_slot_u8, model_valid_u8]
+  - id: 0x0114
+    name: MODEL_OTA_CANCEL
+    request: []
+    response: [empty]
+  - id: 0x0200
+    name: GET_AI_RESULT
+    request: [event_id_u32]
+    response: [event_id_u32, model_version_u16, status_u8, class_index_u8, class_count_u8, quality_flags_u8, event_flags_u16, sample_count_u32, model_crc32_u32, confidence_f32, logits_f32x4, failure_reason_u16, reserved_u16, result_sequence_u32]
+  - id: 0x0300
+    name: GET_EVENT_EVIDENCE
+    request: [event_id_u32]
+    response: [event_id_u32, evidence_version_u16, verdict_u8, ai_decision_u8, reason_flags_u32, storage_state_u8, ai_result_status_u8, ai_failure_reason_u16, ai_result_sequence_u32]
+  - id: 0x0301
+    name: GET_CRASH_RECORD
+    request: [sequence_u32, offset_u32, requested_length_u32]
+    response: [sequence_u32, actual_offset_u32, total_length_u32, actual_length_u32, chunk_crc32_u32, data_bytes]
+  - id: 0x0302
+    name: ACK_CRASH_RECORD
+    request: [sequence_u32]
+    response: [sequence_u32]
+  - id: 0xFFFF
+    name: ERROR
+    response: [error_code_u16, request_message_type_u16]

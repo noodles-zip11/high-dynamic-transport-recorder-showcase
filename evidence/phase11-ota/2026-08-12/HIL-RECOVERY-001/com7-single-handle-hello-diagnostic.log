@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+PORT=COM7 BAUD=115200 TIMEOUT=0.2
+OPEN=PASS is_open=True dtr=True rts=True
+FAIL type=TransportError detail=TransportError('TERP response timed out')
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 119, in hello
+    response = self._request(MessageType.HELLO, b"\x01")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 318, in _request
+    raise TransportError("TERP response timed out")
+host.transport_recorder.protocol.client.TransportError: TERP response timed out
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 119, in hello
+    response = self._request(MessageType.HELLO, b"\x01")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 318, in _request
+    raise TransportError("TERP response timed out")
+host.transport_recorder.protocol.client.TransportError: TERP response timed out

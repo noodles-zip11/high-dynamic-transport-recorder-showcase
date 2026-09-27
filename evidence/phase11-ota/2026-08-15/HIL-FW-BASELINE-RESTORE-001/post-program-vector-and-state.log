@@ -1,0 +1,85 @@
+=== HIL-FW-BASELINE-RESTORE-001 post-program readback ===
+timestamp=2026-08-15T13:10:31.6671684+08:00
+scope=read-only internal vector/state after restore; no write; no SPI Event Flash access
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED08
+
+0xE000ED08 : 08000000
+
+
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.22V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 8 Bytes
+  Address:      : 0x08020000
+
+0x08020000 : 24001600 08027539
+
+
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0x40004800
+
+0x40004800 : 00000000
+
+
+exit_codes=0,0,0

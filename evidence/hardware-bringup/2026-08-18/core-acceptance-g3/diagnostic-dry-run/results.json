@@ -1,0 +1,43 @@
+{
+  "schema": "terp-physical-matrix-1",
+  "status": "DIAGNOSTIC_NOT_PHYSICAL",
+  "formal_pass_eligible": false,
+  "port": "COM7",
+  "event_id": 39,
+  "rounds": 1,
+  "physical_confirmation": false,
+  "started_at": "2026-08-18T19:08:20.8108073+08:00",
+  "ended_at": "2026-08-18T19:08:32.6711043+08:00",
+  "passes": 0,
+  "diagnostic_passes": 1,
+  "failures": 1,
+  "baseline": {
+    "length": 38560,
+    "record_crc32": 3745476147,
+    "download_info_crc32": 3745476147,
+    "downloaded_bytes_crc32": 3745476147,
+    "sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5"
+  },
+  "rows": [
+    {
+      "round": 1,
+      "info_exit": 0,
+      "health_exit": 0,
+      "events_list_exit": 0,
+      "events_list_pages": 3,
+      "event_found": true,
+      "event_lookup_error": null,
+      "download_exit": 0,
+      "length": 38560,
+      "record_crc32": 3745476147,
+      "download_info_crc32": 3745476147,
+      "downloaded_bytes_crc32": 3745476147,
+      "list_crc_matches_download_info": true,
+      "device_crc_matches_download": true,
+      "sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5",
+      "physical_confirmation": false,
+      "formal_pass_eligible": false,
+      "status": "DIAGNOSTIC_NOT_PHYSICAL"
+    }
+  ]
+}

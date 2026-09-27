@@ -1,0 +1,19 @@
+{
+  "kind": "pilot_rule_baseline",
+  "feature_version": "counts_v1",
+  "feature": "accel_peak_to_peak_counts",
+  "threshold": 2001.32808,
+  "fit_background_event_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 20, 21, 25, 46, 47, 48, 49, 50, 51, 52, 53, 54],
+  "fit_impact_event_ids": [56, 61, 68, 69, 70, 71, 74, 77, 78, 83, 84, 86, 87, 88, 89],
+  "fit_confusion": {"true_background_pred_background": 29, "true_background_pred_impact": 0, "true_impact_pred_background": 0, "true_impact_pred_impact": 15},
+  "fit_accuracy": 1.0,
+  "fit_warning": "Resubstitution only. The threshold was selected from the same events, so this is not validation or test accuracy.",
+  "batch_66_90": {
+    "operator_labeled_events": 25,
+    "strong_response_events": 16,
+    "clean_candidate_events": 13,
+    "saturated_review_events": [72, 73],
+    "near_fullscale_review_events": [75],
+    "unknown_or_weak_events": [66, 67, 76, 79, 80, 81, 82, 85, 90]
+  }
+}

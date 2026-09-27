@@ -1,0 +1,212 @@
+main_commit=598e536164fb95823dba0e1fc57047bfefe05bce
+--- attempt=1 start=2026-08-12T17:04:02.4338475+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=1 exit=0 end=2026-08-12T17:04:03.6586709+08:00 ---
+--- attempt=2 start=2026-08-12T17:04:03.6684649+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=2 exit=0 end=2026-08-12T17:04:04.8878793+08:00 ---
+--- attempt=3 start=2026-08-12T17:04:04.9123353+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=3 exit=0 end=2026-08-12T17:04:06.1483612+08:00 ---
+--- attempt=4 start=2026-08-12T17:04:06.1701257+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=4 exit=0 end=2026-08-12T17:04:07.4205605+08:00 ---
+--- attempt=5 start=2026-08-12T17:04:07.4401565+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=5 exit=0 end=2026-08-12T17:04:08.6885632+08:00 ---
+--- attempt=6 start=2026-08-12T17:04:08.6969622+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=6 exit=0 end=2026-08-12T17:04:09.9380829+08:00 ---
+--- attempt=7 start=2026-08-12T17:04:09.9640271+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=7 exit=0 end=2026-08-12T17:04:11.2095777+08:00 ---
+--- attempt=8 start=2026-08-12T17:04:11.2485415+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=8 exit=0 end=2026-08-12T17:04:12.5207541+08:00 ---
+--- attempt=9 start=2026-08-12T17:04:12.5466813+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=9 exit=0 end=2026-08-12T17:04:13.7877395+08:00 ---
+--- attempt=10 start=2026-08-12T17:04:13.8051969+08:00 ---
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+--- attempt=10 exit=0 end=2026-08-12T17:04:15.0573264+08:00 ---
+attempts=10 successes=10 codes=0,0,0,0,0,0,0,0,0,0

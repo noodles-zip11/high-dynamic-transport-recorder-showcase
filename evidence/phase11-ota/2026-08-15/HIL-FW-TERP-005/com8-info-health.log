@@ -1,0 +1,10 @@
+=== HIL-FW-TERP-005 ===
+timestamp=2026-08-15T13:24:20.1771325+08:00
+port=COM8
+scope=read-only TERP info and health; no reset/write; no SPI Event Flash access
+--- info ---
+TERP response timed out
+info_exit=2
+--- health ---
+TERP response timed out
+health_exit=2

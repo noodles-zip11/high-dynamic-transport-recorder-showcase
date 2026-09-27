@@ -1,0 +1,13 @@
+{
+  "schema": "pool-backpressure-smoke-v1",
+  "status": "STARTING",
+  "uart1": "COM6",
+  "uart3": "COM7",
+  "duration_seconds": 240.0,
+  "heartbeat_seconds": 15.0,
+  "trigger_offsets": [
+    20.0,
+    120.0
+  ],
+  "started_at_utc": "2026-08-22T02:15:04.714243+00:00"
+}

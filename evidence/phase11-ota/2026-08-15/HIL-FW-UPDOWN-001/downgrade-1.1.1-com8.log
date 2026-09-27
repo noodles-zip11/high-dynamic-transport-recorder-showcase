@@ -1,0 +1,21 @@
+BEFORE firmware=phase08-terp-uart3 hardware=openmv4-h743-pd8-pd9 health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+PACKAGE path=candidate-1.1.1-stm32h743vit6.trfw bytes=147188 sha256=1dbef7fce406169fb6ed5373cf5e7880907a14b8bb1e9087a00e7e1c3a744019
+BEGIN result=(147188, 0, 0)
+WRITE offset=256/147188 result=(147188, 256, 0)
+WRITE offset=16640/147188 result=(147188, 16640, 0)
+WRITE offset=33024/147188 result=(147188, 33024, 0)
+WRITE offset=49408/147188 result=(147188, 49408, 0)
+WRITE offset=65792/147188 result=(147188, 65792, 0)
+WRITE offset=82176/147188 result=(147188, 82176, 0)
+WRITE offset=98560/147188 result=(147188, 98560, 0)
+WRITE offset=114944/147188 result=(147188, 114944, 0)
+WRITE offset=131328/147188 result=(147188, 131328, 0)
+WRITE offset=147188/147188 result=(147188, 147188, 0)
+Traceback (most recent call last):
+  File "<stdin>", line 32, in <module>
+  File "<stdin>", line 16, in req
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 310, in _request
+    self._raise_device_error(response)
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 340, in _raise_device_error
+    raise DeviceError(code, request_type)
+transport_recorder.protocol.client.DeviceError: device rejected 0x0103: 5

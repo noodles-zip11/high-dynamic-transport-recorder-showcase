@@ -1,0 +1,8 @@
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     5.3.0 build Aug 12 2026 12:55:19
+ 2006 - 2024 Copyright by RT-Thread team
+P11,BOOT,OTA_ONLY,OK,0,0,0
+P11,TERP,UART3,OK,0,0,0
+msh >

@@ -1,0 +1,46 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0x08000000
+
+0x08000000 : 24080000
+
+
+
+UPLOADING ...
+  File          : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\ota\evidence\phase11-ota\2026-08-12\HIL-RECOVERY-INSTALL-001\board-bootloader-current.bin
+  Size          : 24880 Bytes
+  Address:      : 0x8000000
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+Data read successfully
+Time elapsed during read operation is: 00:00:00.176
+
+Algorithm : SHA256
+Hash      : C51871F417CE0E09B8E0489FBDF7295A8BC96F086308E05172EF97D0BC5A23E7
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\ota\evidence\phase11-ota\2026-08-12\HIL-RECOVERY-INSTALL-001\board-bootloader-current.bin
+
+
+Algorithm : SHA256
+Hash      : C51871F417CE0E09B8E0489FBDF7295A8BC96F086308E05172EF97D0BC5A23E7
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\ota\bootloader\build\bootloader.bin

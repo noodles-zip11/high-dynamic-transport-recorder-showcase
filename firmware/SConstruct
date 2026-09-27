@@ -1,0 +1,342 @@
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+import rtconfig
+
+
+RTT_ROOT = os.environ.get("RTT_ROOT")
+if not RTT_ROOT:
+    raise RuntimeError("RTT_ROOT is not set")
+
+RTT_ROOT = os.path.abspath(RTT_ROOT)
+os.environ["RTT_DIR"] = RTT_ROOT
+sys.path.insert(0, os.path.join(RTT_ROOT, "tools"))
+
+from building import DoBuilding, PrepareBuilding
+from SCons.Script import Dir
+from SCons.Script import ARGUMENTS, Default, DefaultEnvironment, Environment, Exit, Export
+from build_options import resolve_build_profile
+from build_options import resolve_fault_injection_enabled
+from build_options import resolve_reliability_evidence_enabled
+
+
+def find_stm32_packages():
+    bsp_root = os.path.join(RTT_ROOT, "bsp", "stm32")
+    candidates = [
+        os.path.join(bsp_root, "stm32h743-st-nucleo", "packages"),
+        os.path.join(bsp_root, "stm32h743-atk-apollo", "packages"),
+    ]
+    required = (
+        "stm32h7_cmsis_driver-latest",
+        "stm32h7_hal_driver-latest",
+    )
+    for candidate in candidates:
+        if all(os.path.isdir(os.path.join(candidate, item)) for item in required):
+            return candidate
+
+    searched = "\n  ".join(candidates)
+    raise RuntimeError(
+        "Local STM32H7 CMSIS/HAL packages are missing. Searched:\n  " + searched
+    )
+
+
+STM32_PACKAGES = find_stm32_packages()
+STM32_LIBRARIES = os.path.join(RTT_ROOT, "bsp", "stm32", "libraries")
+TARGET = os.path.join("build", "transport_recorder.elf")
+CMSIS_CORE = os.path.join(STM32_LIBRARIES, "HAL_Drivers", "CMSIS", "Include")
+CMSIS_DEVICE = os.path.join(STM32_PACKAGES, "stm32h7_cmsis_driver-latest")
+HAL_DRIVER = os.path.join(STM32_PACKAGES, "stm32h7_hal_driver-latest")
+STM32_DRIVERS = os.path.join(STM32_LIBRARIES, "HAL_Drivers")
+BOARD_ROOT = os.path.abspath(os.path.join("bsp", "openmv4_h743"))
+CONFIG_ROOT = os.path.abspath("config")
+
+
+def build_identity_value(name, default):
+    value = os.environ.get(name, default).strip()
+    if not re.fullmatch(r"[A-Za-z0-9_.:-]+", value):
+        raise RuntimeError(f"{name} contains unsupported characters: {value!r}")
+    return value
+
+
+BUILD_PROFILE = resolve_build_profile(
+    build_identity_value("TRANSPORT_BUILD_PROFILE", "debug")
+)
+GIT_REVISION = build_identity_value("TRANSPORT_GIT_REVISION", "local")
+DEVICE_SERIAL = build_identity_value("TRANSPORT_DEVICE_SERIAL", "pending")
+if BUILD_PROFILE == "release":
+    if not re.fullmatch(r"[0-9a-f]{40}", GIT_REVISION):
+        raise RuntimeError(
+            "Release TRANSPORT_GIT_REVISION must be the current 40-character Git SHA"
+        )
+    if DEVICE_SERIAL == "pending":
+        raise RuntimeError("Release TRANSPORT_DEVICE_SERIAL must be explicit")
+
+release_manifest_valid = False
+if (BUILD_PROFILE == "release"
+        and ARGUMENTS.get("reliability_evidence") == "1"):
+    repo_root = Path(Dir('#').abspath)
+    try:
+        actual_revision = subprocess.run(
+            ["git", "-C", str(repo_root), "rev-parse", "--verify", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        ).stdout.strip().lower()
+        worktree_status = subprocess.run(
+            ["git", "-C", str(repo_root), "status", "--porcelain"],
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        ).stdout.strip()
+    except (OSError, subprocess.SubprocessError) as exc:
+        raise RuntimeError(
+            "Release reliability evidence cannot inspect the Git worktree"
+        ) from exc
+    if actual_revision != GIT_REVISION:
+        raise RuntimeError(
+            "Release reliability evidence revision must match current HEAD"
+        )
+    if worktree_status:
+        raise RuntimeError(
+            "Release reliability evidence requires a clean working tree"
+        )
+    manifest_path = os.environ.get(
+        "TRANSPORT_RELIABILITY_EVIDENCE_MANIFEST"
+    )
+    if manifest_path:
+        if not os.path.isabs(manifest_path):
+            raise RuntimeError(
+                "TRANSPORT_RELIABILITY_EVIDENCE_MANIFEST must be absolute"
+            )
+        scripts_root = str(repo_root.parent / "scripts")
+        sys.path.insert(0, scripts_root)
+        from phase4_evidence import ManifestError, validate_manifest
+
+        try:
+            validate_manifest(
+                Path(manifest_path),
+                expected_source_revision=actual_revision,
+                for_release=True,
+            )
+        except (ManifestError, OSError) as exc:
+            raise RuntimeError(
+                "Release reliability evidence manifest rejected: "
+                f"{exc}"
+            ) from exc
+        release_manifest_valid = True
+
+RELIABILITY_EVIDENCE_ENABLED = resolve_reliability_evidence_enabled(
+    ARGUMENTS,
+    BUILD_PROFILE,
+    release_manifest_valid=release_manifest_valid,
+)
+FAULT_INJECTION_ENABLED = resolve_fault_injection_enabled(
+    ARGUMENTS, BUILD_PROFILE
+)
+
+
+def quoted_define(value):
+    # SCons invokes the compiler through a Windows command line.  Escape the
+    # quotes so they survive command-line parsing and remain part of the
+    # preprocessor value (for example, -DNAME=\"value\").
+    return '\\"' + value + '\\"'
+
+DefaultEnvironment(tools=[])
+env = Environment(
+    tools=["mingw"],
+    AS=rtconfig.AS,
+    ASFLAGS=rtconfig.AFLAGS,
+    CC=rtconfig.CC,
+    CFLAGS=rtconfig.CFLAGS,
+    AR=rtconfig.AR,
+    ARFLAGS="-rc",
+    CXX=rtconfig.CXX,
+    CXXFLAGS=rtconfig.CXXFLAGS,
+    LINK=rtconfig.LINK,
+    LINKFLAGS=rtconfig.LFLAGS,
+)
+env.PrependENVPath("PATH", rtconfig.EXEC_PATH)
+env.Append(
+    CPPDEFINES=["STM32H743xx", "USE_HAL_DRIVER"],
+    CPPPATH=[
+        CONFIG_ROOT,
+        BOARD_ROOT,
+        CMSIS_CORE,
+        os.path.join(CMSIS_DEVICE, "Include"),
+        os.path.join(HAL_DRIVER, "Inc"),
+        os.path.join(HAL_DRIVER, "Inc", "Legacy"),
+        STM32_DRIVERS,
+        os.path.join(STM32_DRIVERS, "drivers"),
+        os.path.join(STM32_DRIVERS, "drivers", "config"),
+    ],
+)
+env.Append(CPPDEFINES=[
+    ("TRANSPORT_BUILD_PROFILE", quoted_define(BUILD_PROFILE)),
+    ("TRANSPORT_GIT_REVISION", quoted_define(GIT_REVISION)),
+    ("TRANSPORT_DEVICE_SERIAL", quoted_define(DEVICE_SERIAL)),
+])
+if RELIABILITY_EVIDENCE_ENABLED:
+    env.Append(CPPDEFINES=["TRANSPORT_RELIABILITY_EVIDENCE_ENABLED"])
+    env.Append(
+        LINKFLAGS=(
+            " -T bsp/openmv4_h743/linker_scripts/crash_record_overlay.lds"
+        )
+    )
+if FAULT_INJECTION_ENABLED:
+    env.Append(CPPDEFINES=["TRANSPORT_FAULT_INJECTION_ENABLED"])
+env["TRANSPORT_RELIABILITY_EVIDENCE_ENABLED"] = RELIABILITY_EVIDENCE_ENABLED
+env["TRANSPORT_FAULT_INJECTION_ENABLED"] = FAULT_INJECTION_ENABLED
+if ARGUMENTS.get("phase11_hil") == "1":
+    env.Append(CPPDEFINES=["TRANSPORT_PHASE11_QSPI_HIL"])
+    if "phase11_hil_cycles" in ARGUMENTS:
+        env.Append(CPPDEFINES=[
+            ("TRANSPORT_PHASE11_QSPI_HIL_CYCLES", ARGUMENTS["phase11_hil_cycles"]),
+        ])
+if ARGUMENTS.get("phase11_ota_only") == "1":
+    env.Append(CPPDEFINES=["TRANSPORT_PHASE11_OTA_ONLY"])
+if ARGUMENTS.get("phase11_uart3_echo") == "1":
+    env.Append(CPPDEFINES=["TRANSPORT_PHASE11_UART3_ECHO"])
+env.Tool("compilation_db")
+compilation_db = env.CompilationDatabase("compile_commands.json")
+
+
+RTCONFIG_WRAPPER = """#ifndef TRANSPORT_RECORDER_RTCONFIG_WRAPPER_H
+#define TRANSPORT_RECORDER_RTCONFIG_WRAPPER_H
+
+#include \"config/rtconfig.h\"
+
+#endif
+"""
+
+
+def keep_generated_rtconfig_in_config(action):
+    action()
+    generated_path = os.path.abspath("rtconfig.h")
+    with open(generated_path, "r", encoding="utf-8") as generated_file:
+        generated = generated_file.read()
+    if generated != RTCONFIG_WRAPPER:
+        nested_path = os.path.join(CONFIG_ROOT, "rtconfig.h")
+        with open(nested_path, "w", encoding="utf-8", newline="\n") as nested_file:
+            nested_file.write(generated)
+        with open(generated_path, "w", encoding="utf-8", newline="\n") as wrapper_file:
+            wrapper_file.write(RTCONFIG_WRAPPER)
+
+
+arguments = set(sys.argv[1:])
+
+if "--menuconfig" in arguments:
+    from env_utility import menuconfig
+
+    keep_generated_rtconfig_in_config(lambda: menuconfig(RTT_ROOT))
+    Exit(0)
+
+if arguments.intersection({"--defconfig", "--pyconfig-silent"}):
+    from env_utility import defconfig
+
+    keep_generated_rtconfig_in_config(lambda: defconfig(RTT_ROOT))
+    Exit(0)
+
+if arguments.intersection({"--guiconfig", "--pyconfig"}):
+    from env_utility import guiconfig
+
+    keep_generated_rtconfig_in_config(lambda: guiconfig(RTT_ROOT))
+    Exit(0)
+
+config_file = next(
+    (argument.split("=", 1)[1] for argument in arguments if argument.startswith("--useconfig=")),
+    None,
+)
+if config_file:
+    from env_utility import mk_rtconfig
+
+    keep_generated_rtconfig_in_config(lambda: mk_rtconfig(config_file))
+    Exit(0)
+
+Export("env")
+Export("RTT_ROOT")
+Export("rtconfig")
+Export("STM32_PACKAGES")
+
+objects = PrepareBuilding(env, RTT_ROOT)
+
+
+def external_object(source, object_env=None):
+    if object_env is None:
+        object_env = env
+    source_path = os.path.abspath(source)
+    relative_source = os.path.relpath(source_path, RTT_ROOT)
+    if relative_source == os.pardir or relative_source.startswith(os.pardir + os.sep):
+        raise RuntimeError("External BSP source is outside RTT_ROOT: " + source_path)
+    target = os.path.join("build", "external", relative_source + ".o")
+    return object_env.Object(target=target, source=source_path)
+
+
+startup_source = os.path.join(
+    CMSIS_DEVICE,
+    "Source",
+    "Templates",
+    "gcc",
+    "startup_stm32h743xx.s",
+)
+startup_env = None
+if RELIABILITY_EVIDENCE_ENABLED:
+    startup_env = env.Clone()
+    startup_env.Append(CPPDEFINES=[
+        ("HardFault_Handler", "crash_record_HardFault_Handler"),
+        ("MemManage_Handler", "crash_record_MemManage_Handler"),
+        ("BusFault_Handler", "crash_record_BusFault_Handler"),
+        ("UsageFault_Handler", "crash_record_UsageFault_Handler"),
+    ])
+
+
+external_sources = {
+    "cmsis": [
+        os.path.join(CMSIS_DEVICE, "Source", "Templates", "system_stm32h7xx.c"),
+        startup_source,
+    ],
+    "hal": [
+        os.path.join(HAL_DRIVER, "Src", filename)
+        for filename in (
+            "stm32h7xx_hal.c",
+            "stm32h7xx_hal_cortex.c",
+            # UART IRQ/transfer code retains HAL_DMA_* references even when
+            # RT-Thread serial DMA is disabled, so these two HAL units are required.
+            "stm32h7xx_hal_dma.c",
+            "stm32h7xx_hal_dma_ex.c",
+            "stm32h7xx_hal_flash.c",
+            "stm32h7xx_hal_flash_ex.c",
+            "stm32h7xx_hal_gpio.c",
+            "stm32h7xx_hal_mdma.c",
+            "stm32h7xx_hal_i2c.c",
+            "stm32h7xx_hal_pwr.c",
+            "stm32h7xx_hal_pwr_ex.c",
+            "stm32h7xx_hal_qspi.c",
+            "stm32h7xx_hal_rcc.c",
+            "stm32h7xx_hal_rcc_ex.c",
+            "stm32h7xx_hal_spi.c",
+            "stm32h7xx_hal_uart.c",
+            "stm32h7xx_hal_uart_ex.c",
+        )
+    ],
+    "rt_stm32": [
+        os.path.join(STM32_DRIVERS, "drv_common.c"),
+        os.path.join(STM32_DRIVERS, "drivers", "drv_gpio.c"),
+        os.path.join(STM32_DRIVERS, "drivers", "drv_usart.c"),
+    ],
+}
+for group, sources in external_sources.items():
+    for source in sources:
+        if not os.path.isfile(source):
+            raise RuntimeError("Required local BSP source is missing: " + source)
+        if source == startup_source and startup_env is not None:
+            objects.extend(external_object(startup_source, startup_env))
+        else:
+            objects.extend(external_object(source))
+
+DoBuilding(TARGET, objects)
+Default(TARGET, compilation_db)

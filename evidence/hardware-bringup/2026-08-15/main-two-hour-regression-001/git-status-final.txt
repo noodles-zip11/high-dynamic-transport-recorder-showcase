@@ -1,0 +1,9 @@
+## feature/main-hardware-regression-20260815
+ M evidence/hardware-validation.md
+ M scripts/program_firmware.ps1
+ M scripts/run_tests.ps1
+?? docs/superpowers/plans/2026-08-15-full-chain-closeout.md
+?? evidence/hardware-bringup/2026-08-15/
+?? scripts/cubeprogrammer_paths.ps1
+?? scripts/terp_physical_matrix.ps1
+?? scripts/tests/

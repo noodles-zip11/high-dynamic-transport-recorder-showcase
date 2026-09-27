@@ -1,0 +1,129 @@
+import os
+import sys
+
+root = os.path.abspath(os.path.join(os.getcwd(), ".."))
+firmware_root = os.path.join(root, "firmware")
+sys.path.insert(0, firmware_root)
+
+import rtconfig
+
+
+def find_stm32_packages():
+    rtt_root = os.environ.get("RTT_ROOT")
+    if not rtt_root:
+        raise RuntimeError("RTT_ROOT is not set")
+    candidates = [
+        os.path.join(rtt_root, "bsp", "stm32", "stm32h743-atk-apollo", "packages"),
+        os.path.join(rtt_root, "bsp", "stm32", "stm32h743-st-nucleo", "packages"),
+    ]
+    required = ("stm32h7_cmsis_driver-latest", "stm32h7_hal_driver-latest")
+    for candidate in candidates:
+        if all(os.path.isdir(os.path.join(candidate, item)) for item in required):
+            return candidate
+    raise RuntimeError("Local STM32H7 CMSIS/HAL packages are missing")
+
+
+packages = find_stm32_packages()
+cmsis_device = os.path.join(packages, "stm32h7_cmsis_driver-latest")
+hal_driver = os.path.join(packages, "stm32h7_hal_driver-latest")
+rtt_root = os.path.abspath(os.environ["RTT_ROOT"])
+cmsis_core = os.path.join(rtt_root, "bsp", "stm32", "libraries", "HAL_Drivers", "CMSIS", "Include")
+target = os.path.join("build", "bootloader.elf")
+
+env = Environment(
+    tools=["mingw"],
+    AS=rtconfig.AS,
+    ASFLAGS=rtconfig.AFLAGS,
+    CC=rtconfig.CC,
+    CFLAGS=rtconfig.CFLAGS,
+    AR=rtconfig.AR,
+    ARFLAGS="-rc",
+    LINK=rtconfig.LINK,
+    LINKFLAGS=(
+        rtconfig.DEVICE
+        + " -Wl,--gc-sections,-Map=build/bootloader.map,-cref,-u,Reset_Handler"
+        + " -T link.lds -nostartfiles"
+    ),
+)
+env.PrependENVPath("PATH", rtconfig.EXEC_PATH)
+env.Append(
+    CPPDEFINES=["STM32H743xx", "USE_HAL_DRIVER", "USE_PWR_LDO_SUPPLY"],
+    CPPPATH=[
+        os.path.join(root, "bootloader", "include"),
+        os.path.join(firmware_root, "config"),
+        os.path.join(firmware_root, "components", "ota"),
+        cmsis_core,
+        os.path.join(cmsis_device, "Include"),
+        os.path.join(hal_driver, "Inc"),
+        os.path.join(hal_driver, "Inc", "Legacy"),
+    ],
+)
+if ARGUMENTS.get("phase11_full_recovery_install") == "1":
+    env.Append(CPPDEFINES=[
+        ("BOOTLOADER_COPY_BYTES_PER_BOOT", "TRANSPORT_OTA_APPLICATION_SIZE_BYTES"),
+    ])
+
+sources = [
+    os.path.join("src", filename)
+    for filename in (
+        "bootloader_main.c",
+        "bootloader_app.c",
+        "bootloader_action.c",
+        "bootloader_copy.c",
+        "bootloader_state_store.c",
+        "bootloader_qspi_profile.c",
+        "bootloader_flash_hal.c",
+        "bootloader_qspi_hal.c",
+        "bootloader_platform_hal.c",
+        "bootloader_jump.c",
+    )
+]
+sources.extend(
+    os.path.join("..", "firmware", "components", "ota", filename)
+    for filename in ("ota_crc32.c", "ota_sha256.c", "ota_package.c", "ota_state.c")
+)
+sources.extend(
+    [
+        os.path.join(cmsis_device, "Source", "Templates", "system_stm32h7xx.c"),
+        os.path.join(cmsis_device, "Source", "Templates", "gcc", "startup_stm32h743xx.s"),
+    ]
+)
+sources.extend(
+    os.path.join(hal_driver, "Src", filename)
+    for filename in (
+        "stm32h7xx_hal.c",
+        "stm32h7xx_hal_cortex.c",
+        "stm32h7xx_hal_flash.c",
+        "stm32h7xx_hal_flash_ex.c",
+        "stm32h7xx_hal_gpio.c",
+        "stm32h7xx_hal_mdma.c",
+        "stm32h7xx_hal_pwr.c",
+        "stm32h7xx_hal_pwr_ex.c",
+        "stm32h7xx_hal_rcc.c",
+        "stm32h7xx_hal_rcc_ex.c",
+        "stm32h7xx_hal_qspi.c",
+    )
+)
+
+for source in sources:
+    if not os.path.isfile(source):
+        raise RuntimeError("Required bootloader source is missing: " + source)
+
+objects = [
+    env.Object(
+        target=os.path.join("build", "obj", f"{index:02d}_{os.path.basename(source)}.o"),
+        source=source,
+    )
+    for index, source in enumerate(sources)
+]
+program = env.Program(target=target, source=objects)
+env.AddPostAction(program, rtconfig.SIZE + " $TARGET")
+env.AddPostAction(program, rtconfig.OBJCPY + " -O binary $TARGET build/bootloader.bin")
+env.AddPostAction(
+    program,
+    '"{}" "{}" --elf $TARGET --map build/bootloader.map'.format(
+        sys.executable,
+        os.path.join(root, "tools", "check_bootloader_image.py"),
+    ),
+)
+Default(program)

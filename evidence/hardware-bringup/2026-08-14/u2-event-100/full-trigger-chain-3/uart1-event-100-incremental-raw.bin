@@ -1,0 +1,1318 @@
+log status
+log state=1 events=0 next_id=1 next_offset=0x00002000 jedec=ef4017
+msh >
+msh >log status
+log state=1 events=0 next_id=1 next_offset=0x00002000 jedec=ef4017
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event arm
+msh >
+msh >event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=100 next_id=101 next_offset=0x003ea000 jedec=ef4017
+msh >
+msh >log list
+event=1 offset=0x00002000 span=40960 ev01=38528
+event=2 offset=0x0000c000 span=40960 ev01=38528
+event=3 offset=0x00016000 span=40960 ev01=38528
+event=4 offset=0x00020000 span=40960 ev01=38528
+event=5 offset=0x0002a000 span=40960 ev01=38528
+event=6 offset=0x00034000 span=40960 ev01=38528
+event=7 offset=0x0003e000 span=40960 ev01=38528
+event=8 offset=0x00048000 span=40960 ev01=38528
+event=9 offset=0x00052000 span=40960 ev01=38528
+event=10 offset=0x0005c000 span=40960 ev01=38528
+event=11 offset=0x00066000 span=40960 ev01=38528
+event=12 offset=0x00070000 span=40960 ev01=38528
+event=13 offset=0x0007a000 span=40960 ev01=38528
+event=14 offset=0x00084000 span=40960 ev01=38528
+event=15 offset=0x0008e000 span=40960 ev01=38528
+event=16 offset=0x00098000 span=40960 ev01=38528
+event=17 offset=0x000a2000 span=40960 ev01=38528
+event=18 offset=0x000ac000 span=40960 ev01=38528
+event=19 offset=0x000b6000 span=40960 ev01=38528
+event=20 offset=0x000c0000 span=40960 ev01=38528
+event=21 offset=0x000ca000 span=40960 ev01=38528
+event=22 offset=0x000d4000 span=40960 ev01=38528
+event=23 offset=0x000de000 span=40960 ev01=38528
+event=24 offset=0x000e8000 span=40960 ev01=38528
+event=25 offset=0x000f2000 span=40960 ev01=38528
+event=26 offset=0x000fc000 span=40960 ev01=38528
+event=27 offset=0x00106000 span=40960 ev01=38528
+event=28 offset=0x00110000 span=40960 ev01=38528
+event=29 offset=0x0011a000 span=40960 ev01=38528
+event=30 offset=0x00124000 span=40960 ev01=38528
+event=31 offset=0x0012e000 span=40960 ev01=38528
+event=32 offset=0x00138000 span=40960 ev01=38528
+event=33 offset=0x00142000 span=40960 ev01=38528
+event=34 offset=0x0014c000 span=40960 ev01=38528
+event=35 offset=0x00156000 span=40960 ev01=38528
+event=36 offset=0x00160000 span=40960 ev01=38528
+event=37 offset=0x0016a000 span=40960 ev01=38528
+event=38 offset=0x00174000 span=40960 ev01=38528
+event=39 offset=0x0017e000 span=40960 ev01=38528
+event=40 offset=0x00188000 span=40960 ev01=38528
+event=41 offset=0x00192000 span=40960 ev01=38528
+event=42 offset=0x0019c000 span=40960 ev01=38528
+event=43 offset=0x001a6000 span=40960 ev01=38528
+event=44 offset=0x001b0000 span=40960 ev01=38528
+event=45 offset=0x001ba000 span=40960 ev01=38528
+event=46 offset=0x001c4000 span=40960 ev01=38528
+event=47 offset=0x001ce000 span=40960 ev01=38528
+event=48 offset=0x001d8000 span=40960 ev01=38528
+event=49 offset=0x001e2000 span=40960 ev01=38528
+event=50 offset=0x001ec000 span=40960 ev01=38528
+event=51 offset=0x001f6000 span=40960 ev01=38528
+event=52 offset=0x00200000 span=40960 ev01=38528
+event=53 offset=0x0020a000 span=40960 ev01=38528
+event=54 offset=0x00214000 span=40960 ev01=38528
+event=55 offset=0x0021e000 span=40960 ev01=38528
+event=56 offset=0x00228000 span=40960 ev01=38528
+event=57 offset=0x00232000 span=40960 ev01=38528
+event=58 offset=0x0023c000 span=40960 ev01=38528
+event=59 offset=0x00246000 span=40960 ev01=38528
+event=60 offset=0x00250000 span=40960 ev01=38528
+event=61 offset=0x0025a000 span=40960 ev01=38528
+event=62 offset=0x00264000 span=40960 ev01=38528
+event=63 offset=0x0026e000 span=40960 ev01=38528
+event=64 offset=0x00278000 span=40960 ev01=38528
+event=65 offset=0x00282000 span=40960 ev01=38528
+event=66 offset=0x0028c000 span=40960 ev01=38528
+event=67 offset=0x00296000 span=40960 ev01=38528
+event=68 offset=0x002a0000 span=40960 ev01=38528
+event=69 offset=0x002aa000 span=40960 ev01=38528
+event=70 offset=0x002b4000 span=40960 ev01=38528
+event=71 offset=0x002be000 span=40960 ev01=38528
+event=72 offset=0x002c8000 span=40960 ev01=38528
+event=73 offset=0x002d2000 span=40960 ev01=38528
+event=74 offset=0x002dc000 span=40960 ev01=38528
+event=75 offset=0x002e6000 span=40960 ev01=38528
+event=76 offset=0x002f0000 span=40960 ev01=38528
+event=77 offset=0x002fa000 span=40960 ev01=38528
+event=78 offset=0x00304000 span=40960 ev01=38528
+event=79 offset=0x0030e000 span=40960 ev01=38528
+event=80 offset=0x00318000 span=40960 ev01=38528
+event=81 offset=0x00322000 span=40960 ev01=38528
+event=82 offset=0x0032c000 span=40960 ev01=38528
+event=83 offset=0x00336000 span=40960 ev01=38528
+event=84 offset=0x00340000 span=40960 ev01=38528
+event=85 offset=0x0034a000 span=40960 ev01=38528
+event=86 offset=0x00354000 span=40960 ev01=38528
+event=87 offset=0x0035e000 span=40960 ev01=38528
+event=88 offset=0x00368000 span=40960 ev01=38528
+event=89 offset=0x00372000 span=40960 ev01=38528
+event=90 offset=0x0037c000 span=40960 ev01=38528
+event=91 offset=0x00386000 span=40960 ev01=38528
+event=92 offset=0x00390000 span=40960 ev01=38528
+event=93 offset=0x0039a000 span=40960 ev01=38528
+event=94 offset=0x003a4000 span=40960 ev01=38528
+event=95 offset=0x003ae000 span=40960 ev01=38528
+event=96 offset=0x003b8000 span=40960 ev01=38528
+event=97 offset=0x003c2000 span=40960 ev01=38528
+event=98 offset=0x003cc000 span=40960 ev01=38528
+event=99 offset=0x003d6000 span=40960 ev01=38528
+event=100 offset=0x003e0000 span=40960 ev01=38528
+msh >
+msh >log inspect
+recovery source=superblock_b generation=2 scanned=1 discarded=0 ticks=1
+msh >
+msh >log verify 1
+event=1 verify=OK
+msh >
+msh >log verify 2
+event=2 verify=OK
+msh >
+msh >log verify 3
+event=3 verify=OK
+msh >
+msh >log verify 4
+event=4 verify=OK
+msh >
+msh >log verify 5
+event=5 verify=OK
+msh >
+msh >log verify 6
+event=6 verify=OK
+msh >
+msh >log verify 7
+event=7 verify=OK
+msh >
+msh >log verify 8
+event=8 verify=OK
+msh >
+msh >log verify 9
+event=9 verify=OK
+msh >
+msh >log verify 10
+event=10 verify=OK
+msh >
+msh >log verify 11
+event=11 verify=OK
+msh >
+msh >log verify 12
+event=12 verify=OK
+msh >
+msh >log verify 13
+event=13 verify=OK
+msh >
+msh >log verify 14
+event=14 verify=OK
+msh >
+msh >log verify 15
+event=15 verify=OK
+msh >
+msh >log verify 16
+event=16 verify=OK
+msh >
+msh >log verify 17
+event=17 verify=OK
+msh >
+msh >log verify 18
+event=18 verify=OK
+msh >
+msh >log verify 19
+event=19 verify=OK
+msh >
+msh >log verify 20
+event=20 verify=OK
+msh >
+msh >log verify 21
+event=21 verify=OK
+msh >
+msh >log verify 22
+event=22 verify=OK
+msh >
+msh >log verify 23
+event=23 verify=OK
+msh >
+msh >log verify 24
+event=24 verify=OK
+msh >
+msh >log verify 25
+event=25 verify=OK
+msh >
+msh >log verify 26
+event=26 verify=OK
+msh >
+msh >log verify 27
+event=27 verify=OK
+msh >
+msh >log verify 28
+event=28 verify=OK
+msh >
+msh >log verify 29
+event=29 verify=OK
+msh >
+msh >log verify 30
+event=30 verify=OK
+msh >
+msh >log verify 31
+event=31 verify=OK
+msh >
+msh >log verify 32
+event=32 verify=OK
+msh >
+msh >log verify 33
+event=33 verify=OK
+msh >
+msh >log verify 34
+event=34 verify=OK
+msh >
+msh >log verify 35
+event=35 verify=OK
+msh >
+msh >log verify 36
+event=36 verify=OK
+msh >
+msh >log verify 37
+event=37 verify=OK
+msh >
+msh >log verify 38
+event=38 verify=OK
+msh >
+msh >log verify 39
+event=39 verify=OK
+msh >
+msh >log verify 40
+event=40 verify=OK
+msh >
+msh >log verify 41
+event=41 verify=OK
+msh >
+msh >log verify 42
+event=42 verify=OK
+msh >
+msh >log verify 43
+event=43 verify=OK
+msh >
+msh >log verify 44
+event=44 verify=OK
+msh >
+msh >log verify 45
+event=45 verify=OK
+msh >
+msh >log verify 46
+event=46 verify=OK
+msh >
+msh >log verify 47
+event=47 verify=OK
+msh >
+msh >log verify 48
+event=48 verify=OK
+msh >
+msh >log verify 49
+event=49 verify=OK
+msh >
+msh >log verify 50
+event=50 verify=OK
+msh >
+msh >log verify 51
+event=51 verify=OK
+msh >
+msh >log verify 52
+event=52 verify=OK
+msh >
+msh >log verify 53
+event=53 verify=OK
+msh >
+msh >log verify 54
+event=54 verify=OK
+msh >
+msh >log verify 55
+event=55 verify=OK
+msh >
+msh >log verify 56
+event=56 verify=OK
+msh >
+msh >log verify 57
+event=57 verify=OK
+msh >
+msh >log verify 58
+event=58 verify=OK
+msh >
+msh >log verify 59
+event=59 verify=OK
+msh >
+msh >log verify 60
+event=60 verify=OK
+msh >
+msh >log verify 61
+event=61 verify=OK
+msh >
+msh >log verify 62
+event=62 verify=OK
+msh >
+msh >log verify 63
+event=63 verify=OK
+msh >
+msh >log verify 64
+event=64 verify=OK
+msh >
+msh >log verify 65
+event=65 verify=OK
+msh >
+msh >log verify 66
+event=66 verify=OK
+msh >
+msh >log verify 67
+event=67 verify=OK
+msh >
+msh >log verify 68
+event=68 verify=OK
+msh >
+msh >log verify 69
+event=69 verify=OK
+msh >
+msh >log verify 70
+event=70 verify=OK
+msh >
+msh >log verify 71
+event=71 verify=OK
+msh >
+msh >log verify 72
+event=72 verify=OK
+msh >
+msh >log verify 73
+event=73 verify=OK
+msh >
+msh >log verify 74
+event=74 verify=OK
+msh >
+msh >log verify 75
+event=75 verify=OK
+msh >
+msh >log verify 76
+event=76 verify=OK
+msh >
+msh >log verify 77
+event=77 verify=OK
+msh >
+msh >log verify 78
+event=78 verify=OK
+msh >
+msh >log verify 79
+event=79 verify=OK
+msh >
+msh >log verify 80
+event=80 verify=OK
+msh >
+msh >log verify 81
+event=81 verify=OK
+msh >
+msh >log verify 82
+event=82 verify=OK
+msh >
+msh >log verify 83
+event=83 verify=OK
+msh >
+msh >log verify 84
+event=84 verify=OK
+msh >
+msh >log verify 85
+event=85 verify=OK
+msh >
+msh >log verify 86
+event=86 verify=OK
+msh >
+msh >log verify 87
+event=87 verify=OK
+msh >
+msh >log verify 88
+event=88 verify=OK
+msh >
+msh >log verify 89
+event=89 verify=OK
+msh >
+msh >log verify 90
+event=90 verify=OK
+msh >
+msh >log verify 91
+event=91 verify=OK
+msh >
+msh >log verify 92
+event=92 verify=OK
+msh >
+msh >log verify 93
+event=93 verify=OK
+msh >
+msh >log verify 94
+event=94 verify=OK
+msh >
+msh >log verify 95
+event=95 verify=OK
+msh >
+msh >log verify 96
+event=96 verify=OK
+msh >
+msh >log verify 97
+event=97 verify=OK
+msh >
+msh >log verify 98
+event=98 verify=OK
+msh >
+msh >log verify 99
+event=99 verify=OK
+msh >
+msh >log verify 100
+event=100 verify=OK
+msh >
+msh >

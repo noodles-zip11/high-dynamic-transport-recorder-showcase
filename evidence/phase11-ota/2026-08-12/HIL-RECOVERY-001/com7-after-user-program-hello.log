@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\.venv\Lib\site-packages\serial\serialwin32.py", line 80, in open
+    self._reconfigure_port()
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\.venv\Lib\site-packages\serial\serialwin32.py", line 222, in _reconfigure_port
+    raise SerialException(
+serial.serialutil.SerialException: Cannot configure port, something went wrong. Original message: PermissionError(13, '����ϵͳ�ϵ��豸û�з������á�', None, 31)

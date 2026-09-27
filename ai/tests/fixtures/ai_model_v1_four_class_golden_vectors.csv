@@ -1,0 +1,5 @@
+name,accel_peak_magnitude_counts,accel_peak_to_peak_counts,accel_rms_magnitude_counts,duration_seconds,accel_crest_factor,gyro_peak_magnitude_counts,logit_background,logit_impact,logit_continuous_vibration,logit_drop,probability_background,probability_impact,probability_continuous_vibration,probability_drop,class_index,confidence
+zero,0,0,0,0,0,0,2.0561724,0.3116354,0.1922598,-1.7642643,0.7398043,0.1292629,0.1147176,0.0162152,0,0.7398043
+background_like,7000,6000,2100,1.5,3.0,1600,0.3255678,0.6105083,0.2290694,-0.8313859,0.2815207,0.3743332,0.2556240,0.0885221,1,0.3743332
+impact_like,20000,18000,5000,1.5,5.0,5000,-3.7234976,-0.3745629,-0.5016303,4.0085382,0.0004283,0.0121949,0.0107397,0.9766371,3,0.9766371
+mixed,12000,9000,3000,2.5,4.0,2800,-1.2685115,0.3564115,0.3727371,0.3923988,0.0605923,0.3076896,0.3127540,0.3189641,3,0.3189641

@@ -1,0 +1,14 @@
+from building import DefineGroup, GetCurrentDir, Glob
+
+
+current_dir = GetCurrentDir()
+
+group = DefineGroup(
+    "Drivers",
+    Glob("icm45686/*.c") + Glob("sht4x/*.c"),
+    depend=[""],
+    CPPPATH=[current_dir, current_dir + "/icm45686", current_dir + "/sht4x"],
+    LOCAL_CFLAGS=" -Wall -Wextra",
+)
+
+Return("group")

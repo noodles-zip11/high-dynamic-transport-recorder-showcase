@@ -1,0 +1,39 @@
+{
+  "schema": "main-two-hour-hardware-regression-1",
+  "session_id": "main-two-hour-regression-001",
+  "main_commit": "60eecbd56338a382256009d3be827149a5f8db41",
+  "classification": "smoke-regression; not a contractual hardware closeout",
+  "gates": {
+    "R0": { "status": "PASS", "scope": "Full selfcheck and normal firmware build" },
+    "H0": { "status": "NOT_EXECUTED", "scope": "No new board/module photo archive" },
+    "H1": { "status": "PARTIAL", "scope": "Device identity and two 2 MiB backup hashes passed; 10-connect formal count not repeated" },
+    "H2": { "status": "PARTIAL", "scope": "UART1 follow-up captured RT-Thread/msh and FinSH commands; one reset/event run passed, but formal 10/10 cold-start count is not closed" },
+    "H3": { "status": "PARTIAL", "scope": "TERP hardware identity/health passed; strict sensor IDs and read-only U2/U3 identity diagnostics not executed" },
+    "H4": { "status": "NOT_EXECUTED", "scope": "No external Flash erase/write diagnostic" },
+    "H5": { "status": "NOT_EXECUTED", "scope": "No 1800-second SHT40 HV1 run" },
+    "H6": { "status": "NOT_EXECUTED", "scope": "No ICM FIFO/DMA probe or 1800-second HV1 run" },
+    "H7": { "status": "PARTIAL", "scope": "UART1 trigger_test created event 2; log list and log verify 2 passed; no 100-cycle loop or write-window power-loss test" },
+    "H8": { "status": "PARTIAL", "scope": "UART3 event 2 download, full-record CRC, host EV03 decode, 10-minute read-only observation, and 20/20 same-handle reconnect/download rounds passed; 20-round physical reconnect matrix remains" },
+    "H9": { "status": "NOT_EXECUTED", "scope": "RTC/VBAT/watchdog/SHT40 disconnect recovery not run" },
+    "H10": { "status": "NOT_EXECUTED", "scope": "USB CDC remains unimplemented" },
+    "H11": { "status": "SMOKE_PASS", "scope": "10/10 one-minute UART3 health/list observations; not a 7200-second acceptance run" }
+  },
+  "observations": {
+    "post_program_info": { "exit": 0, "firmware_version": "phase08-terp-uart3", "hardware_version": "openmv4-h743-pd8-pd9", "capability_flags": 43 },
+    "post_program_health": { "exit": 0, "state": 2, "storage_ready": true, "storage_error_count": 0, "event_export_error_count": 0 },
+    "event_1": { "event_id": 1, "total_length": 38528, "event_crc32": 2522325444, "download_sha256": "05D43F7F53226B21B792EB76601BE4D7971687C73D54C933DDBC8F934D8CEC90" },
+    "uart1_followup": { "captured_bytes": 909, "startup_signal": "RT-Thread+msh", "finsh_commands": ["sysinfo", "event status", "log status", "log inspect"], "reset_exit": 0 },
+    "event_2": { "event_id": 2, "created_via": "UART1 event trigger_test", "log_verify": "OK", "auto_export": "complete", "record_bytes": 38560, "listed_record_crc32": 2376085022, "download_sha256": "DB96D6E27F887B18E8F5250BA825B1F93632E8D876056DCC79A6416CFC143E54", "host_decode": "PASS", "payload_crc32": 2985594667, "sample_count": 2400, "data_loss_samples": 0, "uart3_download": "PASS" },
+    "ten_minute_uart3": { "samples": 10, "health_successes": 10, "event_list_successes": 10, "errors_observed": 0 },
+    "uart1_startup": { "reset_exit": 0, "captured_bytes": 0, "startup_signal": "NOT_DETECTED", "interpretation": "superseded by UART1 follow-up after cable moved to UART1" },
+    "local_verification": { "run_tests": "PASS", "host_pytest": "118 passed", "ai_pytest": "1 passed", "firmware_build": "PASS", "git_diff_check": "PASS" },
+    "cubeprogrammer_ascii_staging": { "unit_test": "PASS", "program_verify": "PASS" },
+    "uart3_event_2": { "info_exit": 0, "health_exit": 0, "events_list_exit": 0, "download_exit": 0, "record_crc_match": true, "host_decode_exit": 0, "time_get_exit": 3 },
+    "uart3_same_handle_reconnect_20": { "iterations": 20, "info_successes": 20, "health_successes": 20, "events_list_successes": 20, "download_successes": 20, "length_stable": true, "record_crc_stable": true, "sha256_stable": true, "physical_unplug_count": 0 }
+  },
+  "issues": [
+    { "id": "REG-001", "severity": "P1", "status": "RESOLVED_BY_REWIRE_AND_RETEST", "summary": "Initial COM8 capture was on the wrong UART; UART1 follow-up captured startup/FinSH and a new event", "evidence": "logs/uart1-followup.txt; logs/uart1-event-e2e-followup.txt", "next_action": "Formal 10/10 cold-start count remains an H2 closeout task" },
+    { "id": "REG-002", "severity": "P2", "status": "FIXED_IN_WORKTREE", "summary": "CubeProgrammer upload crashed when output/log paths contained the Chinese workspace path", "evidence": "logs/program-script-ascii-regression.log; scripts/tests/test_cubeprogrammer_paths.ps1", "next_action": "Review and merge the wrapper change before relying on program_firmware.ps1 from a Chinese path" },
+    { "id": "REG-003", "severity": "P2", "status": "DESIGN_BOUNDARY_OPEN", "summary": "TERP time get is rejected by the current capability set", "evidence": "logs/uart3-terp-preflight.log; logs/uart3-terp-post-main-program.log", "next_action": "Design and implement real RTC/VBAT/LSE service in a separate authorized task before enabling time capability" }
+  ]
+}

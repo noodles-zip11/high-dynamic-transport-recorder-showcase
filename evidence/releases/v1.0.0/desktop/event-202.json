@@ -1,0 +1,55 @@
+{
+  "ai_prediction": {
+    "class_count": 4,
+    "class_index": 3,
+    "class_name": "drop",
+    "confidence": 0.5017959475517273,
+    "model_version": 2,
+    "source": {
+      "summary": "full-qspi-event-backup/summary.json",
+      "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+    },
+    "status": 1
+  },
+  "crc": {
+    "device_crc32": "0x3C557E5F",
+    "payload_crc32": "0x695CC47C",
+    "record_crc_verified": true
+  },
+  "decoded": {
+    "format_version": 3,
+    "lost_sample_count": 0,
+    "posttrigger_samples": 1581,
+    "pretrigger_samples": 819,
+    "sample_count": 2400,
+    "sample_rate_hz": 1600,
+    "subtrigger_count": 0
+  },
+  "derived_from": {
+    "decoder": "host.transport_recorder.analysis.event_record.load_event",
+    "raw_event": "full-qspi-event-backup/event-202.terp-event",
+    "raw_event_sha256": "35e7c25b18c82d08a3422a9cfd6717224320db11f7bfcbb4b56917b62d511e57",
+    "summary": "full-qspi-event-backup/summary.json",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  },
+  "event_id": 202,
+  "evidence_level": "derived",
+  "human_label": {
+    "confidence": "not individually asserted; the field action sequence was not fully deterministic",
+    "planned_action": null,
+    "source": null,
+    "value": null,
+    "verified_individual": false
+  },
+  "label_semantics": "human_label.value is populated only for individually verified action truth; planned_action is a non-truth action plan mapping; ai_prediction is the MCU model output and is never used as the label",
+  "png": {
+    "relative_path": "desktop/event-202.png",
+    "sha256": "a010a966d65774ce66a718dcdedd90a9d88ece9fe5dfc503b6f87a3ae1e19c25",
+    "size_bytes": 55790
+  },
+  "source_raw": {
+    "relative_name": "full-qspi-event-backup/event-202.terp-event",
+    "sha256": "35e7c25b18c82d08a3422a9cfd6717224320db11f7bfcbb4b56917b62d511e57",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  }
+}

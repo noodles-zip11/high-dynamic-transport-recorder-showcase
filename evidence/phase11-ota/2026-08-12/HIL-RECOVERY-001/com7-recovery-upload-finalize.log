@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\serial_transport.py", line 21, in open
+    return cls(serial.Serial(port=port, baudrate=baudrate,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\.venv\Lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\.venv\Lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\.venv\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM7': PermissionError(13, '�ܾ����ʡ�', None, 5)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 13, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\serial_transport.py", line 25, in open
+    raise TransportDisconnected(str(error)) from error
+host.transport_recorder.protocol.client.TransportDisconnected: could not open port 'COM7': PermissionError(13, '�ܾ����ʡ�', None, 5)

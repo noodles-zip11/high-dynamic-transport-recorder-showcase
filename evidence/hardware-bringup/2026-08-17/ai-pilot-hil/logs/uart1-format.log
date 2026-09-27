@@ -1,0 +1,38 @@
+log format
+format pending; run log format --confirm within 10 seconds
+msh >
+msh >log format --confirm
+imu services=94661 samples=3029152 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94661 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+msh >
+msh >imu services=94713 samples=3030816 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94713 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=94765 samples=3032480 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94765 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=94817 samples=3034112 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94816 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=94868 samples=3035776 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94868 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=94920 samples=3037440 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94920 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=94972 samples=3039104 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=94972 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=95024 samples=3040768 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=95024 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=95076 samples=3042400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=95075 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=95127 samples=3044064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=95127 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=95179 samples=3045728 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=95179 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0

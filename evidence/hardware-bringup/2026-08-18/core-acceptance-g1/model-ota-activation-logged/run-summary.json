@@ -1,0 +1,286 @@
+{
+  "activation_count": 26,
+  "activations": [
+    {
+      "activation": 1,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 2,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 3,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 4,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 5,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 6,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 7,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 8,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 9,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 10,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 11,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 12,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 13,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 14,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 15,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 16,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 17,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 18,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 19,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 20,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 21,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 22,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 23,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 24,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 25,
+      "active_slot": 0,
+      "model": "A",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    },
+    {
+      "activation": 26,
+      "active_slot": 1,
+      "model": "B",
+      "model_valid": true,
+      "pending_install": false,
+      "total_bytes": 510,
+      "verified_bytes": 510
+    }
+  ],
+  "candidate_bin_sha256": "BEDAE83E835A7A3F5E0CF402DFE31ED1038C1DDAB3F0D5BA91D30A5828250EA1",
+  "candidate_firmware_commit": "4c47fe69b544ef9327300910d66f04927871f0dc",
+  "errors": [],
+  "final_model": {
+    "active_slot": 1,
+    "model_valid": true,
+    "pending_install": false,
+    "total_bytes": 510,
+    "verified_bytes": 510
+  },
+  "finished_utc": "2026-08-18T05:51:46+00:00",
+  "frame_summary": "uart3-frames.jsonl",
+  "health": {
+    "event_export_error_count": 0,
+    "free_log_bytes": 0,
+    "state": 2,
+    "storage_error_count": 0,
+    "storage_ready": true
+  },
+  "initial_model": {
+    "active_slot": 1,
+    "model_valid": true,
+    "pending_install": false,
+    "total_bytes": 510,
+    "verified_bytes": 510
+  },
+  "packages": {
+    "A": {
+      "bytes": 510,
+      "path": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g1\\model-a-v2.trmd",
+      "sha256": "0840CC6CFD2CD38D2ACFF6EB6956E60CB3A7DA7259E3934A700D653C53F2729C"
+    },
+    "B": {
+      "bytes": 510,
+      "path": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g1\\model-b-v3.trmd",
+      "sha256": "E3DC4EDA4CD38E4455FABB57732223A51408DBBF020FCF5BFBA07BFC250AE110"
+    }
+  },
+  "raw_capture": "uart3-activation.raw.log",
+  "schema": "g1-model-ota-activation-run-20260818-v1",
+  "started_utc": "2026-08-18T05:51:19+00:00",
+  "transport": {
+    "baud": 115200,
+    "format": "8N1",
+    "port": "COM7",
+    "uart": "UART3"
+  }
+}

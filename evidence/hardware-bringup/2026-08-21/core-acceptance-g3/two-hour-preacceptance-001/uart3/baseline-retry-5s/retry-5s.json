@@ -1,0 +1,18 @@
+{
+  "schema": "hardware-acceptance-readback-v1",
+  "label": "retry-5s",
+  "port": "COM7",
+  "started_at_utc": "2026-08-21T10:19:40.525326+00:00",
+  "read_only": true,
+  "pass": false,
+  "error": "TransportError: TERP response timed out",
+  "ended_at_utc": "2026-08-21T10:19:45.637304+00:00",
+  "raw_log": {
+    "bytes": 140,
+    "sha256": "87A48E5BEFE959AE74073511C1F8962351D963AFD36E18136EE011A0C1E33481"
+  },
+  "frame_summary": {
+    "bytes": 129,
+    "sha256": "7D27C7B881F4B07C2D4DAD063BB8478A78F34AF2C435869B1E14D6F3F5FEDBAD"
+  }
+}

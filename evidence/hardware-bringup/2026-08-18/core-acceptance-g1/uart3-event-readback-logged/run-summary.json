@@ -1,0 +1,3308 @@
+{
+  "schema": "hardware-g1-uart3-event-readback-v1",
+  "status": "PASS",
+  "port": "COM7",
+  "uart": "UART3",
+  "baudrate": 115200,
+  "format": "8N1",
+  "firmware_revision": "phase08-terp-uart3",
+  "device_info": {
+    "model": "STM32H743",
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "serial_number": "recorder-001",
+    "capability_flags": 235
+  },
+  "health_before": {
+    "state": 2,
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "storage_error_count": 0,
+    "event_export_error_count": 0
+  },
+  "health_after": {
+    "state": 2,
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "storage_error_count": 0,
+    "event_export_error_count": 0
+  },
+  "listed_event_count": 38,
+  "target_event_ids": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "downloaded_event_count": 33,
+  "event_id_check": true,
+  "result_sequence_check": true,
+  "model_identity_check": true,
+  "model_versions": [
+    2
+  ],
+  "sqlite_pass": true,
+  "json_pass": true,
+  "ui_pass": true,
+  "ui_checks": [
+    {
+      "event_id": 6,
+      "widget_event_id": "6",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 7,
+      "widget_event_id": "7",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 8,
+      "widget_event_id": "8",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 9,
+      "widget_event_id": "9",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 10,
+      "widget_event_id": "10",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 11,
+      "widget_event_id": "11",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 12,
+      "widget_event_id": "12",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 13,
+      "widget_event_id": "13",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 14,
+      "widget_event_id": "14",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 15,
+      "widget_event_id": "15",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 16,
+      "widget_event_id": "16",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 17,
+      "widget_event_id": "17",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 18,
+      "widget_event_id": "18",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 19,
+      "widget_event_id": "19",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 20,
+      "widget_event_id": "20",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 21,
+      "widget_event_id": "21",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 22,
+      "widget_event_id": "22",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 23,
+      "widget_event_id": "23",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 24,
+      "widget_event_id": "24",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 25,
+      "widget_event_id": "25",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 26,
+      "widget_event_id": "26",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 27,
+      "widget_event_id": "27",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 28,
+      "widget_event_id": "28",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 29,
+      "widget_event_id": "29",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 30,
+      "widget_event_id": "30",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 31,
+      "widget_event_id": "31",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 32,
+      "widget_event_id": "32",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 33,
+      "widget_event_id": "33",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 34,
+      "widget_event_id": "34",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 35,
+      "widget_event_id": "35",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 36,
+      "widget_event_id": "36",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 37,
+      "widget_event_id": "37",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    },
+    {
+      "event_id": 38,
+      "widget_event_id": "38",
+      "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE",
+      "event_id_match": true
+    }
+  ],
+  "result_sequence_range": [
+    1,
+    33
+  ],
+  "sidecar_records_per_sector": 32,
+  "new_result_count": 33,
+  "sidecar_write_boundary_covered": true,
+  "raw_event_directory": "raw-events",
+  "host_replay_directory": "host-replay",
+  "event_records": [
+    {
+      "event_id": 6,
+      "listed": {
+        "event_id": 6,
+        "total_length": 38560,
+        "event_crc32": 1481226865
+      },
+      "get_event_info": {
+        "event_id": 6,
+        "total_length": 38560,
+        "event_crc32": 1481226865
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "6CC3152917076680393752957E6F86B294777B4D72D45E7F025E3653FD17000A",
+      "downloaded_crc32": 1481226865,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 6,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 1
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 6,
+        "sha256": "6cc3152917076680393752957e6f86b294777b4d72d45e7f025e3653fd17000a",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\6.json",
+        "event_id": 6,
+        "model_result_event_id": 6
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 7,
+      "listed": {
+        "event_id": 7,
+        "total_length": 38560,
+        "event_crc32": 2807201653
+      },
+      "get_event_info": {
+        "event_id": 7,
+        "total_length": 38560,
+        "event_crc32": 2807201653
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "BB205DC23DC84EFDF7BFDE4C252AC99C996448D241E2597F59D2FAD2251DEFB2",
+      "downloaded_crc32": 2807201653,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 7,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 2
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 7,
+        "sha256": "bb205dc23dc84efdf7bfde4c252ac99c996448d241e2597f59d2fad2251defb2",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\7.json",
+        "event_id": 7,
+        "model_result_event_id": 7
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 8,
+      "listed": {
+        "event_id": 8,
+        "total_length": 38560,
+        "event_crc32": 4223089342
+      },
+      "get_event_info": {
+        "event_id": 8,
+        "total_length": 38560,
+        "event_crc32": 4223089342
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "43D0D4D8AE0BF4C408B10246C06357404F4E131C4D306C53DBA69D3E260E5AAB",
+      "downloaded_crc32": 4223089342,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 8,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 3
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 8,
+        "sha256": "43d0d4d8ae0bf4c408b10246c06357404f4e131c4d306c53dba69d3e260e5aab",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\8.json",
+        "event_id": 8,
+        "model_result_event_id": 8
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 9,
+      "listed": {
+        "event_id": 9,
+        "total_length": 38560,
+        "event_crc32": 1837825641
+      },
+      "get_event_info": {
+        "event_id": 9,
+        "total_length": 38560,
+        "event_crc32": 1837825641
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "A442061BC5BDC5807C744B7B55CEDACDAA8F0C7AEEA3EA74E973BA9F69502F83",
+      "downloaded_crc32": 1837825641,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 9,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 4
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 9,
+        "sha256": "a442061bc5bdc5807c744b7b55cedacdaa8f0c7aeea3ea74e973ba9f69502f83",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\9.json",
+        "event_id": 9,
+        "model_result_event_id": 9
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 10,
+      "listed": {
+        "event_id": 10,
+        "total_length": 38560,
+        "event_crc32": 3198696783
+      },
+      "get_event_info": {
+        "event_id": 10,
+        "total_length": 38560,
+        "event_crc32": 3198696783
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "8D8010A3A0AA6E9196F2EBAB8D170089A09B0A8FD285EC685CCF6C85B6FE0551",
+      "downloaded_crc32": 3198696783,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 10,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 5
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 10,
+        "sha256": "8d8010a3a0aa6e9196f2ebab8d170089a09b0a8fd285ec685ccf6c85b6fe0551",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\10.json",
+        "event_id": 10,
+        "model_result_event_id": 10
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 11,
+      "listed": {
+        "event_id": 11,
+        "total_length": 38560,
+        "event_crc32": 718091753
+      },
+      "get_event_info": {
+        "event_id": 11,
+        "total_length": 38560,
+        "event_crc32": 718091753
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "0FCB3ABA08966492C83DD757197C1184D958E08F41937731E85EF00753D57995",
+      "downloaded_crc32": 718091753,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 11,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 6
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 11,
+        "sha256": "0fcb3aba08966492c83dd757197c1184d958e08f41937731e85ef00753d57995",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\11.json",
+        "event_id": 11,
+        "model_result_event_id": 11
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 12,
+      "listed": {
+        "event_id": 12,
+        "total_length": 38560,
+        "event_crc32": 72275859
+      },
+      "get_event_info": {
+        "event_id": 12,
+        "total_length": 38560,
+        "event_crc32": 72275859
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "39EB0BA99E0EFFE7F71B7D7D8E3D38108532E527E1C44BB1B0ADEEB15D2C7556",
+      "downloaded_crc32": 72275859,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 12,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 7
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 12,
+        "sha256": "39eb0ba99e0effe7f71b7d7d8e3d38108532e527e1c44bb1b0adeeb15d2c7556",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\12.json",
+        "event_id": 12,
+        "model_result_event_id": 12
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 13,
+      "listed": {
+        "event_id": 13,
+        "total_length": 38560,
+        "event_crc32": 2078547698
+      },
+      "get_event_info": {
+        "event_id": 13,
+        "total_length": 38560,
+        "event_crc32": 2078547698
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "DE1AA524EE237DE32F6A70B5C47DC0E336541E8BB39B32ABCF6E1302C21D5475",
+      "downloaded_crc32": 2078547698,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 13,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 8
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 13,
+        "sha256": "de1aa524ee237de32f6a70b5c47dc0e336541e8bb39b32abcf6e1302c21d5475",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\13.json",
+        "event_id": 13,
+        "model_result_event_id": 13
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 14,
+      "listed": {
+        "event_id": 14,
+        "total_length": 38560,
+        "event_crc32": 2455942922
+      },
+      "get_event_info": {
+        "event_id": 14,
+        "total_length": 38560,
+        "event_crc32": 2455942922
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "556068B8FC4AFAB5F0D676683876B42191D4B45453FFAED62E578B39064957FB",
+      "downloaded_crc32": 2455942922,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 14,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 9
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 14,
+        "sha256": "556068b8fc4afab5f0d676683876b42191d4b45453ffaed62e578b39064957fb",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\14.json",
+        "event_id": 14,
+        "model_result_event_id": 14
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 15,
+      "listed": {
+        "event_id": 15,
+        "total_length": 38560,
+        "event_crc32": 1395687583
+      },
+      "get_event_info": {
+        "event_id": 15,
+        "total_length": 38560,
+        "event_crc32": 1395687583
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "631036F503425BC7288B71D86CE82939FBC745ECA5E8E6C723F5B522B0C676DF",
+      "downloaded_crc32": 1395687583,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 15,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 10
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 15,
+        "sha256": "631036f503425bc7288b71d86ce82939fbc745eca5e8e6c723f5b522b0c676df",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\15.json",
+        "event_id": 15,
+        "model_result_event_id": 15
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 16,
+      "listed": {
+        "event_id": 16,
+        "total_length": 38560,
+        "event_crc32": 2958992122
+      },
+      "get_event_info": {
+        "event_id": 16,
+        "total_length": 38560,
+        "event_crc32": 2958992122
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "57E6C54C5B082B7FDEBF6FA178F64BAFA3465E3CEB6DBE0D19957CF1AB385301",
+      "downloaded_crc32": 2958992122,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 16,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 11
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 16,
+        "sha256": "57e6c54c5b082b7fdebf6fa178f64bafa3465e3ceb6dbe0d19957cf1ab385301",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\16.json",
+        "event_id": 16,
+        "model_result_event_id": 16
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 17,
+      "listed": {
+        "event_id": 17,
+        "total_length": 38560,
+        "event_crc32": 2177987687
+      },
+      "get_event_info": {
+        "event_id": 17,
+        "total_length": 38560,
+        "event_crc32": 2177987687
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "CAA905C29B2C8E49BD75B7B0AE018E6348D20881374B6E38C18E73444BE61694",
+      "downloaded_crc32": 2177987687,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 17,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 12
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 17,
+        "sha256": "caa905c29b2c8e49bd75b7b0ae018e6348d20881374b6e38c18e73444be61694",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\17.json",
+        "event_id": 17,
+        "model_result_event_id": 17
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 18,
+      "listed": {
+        "event_id": 18,
+        "total_length": 38560,
+        "event_crc32": 2335429292
+      },
+      "get_event_info": {
+        "event_id": 18,
+        "total_length": 38560,
+        "event_crc32": 2335429292
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "1B0D4D0CE891E261D191C3607E93E3AADF33D8B1FDF4F0567B33FD9FE7B38A4C",
+      "downloaded_crc32": 2335429292,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 18,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 13
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 18,
+        "sha256": "1b0d4d0ce891e261d191c3607e93e3aadf33d8b1fdf4f0567b33fd9fe7b38a4c",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\18.json",
+        "event_id": 18,
+        "model_result_event_id": 18
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 19,
+      "listed": {
+        "event_id": 19,
+        "total_length": 38560,
+        "event_crc32": 3081777616
+      },
+      "get_event_info": {
+        "event_id": 19,
+        "total_length": 38560,
+        "event_crc32": 3081777616
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "D18355F391913267162B447A6E64F829DE3051981BBD7F947B76E40E167F0F9D",
+      "downloaded_crc32": 3081777616,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 19,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 14
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 19,
+        "sha256": "d18355f391913267162b447a6e64f829de3051981bbd7f947b76e40e167f0f9d",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\19.json",
+        "event_id": 19,
+        "model_result_event_id": 19
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 20,
+      "listed": {
+        "event_id": 20,
+        "total_length": 38560,
+        "event_crc32": 1842006694
+      },
+      "get_event_info": {
+        "event_id": 20,
+        "total_length": 38560,
+        "event_crc32": 1842006694
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "97F6B4B450D4A4DF945C8BC4A906D1BDF7669AE0D4C86E56C54FF1C942D7A3A4",
+      "downloaded_crc32": 1842006694,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 20,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 15
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 20,
+        "sha256": "97f6b4b450d4a4df945c8bc4a906d1bdf7669ae0d4c86e56c54ff1c942d7a3a4",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\20.json",
+        "event_id": 20,
+        "model_result_event_id": 20
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 21,
+      "listed": {
+        "event_id": 21,
+        "total_length": 38560,
+        "event_crc32": 2950304011
+      },
+      "get_event_info": {
+        "event_id": 21,
+        "total_length": 38560,
+        "event_crc32": 2950304011
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "1D454475CB0E4486A744CD7790A706E3B9A0C485D717B35239B95D7D1C764ACC",
+      "downloaded_crc32": 2950304011,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 21,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 16
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 21,
+        "sha256": "1d454475cb0e4486a744cd7790a706e3b9a0c485d717b35239b95d7d1c764acc",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\21.json",
+        "event_id": 21,
+        "model_result_event_id": 21
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 22,
+      "listed": {
+        "event_id": 22,
+        "total_length": 38560,
+        "event_crc32": 1430316708
+      },
+      "get_event_info": {
+        "event_id": 22,
+        "total_length": 38560,
+        "event_crc32": 1430316708
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "992B203971E407FF0D09DD2F917212352F5680587DBBCC51D2452C7928431D9E",
+      "downloaded_crc32": 1430316708,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 22,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 17
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 22,
+        "sha256": "992b203971e407ff0d09dd2f917212352f5680587dbbcc51d2452c7928431d9e",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\22.json",
+        "event_id": 22,
+        "model_result_event_id": 22
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 23,
+      "listed": {
+        "event_id": 23,
+        "total_length": 38560,
+        "event_crc32": 2846352230
+      },
+      "get_event_info": {
+        "event_id": 23,
+        "total_length": 38560,
+        "event_crc32": 2846352230
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "74DDE6BB7F7AFDB087AF3BE4548178AC64E7243288748726075C044CA2BF1B15",
+      "downloaded_crc32": 2846352230,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 23,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 18
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 23,
+        "sha256": "74dde6bb7f7afdb087af3be4548178ac64e7243288748726075c044ca2bf1b15",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\23.json",
+        "event_id": 23,
+        "model_result_event_id": 23
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 24,
+      "listed": {
+        "event_id": 24,
+        "total_length": 38560,
+        "event_crc32": 2708237329
+      },
+      "get_event_info": {
+        "event_id": 24,
+        "total_length": 38560,
+        "event_crc32": 2708237329
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "8C34D33063ACFCAA6326B0606596FB9694516ADF3CCE12690659170949AC3464",
+      "downloaded_crc32": 2708237329,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 24,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 19
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 24,
+        "sha256": "8c34d33063acfcaa6326b0606596fb9694516adf3cce12690659170949ac3464",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\24.json",
+        "event_id": 24,
+        "model_result_event_id": 24
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 25,
+      "listed": {
+        "event_id": 25,
+        "total_length": 38560,
+        "event_crc32": 1392122019
+      },
+      "get_event_info": {
+        "event_id": 25,
+        "total_length": 38560,
+        "event_crc32": 1392122019
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "42FAB055CB9894EF77C1F7B38115D2A1312CF4DDE45DBBBC899047930AEEDA96",
+      "downloaded_crc32": 1392122019,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 25,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 20
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 25,
+        "sha256": "42fab055cb9894ef77c1f7b38115d2a1312cf4dde45dbbbc899047930aeeda96",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\25.json",
+        "event_id": 25,
+        "model_result_event_id": 25
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 26,
+      "listed": {
+        "event_id": 26,
+        "total_length": 38560,
+        "event_crc32": 43223614
+      },
+      "get_event_info": {
+        "event_id": 26,
+        "total_length": 38560,
+        "event_crc32": 43223614
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "57EE1E5721F1EAEE6A234294468F8F0671F4022F29D7F20F6593DB30F75E0C36",
+      "downloaded_crc32": 43223614,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 26,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 21
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 26,
+        "sha256": "57ee1e5721f1eaee6a234294468f8f0671f4022f29d7f20f6593db30f75e0c36",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\26.json",
+        "event_id": 26,
+        "model_result_event_id": 26
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 27,
+      "listed": {
+        "event_id": 27,
+        "total_length": 38560,
+        "event_crc32": 275238341
+      },
+      "get_event_info": {
+        "event_id": 27,
+        "total_length": 38560,
+        "event_crc32": 275238341
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "FCF705F30439FC799C68E8BAFA0802B27AE45BED85F94070B1E60FD0E1922777",
+      "downloaded_crc32": 275238341,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 27,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 22
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 27,
+        "sha256": "fcf705f30439fc799c68e8bafa0802b27ae45bed85f94070b1e60fd0e1922777",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\27.json",
+        "event_id": 27,
+        "model_result_event_id": 27
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 28,
+      "listed": {
+        "event_id": 28,
+        "total_length": 38560,
+        "event_crc32": 3194530756
+      },
+      "get_event_info": {
+        "event_id": 28,
+        "total_length": 38560,
+        "event_crc32": 3194530756
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "29AD61BD4A2A16859EF1A4511E55BC9A3939EF1BA3A7416F6A1E5234FB15E906",
+      "downloaded_crc32": 3194530756,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 28,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 23
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 28,
+        "sha256": "29ad61bd4a2a16859ef1a4511e55bc9a3939ef1ba3a7416f6a1e5234fb15e906",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\28.json",
+        "event_id": 28,
+        "model_result_event_id": 28
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 29,
+      "listed": {
+        "event_id": 29,
+        "total_length": 38560,
+        "event_crc32": 4229303096
+      },
+      "get_event_info": {
+        "event_id": 29,
+        "total_length": 38560,
+        "event_crc32": 4229303096
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "A2894EF8F1EA16D01637A365A3D5DD2E8C4495C2FD189A7822105CB57A7B4CFE",
+      "downloaded_crc32": 4229303096,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 29,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 24
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 29,
+        "sha256": "a2894ef8f1ea16d01637a365a3d5dd2e8c4495c2fd189a7822105cb57a7b4cfe",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\29.json",
+        "event_id": 29,
+        "model_result_event_id": 29
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 30,
+      "listed": {
+        "event_id": 30,
+        "total_length": 38560,
+        "event_crc32": 2539407930
+      },
+      "get_event_info": {
+        "event_id": 30,
+        "total_length": 38560,
+        "event_crc32": 2539407930
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "E221DE037FBD92673EFC78EBF3C9B36932A0464A81F9124FA2E3624541C55025",
+      "downloaded_crc32": 2539407930,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 30,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 25
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 30,
+        "sha256": "e221de037fbd92673efc78ebf3c9b36932a0464a81f9124fa2e3624541c55025",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\30.json",
+        "event_id": 30,
+        "model_result_event_id": 30
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 31,
+      "listed": {
+        "event_id": 31,
+        "total_length": 38560,
+        "event_crc32": 3330692034
+      },
+      "get_event_info": {
+        "event_id": 31,
+        "total_length": 38560,
+        "event_crc32": 3330692034
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "8D867AC6717D7D660070C63418F34F5F4B940F40E335702A96008FDF302A5D3B",
+      "downloaded_crc32": 3330692034,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 31,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 26
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 31,
+        "sha256": "8d867ac6717d7d660070c63418f34f5f4b940f40e335702a96008fdf302a5d3b",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\31.json",
+        "event_id": 31,
+        "model_result_event_id": 31
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 32,
+      "listed": {
+        "event_id": 32,
+        "total_length": 38560,
+        "event_crc32": 713818499
+      },
+      "get_event_info": {
+        "event_id": 32,
+        "total_length": 38560,
+        "event_crc32": 713818499
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "339B7BAD7149072B9ADD3717348C1DE1E286DE43D1EBC11BE45CB6D2728A6C84",
+      "downloaded_crc32": 713818499,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 32,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 27
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 32,
+        "sha256": "339b7bad7149072b9add3717348c1de1e286de43d1ebc11be45cb6d2728a6c84",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\32.json",
+        "event_id": 32,
+        "model_result_event_id": 32
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 33,
+      "listed": {
+        "event_id": 33,
+        "total_length": 38560,
+        "event_crc32": 3950322097
+      },
+      "get_event_info": {
+        "event_id": 33,
+        "total_length": 38560,
+        "event_crc32": 3950322097
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "FD0FD4F9595E21C4FFE0171D32AF579FE42AE9EBA18D472161C9E705F17CAE76",
+      "downloaded_crc32": 3950322097,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 33,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 28
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 33,
+        "sha256": "fd0fd4f9595e21c4ffe0171d32af579fe42ae9eba18d472161c9e705f17cae76",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\33.json",
+        "event_id": 33,
+        "model_result_event_id": 33
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 34,
+      "listed": {
+        "event_id": 34,
+        "total_length": 38560,
+        "event_crc32": 79190976
+      },
+      "get_event_info": {
+        "event_id": 34,
+        "total_length": 38560,
+        "event_crc32": 79190976
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "1451BCEE0850DBDC914BE8DCC0B41FF4738B0EBA5AAC1ED60B2EBF146B527C6E",
+      "downloaded_crc32": 79190976,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 34,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 29
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 34,
+        "sha256": "1451bcee0850dbdc914be8dcc0b41ff4738b0eba5aac1ed60b2ebf146b527c6e",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\34.json",
+        "event_id": 34,
+        "model_result_event_id": 34
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 35,
+      "listed": {
+        "event_id": 35,
+        "total_length": 38560,
+        "event_crc32": 509773441
+      },
+      "get_event_info": {
+        "event_id": 35,
+        "total_length": 38560,
+        "event_crc32": 509773441
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "3FA07BD1E170B83182DE87B277C3C20947FCC55990DBDFC5E3E7788692E774B8",
+      "downloaded_crc32": 509773441,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 35,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 30
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 35,
+        "sha256": "3fa07bd1e170b83182de87b277c3c20947fcc55990dbdfc5e3e7788692e774b8",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\35.json",
+        "event_id": 35,
+        "model_result_event_id": 35
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 36,
+      "listed": {
+        "event_id": 36,
+        "total_length": 38560,
+        "event_crc32": 3435340982
+      },
+      "get_event_info": {
+        "event_id": 36,
+        "total_length": 38560,
+        "event_crc32": 3435340982
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "8C888361E554B42A2BC54745E136DBB2733C9F2FA710A244F9651AD508E1E840",
+      "downloaded_crc32": 3435340982,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 36,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 31
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 36,
+        "sha256": "8c888361e554b42a2bc54745e136dbb2733c9f2fa710a244f9651ad508e1e840",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\36.json",
+        "event_id": 36,
+        "model_result_event_id": 36
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 37,
+      "listed": {
+        "event_id": 37,
+        "total_length": 38560,
+        "event_crc32": 419919756
+      },
+      "get_event_info": {
+        "event_id": 37,
+        "total_length": 38560,
+        "event_crc32": 419919756
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "96067C0321595E7C348E41FF81B2820BECC978688CF6691A3622A461267357DC",
+      "downloaded_crc32": 419919756,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 37,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 32
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 37,
+        "sha256": "96067c0321595e7c348e41ff81b2820becc978688cf6691a3622a461267357dc",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\37.json",
+        "event_id": 37,
+        "model_result_event_id": 37
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    },
+    {
+      "event_id": 38,
+      "listed": {
+        "event_id": 38,
+        "total_length": 38560,
+        "event_crc32": 3919595366
+      },
+      "get_event_info": {
+        "event_id": 38,
+        "total_length": 38560,
+        "event_crc32": 3919595366
+      },
+      "downloaded_bytes": 38560,
+      "downloaded_sha256": "F84F65DFB401A2265E7105B1101E578B5B0C6D83CCB928436B3F82F59C0EE30B",
+      "downloaded_crc32": 3919595366,
+      "decoded": {
+        "format_version": 3,
+        "sample_count": 2400,
+        "pretrigger_samples": 800,
+        "posttrigger_samples": 1600,
+        "flags": 0,
+        "lost_sample_count": 0,
+        "sample_pool_backpressure_count": 0
+      },
+      "ai_result": {
+        "event_id": 38,
+        "model_version": 2,
+        "status": 1,
+        "class_index": 0,
+        "class_count": 2,
+        "quality_flags": 3,
+        "event_flags": 0,
+        "sample_count": 2400,
+        "model_crc32": 2820006081,
+        "confidence": 0.9948264956474304,
+        "logits": [
+          2.514021873474121,
+          -2.745000123977661,
+          0.0,
+          0.0
+        ],
+        "failure_reason": 0,
+        "result_sequence": 33
+      },
+      "sqlite": {
+        "device_serial": "recorder-001",
+        "event_id": 38,
+        "sha256": "f84f65dfb401a2265e7105b1101e578b5b0c6d83ccb928436b3f82f59c0ee30b",
+        "validation_state": "valid",
+        "ai_result_present": true,
+        "annotation_label": null,
+        "annotation_note": null
+      },
+      "json": {
+        "path": "host-replay\\exports\\38.json",
+        "event_id": 38,
+        "model_result_event_id": 38
+      },
+      "checks": {
+        "event_id_match": true,
+        "length_match": true,
+        "crc_match": true,
+        "format_valid": true,
+        "ai_identity_match": true,
+        "ai_sample_count_match": true,
+        "sqlite_valid": true,
+        "sqlite_ai_present": true,
+        "annotation_separate": true,
+        "json_ai_present": true
+      }
+    }
+  ],
+  "ai_results": [
+    {
+      "event_id": 6,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 1
+    },
+    {
+      "event_id": 7,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 2
+    },
+    {
+      "event_id": 8,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 3
+    },
+    {
+      "event_id": 9,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 4
+    },
+    {
+      "event_id": 10,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 5
+    },
+    {
+      "event_id": 11,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 6
+    },
+    {
+      "event_id": 12,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 7
+    },
+    {
+      "event_id": 13,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 8
+    },
+    {
+      "event_id": 14,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 9
+    },
+    {
+      "event_id": 15,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 10
+    },
+    {
+      "event_id": 16,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 11
+    },
+    {
+      "event_id": 17,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 12
+    },
+    {
+      "event_id": 18,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 13
+    },
+    {
+      "event_id": 19,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 14
+    },
+    {
+      "event_id": 20,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 15
+    },
+    {
+      "event_id": 21,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 16
+    },
+    {
+      "event_id": 22,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 17
+    },
+    {
+      "event_id": 23,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 18
+    },
+    {
+      "event_id": 24,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 19
+    },
+    {
+      "event_id": 25,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 20
+    },
+    {
+      "event_id": 26,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 21
+    },
+    {
+      "event_id": 27,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 22
+    },
+    {
+      "event_id": 28,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 23
+    },
+    {
+      "event_id": 29,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 24
+    },
+    {
+      "event_id": 30,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 25
+    },
+    {
+      "event_id": 31,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 26
+    },
+    {
+      "event_id": 32,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 27
+    },
+    {
+      "event_id": 33,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 28
+    },
+    {
+      "event_id": 34,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 29
+    },
+    {
+      "event_id": 35,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 30
+    },
+    {
+      "event_id": 36,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 31
+    },
+    {
+      "event_id": 37,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 32
+    },
+    {
+      "event_id": 38,
+      "model_version": 2,
+      "status": 1,
+      "class_index": 0,
+      "class_count": 2,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 2820006081,
+      "confidence": 0.9948264956474304,
+      "logits": [
+        2.514021873474121,
+        -2.745000123977661,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 0,
+      "result_sequence": 33
+    }
+  ],
+  "frame_count": 872,
+  "wire_record_count": 3116,
+  "elapsed_seconds": 230.468,
+  "raw_wire_sha256": "AD171AC30230F1A344C7A8909BDB3500853215D121BE1BD4C5A094220D427D35",
+  "frames_sha256": "F4E6539A2B094C5B3C499EBDCF459A238A13E69DA4118AAF65067DB532793969",
+  "ai_results_sha256": "94C79271AC6B7345D3BC26CD0A2396B463626578E0C92B95ACD23719945C6ABF",
+  "comparison_sha256": "40394D248EDC8C50A32FD4515ACC7E7E459488B8447471C704F2180515C93C5E",
+  "artifacts": {
+    "raw_wire": "uart3-terp.raw.log",
+    "frames": "uart3-frames.jsonl",
+    "events_list": "events-list.json",
+    "ai_results": "ai-results.jsonl",
+    "comparison": "event-comparison.jsonl",
+    "raw_events": "raw-events",
+    "host_replay": "host-replay"
+  }
+}

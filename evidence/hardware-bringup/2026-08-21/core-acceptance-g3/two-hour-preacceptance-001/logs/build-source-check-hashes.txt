@@ -1,0 +1,12 @@
+
+Algorithm : SHA256
+Hash      : 740F0EE36657352A34C17EF7B2A1653BA29B597FE13FB2C3B4F7986AE1B88352
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.elf
+
+Algorithm : SHA256
+Hash      : 9889FABF602D0B0A1AFDB8482A28F7C26D9960365F1DCC2A79498880EED53563
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.bin
+
+Algorithm : SHA256
+Hash      : ADA8A0DAB124D6B584EED399E067465342327488598C4B44AED225E5F52F3089
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.map

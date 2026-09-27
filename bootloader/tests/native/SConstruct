@@ -1,0 +1,42 @@
+import os
+
+native_toolchain = os.environ.get(
+    "NATIVE_TOOLCHAIN_PATH",
+    r"C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin",
+)
+native_gcc = os.path.join(native_toolchain, "gcc.exe")
+
+if not os.path.isfile(native_gcc):
+    raise RuntimeError(f"Native GCC not found: {native_gcc}")
+
+env = Environment(tools=["mingw"], ENV=os.environ)
+env.PrependENVPath("PATH", native_toolchain)
+env.Replace(CC="gcc", LINK="gcc")
+env.Append(
+    CPPPATH=[
+        "../../include",
+        "../../../firmware/config",
+        "../../../firmware/components/ota",
+    ],
+)
+
+sources = [
+    "test_bootloader_core.c",
+    "../../src/bootloader_app.c",
+    "../../src/bootloader_action.c",
+    "../../src/bootloader_copy.c",
+    "../../src/bootloader_qspi_profile.c",
+    "../../src/bootloader_state_store.c",
+    "../../../firmware/components/ota/ota_crc32.c",
+    "../../../firmware/components/ota/ota_sha256.c",
+    "../../../firmware/components/ota/ota_package.c",
+    "../../../firmware/components/ota/ota_state.c",
+]
+objects = [
+    env.Object(
+        target=os.path.join("build", "obj", f"{index:02d}_{os.path.basename(source)}.o"),
+        source=source,
+    )
+    for index, source in enumerate(sources)
+]
+env.Program(target=os.path.join("build", "test_bootloader_core"), source=objects)

@@ -1,0 +1,12 @@
+=== HIL-FW-TERP-006 ===
+timestamp=2026-08-15T13:25:17.0686794+08:00
+port=COM8
+scope=read-only TERP info and health after UART3 PD8/PD9 reconnection; no reset/write; no SPI Event Flash access
+--- info ---
+connected port=COM8 serial=pending
+{"capability_flags":43,"firmware_version":"phase08-terp-uart3","hardware_version":"openmv4-h743-pd8-pd9","model":"STM32H743","serial_number":"pending"}
+info_exit=0
+--- health ---
+connected port=COM8 serial=pending
+{"event_export_error_count":0,"free_log_bytes":0,"state":0,"storage_error_count":0,"storage_ready":false}
+health_exit=0

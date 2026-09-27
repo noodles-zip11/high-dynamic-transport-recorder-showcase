@@ -1,0 +1,7 @@
+Note: automatically using hardware breakpoints for read-only addresses.
+0x240273b8 <ai_stats+52>:	0x00000000
+0x240273bc <ai_model>:	0x00000000
+0x240273c0 <ai_model_quarantined>:	0x00000001
+0x24028df0 <event_assembler>:	0x00000000
+$1 = 0
+$2 = 0

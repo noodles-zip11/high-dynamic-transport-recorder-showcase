@@ -1,0 +1,5 @@
+probe_exit_code=0
+probe_path=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\probe-4k.bin
+probe_log=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\probe-4k.log
+probe_exists=True
+probe_bytes=

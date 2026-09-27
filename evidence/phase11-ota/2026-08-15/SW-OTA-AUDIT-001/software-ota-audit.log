@@ -1,0 +1,31 @@
+git version 2.54.0.windows.1
+PowerShell 7.6.4
+Python: 3.12.10
+pytest 8.4.2
+SCons by Steven Knight et al.:
+	SCons: v4.10.1.055b01f429d58b686701a56df863a817c36bb103, Sun, 16 Nov 2025 14:18:20 -0700, by bdbaddog on M1Dog2021
+arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614
+gcc.exe (GCC) 15.2.0
+ARM GCC: C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe
+Native GCC: C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin\gcc.exe
+RTT_ROOT: LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard
+Environment self-check (HostOnly): PASS
+memory layout: PASS app=0x08020000+0x001A0000 qspi=0x00800000
+.........................................                                [100%]
+41 passed in 0.84s
+wrote LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\evidence\phase11-ota\2026-08-15\SW-OTA-AUDIT-001\transport-recorder-ota-only-a.pkg (148260 bytes)
+wrote LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\evidence\phase11-ota\2026-08-15\SW-OTA-AUDIT-001\transport-recorder-ota-only-b.pkg (148260 bytes)
+{
+  "firmware_version": "phase08-terp-uart3",
+  "hardware_id": "openmv4-h743-pd8-pd9",
+  "image_crc32": "0x959C38D9",
+  "image_length": 148064,
+  "image_sha256": "ba21d149b14cb226218d7ccbda39ff34ff94a1cb47838af0c2fd085b06ae4279",
+  "minimum_bootloader_version": "1.0.0",
+  "product_id": "transport-recorder",
+  "target_address": "0x08020000"
+}
+package_sha256_a=B4C63195461631D6268E479129CA20A9C44DE9B6CA5CF12FED840C3E982A9920
+package_sha256_b=B4C63195461631D6268E479129CA20A9C44DE9B6CA5CF12FED840C3E982A9920
+package_deterministic=True
+exit_codes=selfcheck:0 layout:0 pytest:0 package_a:0 package_b:0 inspect:0

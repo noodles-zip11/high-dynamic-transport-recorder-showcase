@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-08-21T11:54:03.088405+00:00",
+  "command": "event trigger_test",
+  "response_bytes": 590,
+  "prompt_seen": true,
+  "fatal_marker_seen": false,
+  "metrics": {
+    "fifo_count_err": 0,
+    "fifo_capacity_err": 0,
+    "fifo_read_err": 0,
+    "fifo_parse_err": 0,
+    "dma_start_err": 0,
+    "dma_timeout": 0,
+    "dma_complete_err": 0,
+    "pool_backpressure": 13,
+    "export_err": 0,
+    "resource_err": 0,
+    "queue_drop": 0,
+    "result_queue_drop": 0,
+    "store_err": 0,
+    "feature_err": 0,
+    "runtime_err": 0
+  },
+  "text": "event trigger_test\r\nmsh >\r\nmsh >imu services=303059 samples=9697888 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=13 blocks=303046 \r\nevent state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0\r\nai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=40 class=0 confidence_permille=994\r\nevent log write begins\r\n",
+  "critical_findings": []
+}

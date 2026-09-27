@@ -1,0 +1,43 @@
+sysinfo
+
+firmware_version=phase08-terp-uart3
+
+git_revision_or_local=local
+
+build_time=Aug 16 2026 20:44:02
+
+sysclk_hz=240000000
+
+rt_tick_hz=1000
+
+reset_reason=0x00fe0000
+
+heap_free_bytes=320608
+
+thread_count=9
+
+msh >
+
+msh >log status
+
+log state=1 events=5 next_id=6 next_offset=0x00034000 jedec=ef4017
+
+msh >
+
+msh >imu services=47399 samples=1516768 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=41 blocks=47358
+
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 feature_err=0 runtime_err=0 last_event=5 class=1 confidence_permille=999
+
+imu services=47451 samples=1518432 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=41 blocks=47410
+
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 feature_err=0 runtime_err=0 last_event=5 class=1 confidence_permille=999
+
+imu services=47503 samples=1520064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=41 blocks=47461
+
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 feature_err=0 runtime_err=0 last_event=5 class=1 confidence_permille=999

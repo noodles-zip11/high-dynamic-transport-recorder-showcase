@@ -1,0 +1,26 @@
+event_id,operator_phase,proposed_label,training_action,quality,peak_delta_post_counts,peak_time_ms_post,accel_peak_to_peak_counts,pretrigger_std_counts,saturation_samples,lost_sample_count,sample_count,sample_rate_hz,sha256,notes
+66,single_tap,unknown_no_capture,exclude_from_training,unknown,19.21,,27.212,2.71,0,0,2400,1600,a78f8b12c4618290b7bfe74be0e82eafe64b43cb19dacb247109ccac4857291b,no post-trigger impact
+67,single_tap,unknown_no_capture,exclude_from_training,unknown,18.69,,27.000,2.68,0,0,2400,1600,f437ca31bd1d93f850a1d1a8d8f680fe1ba29b585221138beb6d5d5aacf981aa,no post-trigger impact
+68,single_tap,single_tap,keep_candidate,candidate,26384.13,653.12,25260.495,2.72,0,0,2400,1600,fd2b783f3f571ff91a767df8a283fae28a903afc8c9ef030e7f1a4d1bcfbc756,one main peak with decaying ringdown
+69,single_tap,single_tap,keep_candidate,candidate,7643.31,597.50,7987.082,16.04,0,0,2400,1600,0269ff07860dc92d4881438e949ca4cc7a248cfce70f5f3303b3ca41910d5b13,one main peak with decaying ringdown
+70,single_tap,single_tap,keep_candidate,candidate,24328.63,901.25,23067.466,2.81,0,0,2400,1600,ff229dac01d1eb868bbd1e1b6a1d91d68a87459847706b29e64516206555546f,one main peak with decaying ringdown
+71,single_tap,single_tap,keep_candidate,candidate,13141.73,803.12,13059.566,2.79,0,0,2400,1600,0dc18dc29f60cf599cd3ed6953ecf37abcdddcf709f49fd92678d7c03f750f04,one main peak with decaying ringdown
+72,single_tap,single_tap_review_saturated,exclude_until_review,review,48690.71,961.88,48338.186,8.95,4,0,2400,1600,bc2aef3c9406a06356d18898f97a032606313d6313526ea814f84da67c9f12ed,accelerometer saturation
+73,single_tap,single_tap_review_saturated,exclude_until_review,review,41292.98,654.38,41538.705,2.73,4,0,2400,1600,c6ad90627aaa1e3542fd91d66f13750fdb644221c2cd0f71e7d6ec832799ba80,accelerometer saturation
+74,single_tap,single_tap,keep_candidate,candidate,15340.99,765.62,13777.320,3.16,0,0,2400,1600,76d07a24aaa9a7182bd2834a5e0f3a69c874ce6695c86a144657e985b1626803,one main peak with decaying ringdown
+75,single_tap,single_tap_review_near_fullscale,exclude_until_review,review,32801.66,863.12,32152.625,5.06,0,0,2400,1600,2bc77f3a0b0001920ad37d097a87c733cdeb601250087230ba2024d8d349a41a,near-full-scale impact
+76,single_tap,unknown_no_capture,exclude_from_training,unknown,21.70,,30.105,2.68,0,0,2400,1600,83bb11dac3a6d9a712d3f00ce8e74ad6497606416c931c9eb78536ac837f420b,no post-trigger impact
+77,single_tap,single_tap,keep_candidate,candidate,12830.33,830.00,12144.602,2.69,0,0,2400,1600,9f88f57364be384c37082a8d2c82ebb10ba9af834e09cb63e7721825cff53b68,one main peak with decaying ringdown
+78,single_tap,single_tap,keep_candidate,candidate,16829.38,502.50,14940.278,2.83,0,0,2400,1600,c798eb00c989747d1216ac0600c0233a4cb650fb49b4398805de475f838cac15,one main peak with decaying ringdown
+79,single_tap,unknown_no_capture,exclude_from_training,unknown,15.85,,29.119,2.59,0,0,2400,1600,98ed99b3e3af9ebef81f29ef5ee9656dc1ef0214561c963d8ac33e44fa856a5e,no post-trigger impact
+80,single_tap,unknown_no_capture,exclude_from_training,unknown,16.91,,110.471,9.24,0,0,2400,1600,70cd5b39ac6fd02ecdae94e8559439012cfb2f20d85a98a343cde8ef26967571,no post-trigger impact
+81,single_tap,weak_or_edge,exclude_from_training,unknown,93.65,974.38,161.148,32.05,0,0,2400,1600,6774bfb0a4072b1b4688df974b936aea065e63ec802b311d1eb494ebbcdfbd3a,weak late change only
+82,single_tap,unknown_no_capture,exclude_from_training,unknown,24.86,,31.976,2.93,0,0,2400,1600,22c6f3125aa7bd054ac36856946c0a496d07b9d1f94550ab6519e0f08b2374ab,no post-trigger impact
+83,single_tap,single_tap,keep_candidate,candidate,7012.24,808.75,6305.443,3.63,0,0,2400,1600,fc0df73b818a038fdf2d0816f6894625b9f2acdaf0a56d2c30e842c814f72183,one main peak with decaying ringdown
+84,single_tap,single_tap,keep_candidate,candidate,3468.76,688.75,2380.705,2.82,0,0,2400,1600,3872e116e20fbcd6fd4902bd862f044832f8b5dd10f795b9dc7cc72911264f14,moderate single peak
+85,single_tap,unknown_pretrigger_motion,exclude_from_training,unknown,25.21,,15421.589,1134.74,0,0,2400,1600,58afda2a323be859acb53e609f4495c8f8e5c0b4b5a276fc71e5222995e4f9d0,no post-trigger impact; pre-trigger motion
+86,single_tap,single_tap,keep_candidate,candidate,16623.27,900.00,15099.087,8.39,0,0,2400,1600,817d1b4ff9e571fc5c0d8e16c98ca6934847c4af3652b67109b88d8aba764ada,one main peak with small preceding motion
+87,single_tap,single_tap,keep_candidate,candidate,26914.08,687.50,25262.199,3.07,0,0,2400,1600,100ce4026be4713fa9cc5f83faef5f5584f1e3a6d17e151e9925d69beca51c4e,one main peak with decaying ringdown
+88,single_tap,single_tap,keep_candidate,candidate,24814.67,415.62,24066.056,3.84,0,0,2400,1600,8fa6fa6530e93df2448dd4359ee6768ed886e5e2f7d7b3a663671d4ef604bb1c,one main peak with decaying ringdown
+89,single_tap,single_tap,keep_candidate,candidate,24833.03,613.12,23072.101,2.66,0,0,2400,1600,453192ee32e592b4de48695d75067266c851727f2bf6f7701c13e9d498b5f8a7,one main peak with decaying ringdown
+90,single_tap,unknown_no_capture,exclude_from_training,unknown,23.07,,1075.727,131.45,0,0,2400,1600,ae13662279b6274561a81abe83eeac182cf60f9e4e1222b3cad962c3c218a198,no post-trigger impact; pre-trigger motion

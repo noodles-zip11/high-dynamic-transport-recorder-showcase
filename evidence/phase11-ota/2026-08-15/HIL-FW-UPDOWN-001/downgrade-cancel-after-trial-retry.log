@@ -1,0 +1,3 @@
+INFO DeviceInfo(model='STM32H743', firmware_version='phase08-terp-uart3', hardware_version='openmv4-h743-pd8-pd9', serial_number='pending', capability_flags=43)
+CANCEL_RESPONSE type=0x8104 bytes=0
+CANCEL_RESULT=PASS

@@ -1,0 +1,5 @@
+本轮按用户要求在第 7 次实际拔插后停止监听，优先转入 U2 写入中断恢复。
+
+统计：7 次物理 CH340 重新枚举；第 1、2、5、6、7 轮 `info/health/events list/events download` 全部退出码 0，event 100 均为 38528 字节且 SHA-256 为 `545330203D0956AAF1723A439DACE18DC131CA1DC5F6614CA728911428AD049A`。第 3 轮在端口刚出现时执行，主机 `COM7 FileNotFoundError`；第 4 轮 `info/health` 仍处于枚举竞争但 `events list/download` 已成功。两轮保留为主机时序边界，不计板端故障，也不虚假标绿完整 20 轮矩阵。
+
+监听器已停止；未烧录、未写 U2/U3、未修改板卡状态。

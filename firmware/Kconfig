@@ -1,0 +1,60 @@
+mainmenu "Transport Recorder RT-Thread Configuration"
+
+RTT_DIR := $(RTT_ROOT)
+
+config SOC_FAMILY_STM32
+    bool
+
+config SOC_SERIES_STM32H7
+    bool
+    select ARCH_ARM_CORTEX_M7
+    select SOC_FAMILY_STM32
+
+config SOC_STM32H743VI
+    bool
+    default y
+    select SOC_SERIES_STM32H7
+    select RT_USING_CACHE
+    select RT_USING_COMPONENTS_INIT
+    select RT_USING_USER_MAIN
+
+source "$(RTT_DIR)/Kconfig"
+
+menu "Transport Recorder BSP"
+
+config BSP_USING_GPIO
+    bool "Enable confirmed GPIO pins"
+    default y
+    select RT_USING_PIN
+
+config BSP_USING_UART
+    bool "Enable serial peripherals"
+    default y
+    select RT_USING_SERIAL
+
+config BSP_USING_UART1
+    bool
+    default y
+    depends on BSP_USING_UART
+
+config BSP_USING_UART3
+    bool "Enable USART3 TERP byte transport"
+    default y
+    depends on BSP_USING_UART
+
+config BSP_STM32_UART_V1_TX_TIMEOUT
+    int "USART1 polling TX timeout"
+    default 2000
+    depends on BSP_USING_UART1 && RT_USING_SERIAL_V1
+
+config BSP_UART1_RX_BUFSIZE
+    int
+    default 128
+    depends on BSP_USING_UART1
+
+config BSP_UART1_TX_BUFSIZE
+    int
+    default 128
+    depends on BSP_USING_UART1
+
+endmenu

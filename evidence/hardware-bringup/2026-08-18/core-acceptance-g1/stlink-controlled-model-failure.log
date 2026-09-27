@@ -1,0 +1,60 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Write 32-bit data
+w @0x240273b8:  0x00000000
+
+
+Downloading...
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+32-bit data download complete
+Write 32-bit data
+w @0x240273bc:  0x00000000
+
+
+Downloading...
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+32-bit data download complete
+Write 32-bit data
+w @0x240273c0:  0x00000001
+
+
+Downloading...
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+32-bit data download complete
+Write 32-bit data
+w @0x240273c4:  0x00000000
+
+
+Downloading...
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+32-bit data download complete
+Write 32-bit data
+w @0x24028d88:  0x00000001
+
+
+Downloading...
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+32-bit data download complete
+Core run

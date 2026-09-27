@@ -1,0 +1,32 @@
+{
+  "schema": "g3-two-hour-preacceptance-results-20260821-v1",
+  "status": "COMPLETED_STRICT_FAIL_POOL_BACKPRESSURE",
+  "formal_gate": "G3_CURRENT_CORE_TWO_HOUR_CONCURRENT_PREACCEPTANCE",
+  "timer_started": true,
+  "t0_started_at_utc": "2026-08-21T10:34:00.767179+00:00",
+  "timer_completed": true,
+  "ended_at_utc": "2026-08-21T12:34:00.791932+00:00",
+  "power_on_observed": true,
+  "ports_verified": true,
+  "baseline_completed": true,
+  "covered_observation": {
+    "duration_seconds": 7200,
+    "heartbeats": 130,
+    "model_switches": 4,
+    "event_triggers": 2,
+    "events_traceable": [39, 40, 41],
+    "stack_usage_max_pct": 86,
+    "pool_backpressure_max": 26,
+    "fifo_dma_lost_sample_queue_storage_errors": 0
+  },
+  "contractual_result": "FAIL_POOL_BACKPRESSURE_OBSERVED",
+  "notes": [
+    "UART1 COM6 baseline passed: sysinfo, ps, event status, log status and log inspect all returned prompts.",
+    "UART3 COM7 initially timed out at 2 seconds and again at 5 seconds with zero RX frames.",
+    "After the user replugged the UART3 adapter, the complete COM7 readback baseline passed: identity, health, model query and 39-event readback.",
+    "Both baselines passed and T0 started at 2026-08-21T10:34:00.767179+00:00 UTC.",
+    "The 7200-second window completed at 2026-08-21T12:34:00.791932+00:00 UTC with 130 heartbeats, 4 valid A/B model activations and 2 traceable new events.",
+    "Strict G3 is not closed: pool_backpressure reached 26 during event triggers; the runtime pool minimum is unavailable/default zero.",
+    "No HardFault/assert marker, EV03 lost samples, AI queue drop, FIFO/DMA/storage/export/feature/runtime error or stack exhaustion was observed."
+  ]
+}

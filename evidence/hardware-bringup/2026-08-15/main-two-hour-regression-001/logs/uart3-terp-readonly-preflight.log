@@ -1,0 +1,17 @@
+2026-08-15T17:43:53.3296610+08:00 COM8 115200 8N1 UART3 read-only preflight
+
+[2026-08-15T17:43:53.3491191+08:00] transport-recorder info --port COM8 --json
+{"capability_flags":43,"firmware_version":"phase08-terp-uart3","hardware_version":"openmv4-h743-pd8-pd9","model":"STM32H743","serial_number":"pending"}
+exit_code=0
+
+[2026-08-15T17:43:54.2914425+08:00] transport-recorder health --port COM8 --json
+{"event_export_error_count":0,"free_log_bytes":0,"state":0,"storage_error_count":0,"storage_ready":false}
+exit_code=0
+
+[2026-08-15T17:43:55.1954252+08:00] transport-recorder time --port COM8 --json get
+device rejected 0x0004: 2
+exit_code=3
+
+[2026-08-15T17:43:56.1218770+08:00] transport-recorder events list --port COM8 --json
+device rejected 0x0006: 5
+exit_code=3

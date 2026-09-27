@@ -1,0 +1,10 @@
+=== HIL-FW-TERP-002 ===
+timestamp=2026-08-15T13:04:36.2537808+08:00
+port=COM7
+scope=read-only TERP info and health; no SWD write/reset; no SPI Event Flash access
+--- info ---
+Cannot configure port, something went wrong. Original message: PermissionError(13, '����ϵͳ�ϵ��豸û�з������á�', None, 31)
+info_exit=2
+--- health ---
+Cannot configure port, something went wrong. Original message: PermissionError(13, '����ϵͳ�ϵ��豸û�з������á�', None, 31)
+health_exit=2

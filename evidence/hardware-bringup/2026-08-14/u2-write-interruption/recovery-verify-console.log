@@ -1,0 +1,41 @@
+COMMAND 'log status' bytes=380
+imu services=2971 samples=95040 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=2970 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+log status
+log state=1 events=1 next_id=2 next_offset=0x0000c000 jedec=ef4017
+msh >
+msh >
+COMMAND 'log inspect' bytes=388
+log inspect
+recovery source=superblock_b generation=2 scanned=2 discarded=0 ticks=715
+msh >
+msh >imu services=3022 samples=96704 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3022 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+COMMAND 'log list' bytes=71
+log list
+event=1 offset=0x00002000 span=40960 ev01=38528
+msh >
+msh >
+COMMAND 'log verify 1' bytes=824
+imu services=3073 samples=98336 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3073 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+firmware_version=phase08-terp-uart3
+git_revision_or_local=local
+build_time=Aug 14 2026 19:23:23
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=331024
+thread_count=8
+log verify 1
+imu services=3126 samples=100000 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3125 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+event=1 verify=OK
+msh >
+msh >
+COMMAND 'event status' bytes=97
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >

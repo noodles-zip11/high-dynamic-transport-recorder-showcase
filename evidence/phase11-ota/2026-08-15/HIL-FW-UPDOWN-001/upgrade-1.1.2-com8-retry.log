@@ -1,0 +1,16 @@
+BEFORE firmware=phase08-terp-uart3 hardware=openmv4-h743-pd8-pd9 health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+PACKAGE path=candidate-1.1.2-terp-stack-fix.trfw bytes=147188 sha256=7d6d355df9f8a08f79f407deb0a2f78c29955e838d3df669c1e2d66ff75909f2
+BEGIN result=(147188, 0, 0)
+WRITE offset=256/147188 result=(147188, 256, 0)
+WRITE offset=16640/147188 result=(147188, 16640, 0)
+WRITE offset=33024/147188 result=(147188, 33024, 0)
+WRITE offset=49408/147188 result=(147188, 49408, 0)
+WRITE offset=65792/147188 result=(147188, 65792, 0)
+WRITE offset=82176/147188 result=(147188, 82176, 0)
+WRITE offset=98560/147188 result=(147188, 98560, 0)
+WRITE offset=114944/147188 result=(147188, 114944, 0)
+WRITE offset=131328/147188 result=(147188, 131328, 0)
+WRITE offset=147188/147188 result=(147188, 147188, 0)
+FINALIZE result=(147188, 147188, 1)
+QUERY result=(147188, 147188, 1)
+UPLOAD_RESULT=PASS

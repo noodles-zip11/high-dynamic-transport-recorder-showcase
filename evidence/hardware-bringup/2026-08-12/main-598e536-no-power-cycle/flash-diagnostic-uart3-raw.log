@@ -1,0 +1,2 @@
+﻿U2 init=0 probe=0 jedec=EF4017 sr1=00 validation=-255 stage=3 flags=0000 sector=0x007FF000 failure=0x007FF000
+U3 init=0 probe=0 jedec=EF4017 sr1=00 validation=0 stage=2 flags=0011 sector=0x007FF000 failure=0x00000000

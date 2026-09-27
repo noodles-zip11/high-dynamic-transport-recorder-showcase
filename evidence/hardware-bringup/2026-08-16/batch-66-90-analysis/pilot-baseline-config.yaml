@@ -1,0 +1,16 @@
+version: 1
+allowed_labels:
+  - background
+  - impact
+  - continuous_vibration
+  - drop
+  - unknown
+baseline:
+  feature_version: counts_v1
+  default_label: background
+  rules:
+    - label: impact
+      conditions:
+        - feature_name: accel_peak_to_peak_counts
+          minimum: 2001.32808
+          maximum: null

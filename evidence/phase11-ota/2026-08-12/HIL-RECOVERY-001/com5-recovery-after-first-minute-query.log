@@ -1,0 +1,2 @@
+hello= DeviceInfo(model='STM32H743', firmware_version='phase08-terp-uart3', hardware_version='openmv4-h743-pd8-pd9', serial_number='pending', capability_flags=43)
+query= (147188, 73728, 0)

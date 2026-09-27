@@ -1,0 +1,59 @@
+=== HIL-FW-BASELINE-RESTORE-001 program ===
+timestamp=2026-08-15T13:10:15.1081412+08:00
+scope=write only internal application Flash at 0x08020000; no QSPI/SPI Event Flash access
+image_sha256=BA21D149B14CB226218D7CCBDA39FF34FF94A1CB47838AF0C2FD085B06AE4279
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Opening and parsing file: transport_recorder-ota-only.bin
+
+
+Memory Programming ...
+  File          : transport_recorder-ota-only.bin
+  Size          : 144.59 KB
+  Address       : 0x08020000
+
+
+
+Erasing memory corresponding to sector 0:
+Erasing internal memory sectors [1 2]
+Download in Progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+File download complete
+Time elapsed during download operation: 00:00:03.140
+
+
+
+Verifying ...
+
+
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Download verified successfully
+
+
+
+MCU Reset
+
+Software reset is performed
+program_exit=0

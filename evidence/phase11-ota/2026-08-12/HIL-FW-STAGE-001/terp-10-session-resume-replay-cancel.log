@@ -1,0 +1,40 @@
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 BEGIN (147188, 0, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=0 verified=0
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=0 query=(147188, 0, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=10 verified=14592
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=10 query=(147188, 14592, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=20 verified=29184
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=20 query=(147188, 29184, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=30 verified=44032
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=30 query=(147188, 44032, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=40 verified=58624
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=40 query=(147188, 58624, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=50 verified=73472
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=50 query=(147188, 73472, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=60 verified=88064
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=60 query=(147188, 88064, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=70 verified=102912
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=70 query=(147188, 102912, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=80 verified=117504
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=80 query=(147188, 117504, 0)
+HIL-FW-RESUME-010 DISCONNECT percent=90 verified=132352
+HIL-FW-RESUME-010 CONNECT attempt=1
+HIL-FW-RESUME-010 RESUME percent=90 query=(147188, 132352, 0)
+HIL-FW-RESUME-010 UPLOAD_COMPLETE query=(147188, 147188, 0)
+HIL-FW-RESUME-010 REPLAY_IDENTICAL offset=146688 result=(147188, 147188, 0)
+HIL-FW-RESUME-010 REPLAY_CONFLICT_REJECTED code=5 request=0x0101
+Traceback (most recent call last):
+  File "<stdin>", line 69, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 318, in _request
+    raise TransportError("TERP response timed out")
+transport_recorder.protocol.client.TransportError: TERP response timed out

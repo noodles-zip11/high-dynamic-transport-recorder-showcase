@@ -1,0 +1,11 @@
+{
+  "iteration": 6,
+  "info_exit": 0,
+  "health_exit": 0,
+  "events_list_exit": 0,
+  "download_exit": 0,
+  "length": 38560,
+  "sha256": "DB96D6E27F887B18E8F5250BA825B1F93632E8D876056DCC79A6416CFC143E54",
+  "record_crc32": 2376085022,
+  "status": "PASS"
+}

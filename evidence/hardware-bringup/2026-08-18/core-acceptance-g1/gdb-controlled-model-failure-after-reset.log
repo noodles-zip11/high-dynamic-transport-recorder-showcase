@@ -1,0 +1,21 @@
+C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin\arm-none-eabi-gdb.exe: warning: Couldn't determine a path for the index cache directory.
+Reading symbols from firmware/build/transport_recorder.elf...
+(No debugging symbols found in firmware/build/transport_recorder.elf)
+BFD: reopening LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\hardware-acceptance-route\firmware\build\transport_recorder.elf: No such file or directory
+warning: `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\hardware-acceptance-route\firmware\build\transport_recorder.elf' has disappeared; keeping its symbols.
+Remote debugging using :61234
+warning: Can't read data for section '.debug_frame' in file 'LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\hardware-acceptance-route\firmware\build\transport_recorder.elf'
+0x08036176 in rt_thread_idle_init ()
+Trying to halt core...
+0x240273b8 <ai_stats+52>:	0x00000001
+0x240273bc <ai_model>:	0x2402c25c
+0x240273c0 <ai_model_quarantined>:	0x00000000
+Note: automatically using hardware breakpoints for read-only addresses.
+0x240273b8 <ai_stats+52>:	0x00000000
+0x240273bc <ai_model>:	0x00000000
+0x240273c0 <ai_model_quarantined>:	0x00000001
+$1 = 0
+$2 = 0
+Detaching from program: LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-acceptance-route\firmware\build\transport_recorder.elf, Remote target
+Ending remote debugging.
+[Inferior 1 (Remote target) detached]

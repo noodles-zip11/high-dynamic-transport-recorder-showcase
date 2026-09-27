@@ -1,0 +1,166 @@
+{
+  "checksum_scope": {
+    "manifest_self_hash": "excluded",
+    "sha256sums_covers_manifest": true,
+    "sha256sums_self_hash": "excluded"
+  },
+  "generated_by": {
+    "module": "host/tools/v1_evidence_package.py",
+    "raw_included": false,
+    "version": 1
+  },
+  "package_file_count_excluding_manifests": 22,
+  "package_file_count_including_manifests": 24,
+  "package_files": [
+    {
+      "evidence_level": "ai_pilot",
+      "path": "ai/model-manifest.json",
+      "sha256": "b80b9510de7cd27e90a90571ad75275779df8fb7e6ae6b26fce95a7b6676db6f",
+      "size_bytes": 1071
+    },
+    {
+      "evidence_level": "ai_pilot",
+      "path": "ai/real-ai-pilot.md",
+      "sha256": "60a48d69033455c1590a4585ea5b7b69d6ba8e3a52bedc83cd6908dddcef3428",
+      "size_bytes": 1176
+    },
+    {
+      "evidence_level": "ai_pilot",
+      "path": "ai/training-report.json",
+      "sha256": "976237462d4c2c1915e5bcfedac3ce6d609a7d951de49ec3fe03c1f6105e1ed6",
+      "size_bytes": 922
+    },
+    {
+      "evidence_level": "catalog",
+      "path": "catalog/evidence-inventory.csv",
+      "sha256": "7aaafb669a8c876c48b11e7c9a25150ebcc78f5b0be635ed1215641e15896fd9",
+      "size_bytes": 165938
+    },
+    {
+      "evidence_level": "catalog",
+      "path": "catalog/key-logs.csv",
+      "sha256": "7e3b067d13b0924bd4b59bcd2a021959a4f19cbbbd08a6dbd2727ee7060f1c69",
+      "size_bytes": 652
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-180.json",
+      "sha256": "1eaba6afecd2f21143b1b34707c37d7eefbdaf54619c18371c8ff636a7c64369",
+      "size_bytes": 2008
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-180.png",
+      "sha256": "4f2c8f3173356d64060c7212b00dcf0f3984151668b9890df5ba7cfc1fd8fb12",
+      "size_bytes": 37834
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-181.json",
+      "sha256": "4d895404d8eaad5af68522a99f7df919d2c8f63c93a5904957c14f2b55b1c6d4",
+      "size_bytes": 2012
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-181.png",
+      "sha256": "7e3d702fb94e77c1658a53d077c6cc3dedf0f4423dec7ac18a8c1e61b57b699d",
+      "size_bytes": 64999
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-191.json",
+      "sha256": "47fdb724fc8ddf043e3c994396d25607b7af210eef97d0cff58972309dcb68a2",
+      "size_bytes": 2044
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-191.png",
+      "sha256": "95b59464810d629b74980b2648f5b26c2c86cae43e34bed3d4d99f7c95c992c5",
+      "size_bytes": 34186
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-195.json",
+      "sha256": "be5d7510bd74a24b20f411e65b8dd97cb3369dc70c9f2255af42fdeccd679f31",
+      "size_bytes": 2044
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-195.png",
+      "sha256": "d4fb6ccc1b9267197ce06021151da5cb17dffcd1deed37ec3098a39cfd7aeb21",
+      "size_bytes": 36302
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-202.json",
+      "sha256": "c4fc4ce413f81d8aa0fbea56768def5c1b6dc5d5e1c7a155e4d064ed90d4e01e",
+      "size_bytes": 2006
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/event-202.png",
+      "sha256": "a010a966d65774ce66a718dcdedd90a9d88ece9fe5dfc503b6f87a3ae1e19c25",
+      "size_bytes": 55790
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/index.json",
+      "sha256": "6fa605c88802aa75457b7eb7ea1974a1bf643225dc0653485c7db39db23c05c5",
+      "size_bytes": 3138
+    },
+    {
+      "evidence_level": "derived",
+      "path": "desktop/README.md",
+      "sha256": "0022f25a3a41b8aa488cd7beb329433c5250f5825ec2149a273e30baa3df6838",
+      "size_bytes": 948
+    },
+    {
+      "evidence_level": "hardware",
+      "path": "hardware/hardware-acceptance.md",
+      "sha256": "4aa4fbbefca613fe2daa611a068fa7d336a725b5e594bcce77c30fb6d7b605ec",
+      "size_bytes": 1315
+    },
+    {
+      "evidence_level": "hardware",
+      "path": "provenance/release-equivalence.md",
+      "sha256": "1099ecca9b34342d031684178b8181b991cbd9fdd94e3108df9edd29478c9edb",
+      "size_bytes": 575
+    },
+    {
+      "evidence_level": "hardware",
+      "path": "provenance/source-and-builds.md",
+      "sha256": "954cb19fbf3d282b5947aba62747a20145cb6b2cf98f38b24148883351903e0f",
+      "size_bytes": 1028
+    },
+    {
+      "evidence_level": "catalog",
+      "path": "README.md",
+      "sha256": "4aaee2abcc90032f13d0bdf6606d3ddc817bb89fd4dfed9bafb1078084f9b750",
+      "size_bytes": 2865
+    },
+    {
+      "evidence_level": "software",
+      "path": "software/software-gate.md",
+      "sha256": "1008197020bde91fc3d8becac058f8dfb43bb6df234cf33bf573aece1fb1cee5",
+      "size_bytes": 993
+    }
+  ],
+  "package_version": "v1.0.0",
+  "schema": "v1-public-evidence-package-v1",
+  "source_boundary": {
+    "event_file_count": 204,
+    "event_id_range": [
+      1,
+      204
+    ],
+    "raw_files_copied": 0,
+    "summary_name": "full-qspi-event-backup/summary.json",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  },
+  "source_commit": "a69b6c6c71b91e1267780c169760eca284b7523b",
+  "tag": {
+    "name": "v1.0.0",
+    "object": "75d183e21bd99795ec5d487d0363d0bdc83aaf1e",
+    "peeled_commit": "a69b6c6c71b91e1267780c169760eca284b7523b"
+  }
+}

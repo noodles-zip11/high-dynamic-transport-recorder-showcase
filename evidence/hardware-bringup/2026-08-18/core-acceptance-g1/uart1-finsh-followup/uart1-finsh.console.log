@@ -1,0 +1,77 @@
+UART1 FinSH read-only follow-up
+port=COM7 baudrate=115200 format=8N1
+started_unix=1787035353.132
+
+=== INITIAL ===
+imu services=14685 samples=469920 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=14685 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=14738 samples=471584 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=14737 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=14790 samples=473280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=14790 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+
+=== COMMAND ps prompt_seen=True ===
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001e4 0x00000800     76%   0x0000000a EINTRPT 0x24033868  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000003 EINTRPT 0x240335a8  N/A
+event          9  suspend 0x00000114 0x00000800     14%   0x00000006 EINTRPT 0x24032ce8  N/A
+imu_acq        8  suspend 0x000000ec 0x00000800     15%   0x00000002 EINTRPT 0x24032428  N/A
+ai            15  suspend 0x0000033c 0x00000600     55%   0x00000008 EINTRPT 0x24031d68  N/A
+terp_rx       18  suspend 0x00000084 0x00001000      3%   0x00000001 EINTRPT 0x24030ca8  N/A
+tshell        20  running 0x0000018c 0x00000800     21%   0x00000001 OK      0x2402ffc8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x0000001c OK      0x2402eb20  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x2402f100  N/A
+msh >
+msh >
+
+=== COMMAND sysinfo prompt_seen=True ===
+sysinfo
+firmware_version=phase08-terp-uart3
+git_revision_or_local=4c47fe69b544ef9327300910d66f04927871f0dc
+build_time=Aug 18 2026 13:56:41
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=312168
+thread_count=9
+msh >
+msh >
+
+=== COMMAND event status prompt_seen=True ===
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=14842 samples=474944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=14842 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+
+=== COMMAND log status prompt_seen=True ===
+log status
+log state=1 events=5 next_id=6 next_offset=0x00034000 jedec=ef4017
+msh >
+msh >
+
+=== COMMAND log list prompt_seen=True ===
+log list
+event=1 offset=0x00002000 span=40960 ev01=38560
+event=2 offset=0x0000c000 span=40960 ev01=38560
+event=3 offset=0x00016000 span=40960 ev01=38560
+event=4 offset=0x00020000 span=40960 ev01=38560
+event=5 offset=0x0002a000 span=40960 ev01=38560
+msh >
+msh >
+
+=== COMMAND log inspect prompt_seen=True ===
+log inspect
+recovery source=superblock_b generation=2 scanned=6 discarded=0 ticks=3450
+msh >
+msh >imu services=14894 samples=476608 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=14894 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0

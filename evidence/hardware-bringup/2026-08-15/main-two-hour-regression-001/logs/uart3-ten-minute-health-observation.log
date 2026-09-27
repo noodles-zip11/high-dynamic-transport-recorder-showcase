@@ -1,0 +1,62 @@
+2026-08-15T18:21:29.7602684+08:00 COM8 UART3 10-minute read-only observation start
+
+OBSERVATION index=0 timestamp=2026-08-15T18:21:29.7729567+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=1 timestamp=2026-08-15T18:22:21.5914389+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=2 timestamp=2026-08-15T18:23:13.3429671+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=3 timestamp=2026-08-15T18:24:05.0921144+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=4 timestamp=2026-08-15T18:24:56.8666013+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=5 timestamp=2026-08-15T18:25:48.6763139+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=6 timestamp=2026-08-15T18:26:40.4245788+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=7 timestamp=2026-08-15T18:27:32.2037954+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=8 timestamp=2026-08-15T18:28:23.9888110+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+
+OBSERVATION index=9 timestamp=2026-08-15T18:29:15.7583220+08:00
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+health_exit_code=0
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+events_exit_code=0
+2026-08-15T18:29:17.5144871+08:00 observation_end

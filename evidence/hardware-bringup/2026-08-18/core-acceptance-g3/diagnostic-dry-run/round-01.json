@@ -1,0 +1,20 @@
+{
+  "round": 1,
+  "info_exit": 0,
+  "health_exit": 0,
+  "events_list_exit": 0,
+  "events_list_pages": 3,
+  "event_found": true,
+  "event_lookup_error": null,
+  "download_exit": 0,
+  "length": 38560,
+  "record_crc32": 3745476147,
+  "download_info_crc32": 3745476147,
+  "downloaded_bytes_crc32": 3745476147,
+  "list_crc_matches_download_info": true,
+  "device_crc_matches_download": true,
+  "sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5",
+  "physical_confirmation": false,
+  "formal_pass_eligible": false,
+  "status": "DIAGNOSTIC_NOT_PHYSICAL"
+}

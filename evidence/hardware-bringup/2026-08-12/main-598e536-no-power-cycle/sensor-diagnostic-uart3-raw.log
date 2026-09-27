@@ -1,0 +1,1 @@
+﻿SENSOR ICM spi=0 read=0 who=0xE9 expect=0xE9 probe=0 | SHT init=0 ready44=0 ready45=-255 addr=0x44 serial_wr=0 serial_rd=0 serial=0C847CD5 crc=1 project_probe=0 project_init=0 measure=0 temp_centi=2849 rh_milli=45541

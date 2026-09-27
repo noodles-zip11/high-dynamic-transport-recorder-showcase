@@ -1,0 +1,40 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+=====  DFU Interface   =====
+
+No STM32 device in DFU mode connected
+
+===== J-Link Interface =====
+No J-Link/flasher probe detected.
+===== STLink Interface =====
+
+-------- Connected ST-LINK Probes List --------
+
+ST-Link Probe 0 :
+   ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+   ST-LINK FW  : V2J46S7
+   Access Port Number  : 3
+   Board Name  : 
+-----------------------------------------------
+
+=====  UART Interface  =====
+
+Total number of serial ports available: 3
+
+Port: COM4
+Location: \\.\COM4
+Description: ??????????
+Manufacturer: Microsoft
+
+Port: COM3
+Location: \\.\COM3
+Description: ??????????
+Manufacturer: Microsoft
+
+Port: COM8
+Location: \\.\COM8
+Description: USB-SERIAL CH340
+Manufacturer: wch.cn
+

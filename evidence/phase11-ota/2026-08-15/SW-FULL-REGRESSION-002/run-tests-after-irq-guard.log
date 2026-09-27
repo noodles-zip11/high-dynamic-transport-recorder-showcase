@@ -1,0 +1,84 @@
+git version 2.54.0.windows.1
+PowerShell 7.6.4
+Python: 3.12.10
+pytest 8.4.2
+SCons by Steven Knight et al.:
+	SCons: v4.10.1.055b01f429d58b686701a56df863a817c36bb103, Sun, 16 Nov 2025 14:18:20 -0700, by bdbaddog on M1Dog2021
+arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614
+gcc.exe (GCC) 15.2.0
+ARM GCC: C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe
+Native GCC: C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin\gcc.exe
+RTT_ROOT: LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard
+Environment self-check (HostOnly): PASS
+get_device_info_request.bin 24 b9d2c7d17e676c56d86ea1b6e0da0effa7bbc013580742ae9b1e65861c0b1912
+get_device_info_response.bin 71 86eea2e240e8c6e4af8c5c7408310000b4ac6897dfd56213790d02478787b720
+event_chunk.bin 50 a44ae27416b3fd3a3754c047ce0dfb37ff5c141855a147fb69043d6911fe6c0d
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\firmware\tests\native'
+scons: `build\native_smoke.exe' is up to date.
+scons: `build\test_memory_layout.exe' is up to date.
+scons: `build\test_system_report_format.exe' is up to date.
+scons: `build\test_icm45686.exe' is up to date.
+scons: `build\test_icm45686_fifo.exe' is up to date.
+scons: `build\test_imu_acquisition.exe' is up to date.
+scons: `build\test_imu_acquisition_stats.exe' is up to date.
+scons: `build\test_sample_block_pool.exe' is up to date.
+scons: `build\test_trigger_detector.exe' is up to date.
+scons: `build\test_pretrigger_ring.exe' is up to date.
+scons: `build\test_event_assembler.exe' is up to date.
+scons: `build\test_event_export_debug.exe' is up to date.
+scons: `build\test_storage_format_confirmation.exe' is up to date.
+scons: `build\test_event_service.exe' is up to date.
+scons: `build\test_event_log.exe' is up to date.
+scons: `build\test_fake_nor.exe' is up to date.
+scons: `build\test_nor_flash_w25q.exe' is up to date.
+scons: `build\test_sht4x.exe' is up to date.
+scons: `build\test_health_service.exe' is up to date.
+scons: `build\test_environment_service.exe' is up to date.
+scons: `build\test_time_service.exe' is up to date.
+scons: `build\test_reset_power_service.exe' is up to date.
+scons: `build\test_terp.exe' is up to date.
+scons: `build\test_terp_device.exe' is up to date.
+scons: `build\test_terp_service.exe' is up to date.
+scons: `build\test_ota_package.exe' is up to date.
+scons: `build\test_ota_state.exe' is up to date.
+scons: `build\test_ota_slots.exe' is up to date.
+scons: `build\test_ota_download_service.exe' is up to date.
+scons: `build\test_uart3_echo.exe' is up to date.
+native smoke: PASS
+memory layout: PASS
+system report format: PASS
+icm45686 driver: PASS
+icm45686 fifo: PASS
+imu acquisition: PASS
+imu acquisition stats: PASS
+sample block pool: PASS
+trigger detector: PASS
+pretrigger ring: PASS
+event assembler: PASS
+event export debug: PASS
+storage format confirmation: PASS
+event service: PASS
+sht4x: PASS
+environment_service: PASS
+time service: PASS
+reset power service: PASS
+health service: PASS
+terp: PASS
+terp device: PASS
+terp service: PASS
+ota package: PASS
+ota state: PASS
+ota slots: PASS
+Native C tests: PASS
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\bootloader\tests\native'
+scons: `.' is up to date.
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\bootloader'
+scons: `build\bootloader.elf' is up to date.
+Bootloader image check: PASS (24928 bytes used of 131072 bytes; no RT-Thread symbols)
+Bootloader tests and image checks: PASS
+........................................................................ [ 72%]
+............................                                             [100%]
+100 passed in 11.56s
+.                                                                        [100%]
+1 passed in 0.02s
+All host-side tests: PASS

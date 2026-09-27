@@ -1,0 +1,8 @@
+BEFORE firmware=phase08-terp-uart3 hardware=openmv4-h743-pd8-pd9 health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+PACKAGE path=candidate-1.1.2-terp-stack-fix.trfw bytes=147188 sha256=7d6d355df9f8a08f79f407deb0a2f78c29955e838d3df669c1e2d66ff75909f2
+Traceback (most recent call last):
+  File "<stdin>", line 31, in <module>
+  File "<stdin>", line 20, in request
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 318, in _request
+    raise TransportError("TERP response timed out")
+transport_recorder.protocol.client.TransportError: TERP response timed out

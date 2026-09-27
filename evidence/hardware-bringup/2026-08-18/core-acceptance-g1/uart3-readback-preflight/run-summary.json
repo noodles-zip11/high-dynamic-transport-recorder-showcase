@@ -1,0 +1,234 @@
+{
+  "device_info": {
+    "model": "STM32H743",
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "serial_number": "recorder-001",
+    "capability_flags": 235
+  },
+  "health": {
+    "state": 2,
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "storage_error_count": 0,
+    "event_export_error_count": 0
+  },
+  "event_pages": [
+    {
+      "after_event_id": 0,
+      "events": [
+        {
+          "event_id": 1,
+          "total_length": 38560,
+          "event_crc32": 1339916424
+        },
+        {
+          "event_id": 2,
+          "total_length": 38560,
+          "event_crc32": 1715412739
+        },
+        {
+          "event_id": 3,
+          "total_length": 38560,
+          "event_crc32": 2908140599
+        },
+        {
+          "event_id": 4,
+          "total_length": 38560,
+          "event_crc32": 932531375
+        },
+        {
+          "event_id": 5,
+          "total_length": 38560,
+          "event_crc32": 4126823171
+        },
+        {
+          "event_id": 6,
+          "total_length": 38560,
+          "event_crc32": 1481226865
+        },
+        {
+          "event_id": 7,
+          "total_length": 38560,
+          "event_crc32": 2807201653
+        },
+        {
+          "event_id": 8,
+          "total_length": 38560,
+          "event_crc32": 4223089342
+        },
+        {
+          "event_id": 9,
+          "total_length": 38560,
+          "event_crc32": 1837825641
+        },
+        {
+          "event_id": 10,
+          "total_length": 38560,
+          "event_crc32": 3198696783
+        },
+        {
+          "event_id": 11,
+          "total_length": 38560,
+          "event_crc32": 718091753
+        },
+        {
+          "event_id": 12,
+          "total_length": 38560,
+          "event_crc32": 72275859
+        },
+        {
+          "event_id": 13,
+          "total_length": 38560,
+          "event_crc32": 2078547698
+        },
+        {
+          "event_id": 14,
+          "total_length": 38560,
+          "event_crc32": 2455942922
+        },
+        {
+          "event_id": 15,
+          "total_length": 38560,
+          "event_crc32": 1395687583
+        },
+        {
+          "event_id": 16,
+          "total_length": 38560,
+          "event_crc32": 2958992122
+        }
+      ],
+      "next_event_id": 16
+    },
+    {
+      "after_event_id": 16,
+      "events": [
+        {
+          "event_id": 17,
+          "total_length": 38560,
+          "event_crc32": 2177987687
+        },
+        {
+          "event_id": 18,
+          "total_length": 38560,
+          "event_crc32": 2335429292
+        },
+        {
+          "event_id": 19,
+          "total_length": 38560,
+          "event_crc32": 3081777616
+        },
+        {
+          "event_id": 20,
+          "total_length": 38560,
+          "event_crc32": 1842006694
+        },
+        {
+          "event_id": 21,
+          "total_length": 38560,
+          "event_crc32": 2950304011
+        },
+        {
+          "event_id": 22,
+          "total_length": 38560,
+          "event_crc32": 1430316708
+        },
+        {
+          "event_id": 23,
+          "total_length": 38560,
+          "event_crc32": 2846352230
+        },
+        {
+          "event_id": 24,
+          "total_length": 38560,
+          "event_crc32": 2708237329
+        },
+        {
+          "event_id": 25,
+          "total_length": 38560,
+          "event_crc32": 1392122019
+        },
+        {
+          "event_id": 26,
+          "total_length": 38560,
+          "event_crc32": 43223614
+        },
+        {
+          "event_id": 27,
+          "total_length": 38560,
+          "event_crc32": 275238341
+        },
+        {
+          "event_id": 28,
+          "total_length": 38560,
+          "event_crc32": 3194530756
+        },
+        {
+          "event_id": 29,
+          "total_length": 38560,
+          "event_crc32": 4229303096
+        },
+        {
+          "event_id": 30,
+          "total_length": 38560,
+          "event_crc32": 2539407930
+        },
+        {
+          "event_id": 31,
+          "total_length": 38560,
+          "event_crc32": 3330692034
+        },
+        {
+          "event_id": 32,
+          "total_length": 38560,
+          "event_crc32": 713818499
+        }
+      ],
+      "next_event_id": 32
+    },
+    {
+      "after_event_id": 32,
+      "events": [
+        {
+          "event_id": 33,
+          "total_length": 38560,
+          "event_crc32": 3950322097
+        },
+        {
+          "event_id": 34,
+          "total_length": 38560,
+          "event_crc32": 79190976
+        },
+        {
+          "event_id": 35,
+          "total_length": 38560,
+          "event_crc32": 509773441
+        },
+        {
+          "event_id": 36,
+          "total_length": 38560,
+          "event_crc32": 3435340982
+        },
+        {
+          "event_id": 37,
+          "total_length": 38560,
+          "event_crc32": 419919756
+        },
+        {
+          "event_id": 38,
+          "total_length": 38560,
+          "event_crc32": 3919595366
+        }
+      ],
+      "next_event_id": 0
+    }
+  ],
+  "total_events": 38,
+  "frame_count": 12,
+  "wire_record_count": 12,
+  "elapsed_seconds": 1.345,
+  "raw_sha256": "DAF480EC468D2B2CAA08B8B7B3E93EBF172D139C27F806307AB170A215666A96",
+  "frames_sha256": "5F1F28061334B3D792117A2F22D4590C7CA72F7B6387EAB0BD2D427571FB299D",
+  "raw_log": "uart3-terp.raw.log",
+  "frames": "uart3-frames.jsonl"
+}

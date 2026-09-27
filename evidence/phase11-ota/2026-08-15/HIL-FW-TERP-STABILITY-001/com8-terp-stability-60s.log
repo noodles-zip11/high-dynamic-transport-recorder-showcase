@@ -1,0 +1,16 @@
+=== HIL-FW-TERP-STABILITY-001 ===
+timestamp=2026-08-15T13:26:21.1492856+08:00
+port=COM8
+scope=10 read-only HELLO/health samples over >=60s; no reset/write; no SPI Event Flash access
+sample=1 elapsed=0.6s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=2 elapsed=7.8s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=3 elapsed=15.0s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=4 elapsed=22.1s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=5 elapsed=29.3s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=6 elapsed=36.4s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=7 elapsed=43.6s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=8 elapsed=50.7s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=9 elapsed=57.9s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=10 elapsed=65.0s model=STM32H743 firmware=phase08-terp-uart3 caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+PASS samples=10 elapsed=65.0s
+exit=0

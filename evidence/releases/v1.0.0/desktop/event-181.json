@@ -1,0 +1,55 @@
+{
+  "ai_prediction": {
+    "class_count": 4,
+    "class_index": 0,
+    "class_name": "background",
+    "confidence": 0.5372567772865295,
+    "model_version": 2,
+    "source": {
+      "summary": "full-qspi-event-backup/summary.json",
+      "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+    },
+    "status": 1
+  },
+  "crc": {
+    "device_crc32": "0x4D40A12A",
+    "payload_crc32": "0xD04FC0C6",
+    "record_crc_verified": true
+  },
+  "decoded": {
+    "format_version": 3,
+    "lost_sample_count": 0,
+    "posttrigger_samples": 1592,
+    "pretrigger_samples": 808,
+    "sample_count": 2400,
+    "sample_rate_hz": 1600,
+    "subtrigger_count": 0
+  },
+  "derived_from": {
+    "decoder": "host.transport_recorder.analysis.event_record.load_event",
+    "raw_event": "full-qspi-event-backup/event-181.terp-event",
+    "raw_event_sha256": "78c06edd98efcdbedda5c67cb7d16ece0eb46fea2595fea9c5e3161897c8001d",
+    "summary": "full-qspi-event-backup/summary.json",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  },
+  "event_id": 181,
+  "evidence_level": "derived",
+  "human_label": {
+    "confidence": "not individually asserted; the field action sequence was not fully deterministic",
+    "planned_action": null,
+    "source": null,
+    "value": null,
+    "verified_individual": false
+  },
+  "label_semantics": "human_label.value is populated only for individually verified action truth; planned_action is a non-truth action plan mapping; ai_prediction is the MCU model output and is never used as the label",
+  "png": {
+    "relative_path": "desktop/event-181.png",
+    "sha256": "7e3d702fb94e77c1658a53d077c6cc3dedf0f4423dec7ac18a8c1e61b57b699d",
+    "size_bytes": 64999
+  },
+  "source_raw": {
+    "relative_name": "full-qspi-event-backup/event-181.terp-event",
+    "sha256": "78c06edd98efcdbedda5c67cb7d16ece0eb46fea2595fea9c5e3161897c8001d",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  }
+}

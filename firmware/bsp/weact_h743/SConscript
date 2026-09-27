@@ -1,0 +1,14 @@
+from building import DefineGroup, GetCurrentDir
+
+
+current_dir = GetCurrentDir()
+
+group = DefineGroup(
+    "Board",
+    ["board.c", "board_power.c", "dma_buffer.c", "imu_spi.c", "u8_nor_spi.c", "stm32h7xx_hal_msp.c"],
+    depend=[""],
+    CPPPATH=[current_dir],
+    CPPDEFINES=["STM32H743xx"],
+)
+
+Return("group")

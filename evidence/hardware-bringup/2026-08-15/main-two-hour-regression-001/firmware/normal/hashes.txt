@@ -1,0 +1,13 @@
+
+Algorithm : SHA256
+Hash      : 1EB1AECE618678BA67985DB8B6AA8F606318E1F41583959B921E9A70E0654FC8
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\evidence\hardware-bringup\2026-08-15\main-two-hour-regression-001\firmware\normal\transport_recorder.elf
+
+Algorithm : SHA256
+Hash      : 80B55AAB0926518181C302C9767A7C8E65468ECC05FB3084268435422200C1F7
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\evidence\hardware-bringup\2026-08-15\main-two-hour-regression-001\firmware\normal\transport_recorder.bin
+
+Algorithm : SHA256
+Hash      : 7CE7DC45ACB577F8DF2FA2DCCD06B2D1D052F382CA4B592C602605A0A078ACFA
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\evidence\hardware-bringup\2026-08-15\main-two-hour-regression-001\firmware\normal\transport_recorder.map
+

@@ -1,0 +1,3 @@
+source_bin=evidence\hardware-bringup\2026-08-15\main-two-hour-regression-001\firmware\normal\transport_recorder.bin
+program_bin=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\main-transport_recorder.bin
+bin_sha256=80B55AAB0926518181C302C9767A7C8E65468ECC05FB3084268435422200C1F7

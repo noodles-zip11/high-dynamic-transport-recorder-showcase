@@ -1,0 +1,30 @@
+{
+  "baudrate": 115200,
+  "cold_boot_pass_count": 0,
+  "cold_boot_required_count": 10,
+  "evidence_files": {
+    "frames": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g0\\cold-boot-10-final\\uart3-cold-boot.frames.jsonl",
+    "observations": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g0\\cold-boot-10-final\\observations.jsonl",
+    "raw_uart": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g0\\cold-boot-10-final\\uart3-cold-boot.raw.jsonl"
+  },
+  "expected_identity": {
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "model": "STM32H743",
+    "serial_number": "recorder-001"
+  },
+  "format": "8N1",
+  "not_ready_probes": 0,
+  "pass_records": [],
+  "port": "COM7",
+  "power_sequence": {
+    "power_off_detected_by": "no valid TERP probe for at least 5 seconds; operator instructed to hold off >=5 seconds",
+    "power_on_acceptance": "valid info/health/events/model readback within 60 seconds; storage ready and errors zero",
+    "reset_method": "physical board power cycle only; no software/ST-Link reset counted"
+  },
+  "preflight": null,
+  "probe_errors": 45,
+  "schema": "hardware-g0-cold-boot-10-v1",
+  "status": "FAIL_INCOMPLETE",
+  "uart": "UART3"
+}

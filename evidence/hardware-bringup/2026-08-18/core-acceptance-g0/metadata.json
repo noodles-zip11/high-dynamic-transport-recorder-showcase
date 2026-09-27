@@ -1,0 +1,115 @@
+{
+  "schema": "core-acceptance-g0-20260818-v3",
+  "date": "2026-08-18",
+  "gate": "G0",
+  "status": "PASS_10_OF_10_COLD_BOOT",
+  "worktree_branch": "docs/hardware-acceptance-route",
+  "main_revision": "4c47fe69b544ef9327300910d66f04927871f0dc",
+  "device": {
+    "mcu": "STM32H743VIT6",
+    "device_id": "0x450",
+    "revision": "Rev V",
+    "internal_flash_bytes": 2097152,
+    "target_voltage_v": 3.23,
+    "stlink_serial": "DEVICE_SERIAL_REDACTED__",
+    "reported_uart_role": "UART3/TERP",
+    "observed_ch340_port": "COM7",
+    "user_reported_port_before_reenumeration": "COM8"
+  },
+  "release_artifact": {
+    "profile": "Release",
+    "device_serial": "recorder-001",
+    "elf_sha256": "ac3b7cffd5034e8d6e2669de8d50793ed139985d4403a2d6e4bb9544fc78454e",
+    "bin_sha256": "2f0e676507d1591060ba759d8f81c6de472d302988172a22def627365b5e878a",
+    "map_sha256": "ada8a0dab124d6b584eed399e067465342327488598c4b44aed225e5f52f3089",
+    "bin_bytes": 128952,
+    "program_address": "0x08020000"
+  },
+  "preflash_internal_flash": {
+    "bytes": 2097152,
+    "sha256": "2b9845c8d9f459b271fb06247e50239d8e6ed88377b330ee9d1adb3c9d502f32",
+    "evidence_path": "evidence/hardware-bringup/2026-08-18/core-acceptance-g0/internal-flash-before.bin",
+    "local_archive_path": "LOCAL_USER_HOME/Desktop/hardware_acceptance_g0_20260818/internal-flash-before.bin",
+    "commit_policy": "Local binary backup is not committed; retain externally and verify by this SHA-256."
+  },
+  "software_test_log": {
+    "path": "evidence/hardware-bringup/2026-08-18/core-acceptance-g0/run-tests-release.log",
+    "sha256": "9db2d198c6d9fe55032a6b0beead54a3b39258d009ec69a24b590cab2139f477",
+    "bytes": 6797,
+    "exit_code": 0,
+    "capture": "direct child stdout/stderr plus explicit trailing exit code"
+  },
+  "completed": [
+    "release_build_and_unified_software_tests",
+    "stlink_target_identity_read",
+    "internal_flash_read_only_backup",
+    "application_program_and_verify",
+    "uart3_info_health_events_smoke",
+    "cold_boot_10_of_10_physical_power_cycles"
+  ],
+  "not_completed": [],
+  "uart1_observation": {
+    "attempts": 2,
+    "reset_method": "ST-LINK hard reset",
+    "baud": 115200,
+    "format": "8N1",
+    "dtr": false,
+    "rts": false,
+    "bytes_received": 0,
+    "interpretation": "No UART1 evidence; do not classify as firmware failure or UART3 evidence."
+  },
+  "uart3_smoke": {
+    "port": "COM7",
+    "baud": 115200,
+    "format": "8N1",
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "device_serial": "recorder-001",
+    "health_state": 2,
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "event_export_error_count": 0,
+    "storage_error_count": 0,
+    "event_ids_returned": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+    "event_count": 39,
+    "next_event_id": 0
+  },
+  "cold_boot_10": {
+    "status": "PASS",
+    "official_rounds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "round_3_record": "cold-boot-10-manual/round-03-redo.json",
+    "operator_reported_power_cycles": 10,
+    "identity_match_all_rounds": true,
+    "event_ids_stable_all_rounds": true,
+    "storage_ready_all_rounds": true,
+    "storage_error_count_all_rounds": 0,
+    "event_export_error_count_all_rounds": 0,
+    "model_valid_all_rounds": true,
+    "pending_install_all_rounds": false,
+    "health_state_observed": 2,
+    "health_state_interpretation": "HEALTH_DEGRADED observation; not an overall health PASS",
+    "evidence_directory": "evidence/hardware-bringup/2026-08-18/core-acceptance-g0/cold-boot-10-manual",
+    "machine_summary": "cold-boot-10-manual/run-summary.json",
+    "machine_summary_bytes": 4144,
+    "machine_summary_sha256": "cc77648d52c82e5939a2c093323671538fd8931912a97d300446fcf4533f91d7",
+    "round_ledger": "cold-boot-10-manual/rounds.jsonl",
+    "frame_summary": "cold-boot-10-manual/uart3-cold-boot.frames.jsonl",
+    "round_ledger_bytes": 7947,
+    "round_ledger_sha256": "76b13b7af7964107105dfae1c19cacd0aa1902c19df43c8a35d900f2bad07a4b",
+    "frame_summary_bytes": 12606,
+    "frame_summary_sha256": "6407b3b5fab70fea991a7d8a66efb5b11251cf7e38959bbac7af5666d4c30ee5"
+  },
+  "build_notes": [
+    "Native C PASS",
+    "Bootloader/image PASS",
+    "Host 131 passed",
+    "AI 66 passed",
+    "ARM Release link and memory-map PASS",
+    "Compiler emitted a non-fatal -Wmaybe-uninitialized warning in ai_runtime.c:354"
+  ],
+  "safety_boundary": [
+    "Bootloader was not programmed",
+    "U2/QSPI was not formatted or intentionally written by this run",
+    "UART3 was used for info, health, events list and model state readback; G2/G3 hardware contracts remain open"
+  ]
+}

@@ -1,0 +1,42 @@
+imu services=28639 samples=916448 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=28042 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994
+imu services=28691 samples=918112 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=28094 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001e4 0x00000800     76%   0x00000008 EINTRPT 0x24033868  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000003 EINTRPT 0x240335a8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000009 EINTRPT 0x24032ce8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000004 EINTRPT 0x24032428  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24031d68  N/A
+terp_rx       18  suspend 0x00000084 0x00001000      3%   0x00000001 EINTRPT 0x24030ca8  N/A
+tshell        20  running 0x00000214 0x00000800     57%   0x00000007 OK      0x2402ffc8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000004 OK      0x2402eb20  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x2402f100  N/A
+msh >
+msh >sysinfo
+firmware_version=phase08-terp-uart3
+git_revision_or_local=4c47fe69b544ef9327300910d66f04927871f0dc
+build_time=Aug 18 2026 13:56:41
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=312168
+thread_count=9
+msh >
+msh >event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=28744 samples=919776 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=28146 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994
+log status
+log state=1 events=38 next_id=39 next_offset=0x0017e000 jedec=ef4017
+msh >
+msh >log inspect
+recovery source=superblock_b generation=2 scanned=6 discarded=0 ticks=3450
+msh >
+msh >

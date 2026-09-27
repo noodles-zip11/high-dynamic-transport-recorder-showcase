@@ -1,0 +1,6 @@
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\bootloader\tests\native'
+scons: `.' is up to date.
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\bootloader'
+scons: `build\bootloader.elf' is up to date.
+Bootloader image check: PASS (24928 bytes used of 131072 bytes; no RT-Thread symbols)
+Bootloader tests and image checks: PASS

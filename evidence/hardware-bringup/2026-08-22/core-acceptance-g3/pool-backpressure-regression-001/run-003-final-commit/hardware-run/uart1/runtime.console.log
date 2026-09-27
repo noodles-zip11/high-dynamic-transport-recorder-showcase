@@ -1,0 +1,1392 @@
+[2026-08-22T02:15:04.985265+00:00] TX
+sysinfo
+
+[2026-08-22T02:15:07.054608+00:00] RX
+sysinfo
+firmware_version=phase08-terp-uart3
+git_revision_or_local=0a9ff127c1a2a0a2596c1c61d616f06efc47af0f
+build_time=Aug 22 2026 10:13:27
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=236392
+thread_count=9
+msh >
+msh >imu services=1570 samples=50240 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1570 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=1622 samples=51904 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1622 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:07.304309+00:00] TX
+ps
+
+[2026-08-22T02:15:09.404323+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     71%   0x00000001 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     15%   0x00000006 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000003 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x0000033c 0x00000600     54%   0x0000000a EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x0000000a EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000006 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000074 0x00000400     12%   0x0000000c OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=1675 samples=53568 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1674 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=1727 samples=55264 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1727 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:09.650108+00:00] TX
+event status
+
+[2026-08-22T02:15:11.744487+00:00] RX
+imu services=1779 samples=56928 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1779 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=1832 samples=58592 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1831 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:12.040043+00:00] RX_PRE_COMMAND
+imu services=1884 samples=60288 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1884 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:12.040043+00:00] TX
+log status
+
+[2026-08-22T02:15:14.146380+00:00] RX
+log status
+log state=1 events=46 next_id=47 next_offset=0x001ce000 jedec=ef4017
+msh >
+msh >imu services=1936 samples=61952 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1936 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=1988 samples=63616 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=1988 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:14.397177+00:00] TX
+log inspect
+
+[2026-08-22T02:15:16.469776+00:00] RX
+log inspect
+recovery source=superblock_b generation=4 scanned=15 discarded=0 ticks=9659
+msh >
+msh >imu services=2041 samples=65312 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2041 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2093 samples=66976 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2093 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:18.323877+00:00] RX_PRE_COMMAND
+imu services=2145 samples=68640 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2145 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2198 samples=70304 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2197 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:18.324398+00:00] TX
+ps
+
+[2026-08-22T02:15:20.131927+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     71%   0x00000008 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     15%   0x00000004 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x0000000a EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x0000033c 0x00000600     54%   0x0000000a EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000008 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000008 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000074 0x00000400     12%   0x00000011 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=2250 samples=72000 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2250 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2302 samples=73664 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_e
+[2026-08-22T02:15:20.427797+00:00] RX_PRE_COMMAND
+rr=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2302 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:20.427797+00:00] TX
+event status
+
+[2026-08-22T02:15:22.225846+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=2355 samples=75328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2354 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2407 samples=77024 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_e
+[2026-08-22T02:15:33.479071+00:00] RX_PRE_COMMAND
+rr=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2407 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2459 samples=78688 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2459 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2512 samples=80352 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2511 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2564 samples=82048 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2564 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2616 samples=83712 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2616 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2668 samples=85376 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2668 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2721 samples=87072 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2721 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2773 samples=88736 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2773 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2825 samples=90400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2825 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2878 samples=92064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2877 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=2930 samples=93760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2930 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:33.479071+00:00] TX
+ps
+
+[2026-08-22T02:15:35.331575+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000004 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     15%   0x00000001 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x0000000a EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x0000033c 0x00000600     54%   0x0000000a EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000004 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000007 OK      0x240427c8  N/A
+tidle0        31  ready   0x0000007c 0x00000400     12%   0x0000001e OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=2982 samples=95424 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=2982 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=3035 samples=97088 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=3034 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:35.581596+00:00] TX
+event status
+
+[2026-08-22T02:15:37.438906+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=3087 samples=98784 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=3087 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=3139 samples=100448 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=3139 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+firmware_version=phase08-terp-uart3
+git_revision_or_local=0a9ff127c1a2a0a2596c1c61d616f06efc47af0f
+build_time=Aug 22 2026 10:13:27
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=236392
+thread_count=9
+
+[2026-08-22T02:15:38.986373+00:00] RX_PRE_COMMAND
+imu services=3193 samples=102144 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=3192 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+i
+[2026-08-22T02:15:38.987374+00:00] TX
+event trigger_test
+
+[2026-08-22T02:15:41.528917+00:00] RX
+mu services=3245 samples=103840 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=166 pool_backpressure=0 blocks=3245 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event trigger_test
+msh >
+msh >event log write begins
+event log write complete
+imu services=3363 samples=107616 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3363 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+[2026-08-22T02:15:48.607416+00:00] RX_PRE_COMMAND
+imu services=3415 samples=109280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3415 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=3468 samples=110976 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3468 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=3520 samples=112640 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3520 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=3572 samples=114304 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3572 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=3625 samples=116000 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3625 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=3677 samples=117664 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3677 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:15:48.608430+00:00] TX
+ps
+
+[2026-08-22T02:15:50.518308+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000004 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     79%   0x00000009 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000003 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000009 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00imu services=3729 samples=119328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3729 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+ submitted=1 processed=1 queue_drop=0 result_q  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000017 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=3782 samples=120992 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3781 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:15:50.767228+00:00] TX
+event status
+
+[2026-08-22T02:15:52.615401+00:00] RX
+event status
+event state=0 pretrigger_blocks=25imu services=3834 samples=122688 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3834 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+ssed=1 queue_drop=0 result_queue_dromsh >
+msh >imu services=3886 samples=124352 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3886 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:03.777081+00:00] RX_PRE_COMMAND
+imu services=3939 samples=126016 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3938 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=3991 samples=127712 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=3991 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4043 samples=129376 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4043 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4096 samples=131040 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4095 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4148 samples=132736 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4148 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4200 samples=134400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4200 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4252 samples=136064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4252 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4305 samples=137760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4305 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4357 samples=139424 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4357 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4409 samples=141088 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4409 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4462 samples=142752 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4461 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:03.777081+00:00] TX
+ps
+
+[2026-08-22T02:16:05.613264+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000006 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     79%   0x00000005 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000007 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000003 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000004 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x0000001e OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=4514 samples=144448 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4514 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4566 samples=146112 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4566 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:05.863187+00:00] TX
+event status
+
+[2026-08-22T02:16:07.708060+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=4619 samples=147776 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4618 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4671 samples=149472 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4671 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:18.933884+00:00] RX_PRE_COMMAND
+imu services=4723 samples=151136 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4723 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4776 samples=152800 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4775 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4828 samples=154496 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4828 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4880 samples=156160 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4880 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4932 samples=157824 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4932 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=4985 samples=159520 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=4985 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5037 samples=161184 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5037 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5089 samples=162848 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5089 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5142 samples=164512 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5141 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5194 samples=166208 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5194 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:18.934393+00:00] TX
+ps
+
+[2026-08-22T02:16:20.763148+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000002 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     79%   0x00000002 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000008 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000004 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000004 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x0000000d OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=5246 samples=167872 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5246 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5299 samples=169536 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5298 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:21.014495+00:00] TX
+event status
+
+[2026-08-22T02:16:22.852724+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=5351 samples=171232 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5351 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5403 samples=172896 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5403 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:34.079680+00:00] RX_PRE_COMMAND
+imu services=5456 samples=174560 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5455 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5508 samples=176256 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5508 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5560 samples=177920 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5560 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5612 samples=179584 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5612 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5665 samples=181280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5665 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5717 samples=182944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5717 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5769 samples=184608 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5769 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5822 samples=186272 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5821 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5874 samples=187968 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5874 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5926 samples=189632 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5926 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=5979 samples=191296 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=5978 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:34.080188+00:00] TX
+ps
+
+[2026-08-22T02:16:35.962361+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000002 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     79%   0x0000000a EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000007 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000004 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000003 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000018 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=6031 samples=192992 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6031 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6083 samples=194656 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6083 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:36.212641+00:00] TX
+event status
+
+[2026-08-22T02:16:38.067115+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=6136 samples=196320 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6135 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6188 samples=198016 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6188 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:49.105231+00:00] RX_PRE_COMMAND
+imu services=6240 samples=199680 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6240 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6292 samples=201344 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6292 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6345 samples=203040 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6345 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+firmware_version=phase08-terp-uart3
+git_revision_or_local=0a9ff127c1a2a0a2596c1c61d616f06efc47af0f
+build_time=Aug 22 2026 10:13:27
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=236392
+thread_count=9
+imu services=6398 samples=204736 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6398 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6450 samples=206400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6450 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6503 samples=208096 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6503 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6555 samples=209760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6555 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6607 samples=211424 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6607 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6660 samples=213088 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6659 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6712 samples=214784 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6712 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:49.105231+00:00] TX
+ps
+
+[2026-08-22T02:16:51.013456+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000008 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     79%   0x00000003 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000008 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000005 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000002 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000074 0x00000400     12%   0x00000019 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=6764 samples=216448 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6764 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6817 samples=218112 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6816 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:16:51.262955+00:00] TX
+event status
+
+[2026-08-22T02:16:53.116035+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=6869 samples=219808 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6869 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=6921 samples=221472 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6921 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:17:04.078907+00:00] RX_PRE_COMMAND
+imu services=6974 samples=223136 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=6973 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7026 samples=224832 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7026 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7078 samples=226496 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7078 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7130 samples=228160 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7130 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7183 samples=229856 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7183 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7235 samples=231520 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7235 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7287 samples=233184 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7287 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7340 samples=234848 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7339 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7392 samples=236544 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7392 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7444 samples=238208 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7444 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+i
+[2026-08-22T02:17:04.079903+00:00] TX
+ps
+
+[2026-08-22T02:17:05.926873+00:00] RX
+mu services=7497 samples=239872 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7496 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x0000000a EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     79%   0x00000001 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000008 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000007 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000003 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000002 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000001 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=7549 samples=241568 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7549 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:17:06.175731+00:00] TX
+event status
+
+[2026-08-22T02:17:08.013615+00:00] RX
+imu services=7601 samples=243232 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7601 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=7654 samples=244896 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7653 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:17:18.422251+00:00] RX_PRE_COMMAND
+imu services=7706 samples=246592 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7706 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7758 samples=248256 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7758 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7810 samples=249920 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7810 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7863 samples=251616 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7863 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7915 samples=253280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7915 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=7967 samples=254944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=7967 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=8020 samples=256640 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=8020 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=8072 samples=258304 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=8072 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=8124 samples=259968 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=8124 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+imu services=8177 samples=261632 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=8176 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:17:18.423299+00:00] TX
+event trigger_test
+
+[2026-08-22T02:17:20.959789+00:00] RX
+event trigger_test
+msh >
+msh >imu services=8229 samples=263328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=8229 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+event log write begins
+event log write complete
+imu services=8331 samples=266592 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8331 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994
+
+[2026-08-22T02:17:21.409718+00:00] TX
+ps
+
+[2026-08-22T02:17:23.298782+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000007 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000005 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000008 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000004 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000006 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000007 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000013 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=8383 samples=268256 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8383 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8436 samples=269952 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8436 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:23.550150+00:00] TX
+event status
+
+[2026-08-22T02:17:25.391545+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=8488 samples=271616 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8488 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8540 samples=273280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8540 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:36.659764+00:00] RX_PRE_COMMAND
+imu services=8593 samples=274944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8592 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8645 samples=276640 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8645 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8697 samples=278304 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8697 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8750 samples=279968 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8749 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8802 samples=281664 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8802 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8854 samples=283328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8854 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8907 samples=284992 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8906 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=8959 samples=286688 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8959 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9011 samples=288352 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9011 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9063 samples=290016 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9063 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9116 samples=291712 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9116 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:36.659764+00:00] TX
+ps
+
+[2026-08-22T02:17:38.572946+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000007 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000004 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000006 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000004 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000006 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000007 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000019 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=9168 samples=293376 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9168 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:38.871132+00:00] RX_PRE_COMMAND
+imu services=9220 samples=295040 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9220 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:38.871645+00:00] TX
+event status
+
+[2026-08-22T02:17:40.679477+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=9273 samples=296704 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9272 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9325 samples=298400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_e
+[2026-08-22T02:17:51.765003+00:00] RX_PRE_COMMAND
+rr=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9325 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9377 samples=300064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9377 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9430 samples=301728 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9429 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9482 samples=303424 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9482 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9534 samples=305088 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9534 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+firmware_version=phase08-terp-uart3
+git_revision_or_local=0a9ff127c1a2a0a2596c1c61d616f06efc47af0f
+build_time=Aug 22 2026 10:13:27
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=236392
+thread_count=9
+imu services=9588 samples=306784 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9587 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9640 samples=308480 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9640 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9692 samples=310144 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9692 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9745 samples=311808 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9744 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9797 samples=313504 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9797 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9849 samples=315168 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9849 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:51.765003+00:00] TX
+ps
+
+[2026-08-22T02:17:53.677622+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000003 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x0000000a EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000001 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x000000ec 0x00000800     15%   0x00000009 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000004 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000006 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000006 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x0000000f OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=9901 samples=316832 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9901 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=9954 samples=318528 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=9954 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:17:53.925565+00:00] TX
+event status
+
+[2026-08-22T02:17:55.776210+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=10006 samples=320192 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10006 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10058 samples=321856 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10058 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:06.838241+00:00] RX_PRE_COMMAND
+imu services=10111 samples=323552 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10111 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10163 samples=325216 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10163 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10215 samples=326880 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10215 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10268 samples=328544 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10267 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10320 samples=330240 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10320 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10372 samples=331904 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10372 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10425 samples=333568 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10424 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10477 samples=335264 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10477 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10529 samples=336928 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10529 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10582 samples=338592 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10581 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:06.838849+00:00] TX
+ps
+
+[2026-08-22T02:18:08.712806+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000005 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x000000imu services=10634 samples=340288 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10634 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+ready=1 submitted=2 processed=2 queue_drop=0 result_q  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x0000000a EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000002 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000004 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000006 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000006 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000012 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=10686 samples=341952 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10686 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:08.963363+00:00] TX
+event status
+
+[2026-08-22T02:18:10.816616+00:00] RX
+imu services=10739 samples=343616 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10738 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=10791 samples=345312 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10791 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:21.856014+00:00] RX_PRE_COMMAND
+imu services=10843 samples=346976 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10843 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10896 samples=348672 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10896 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=10948 samples=350336 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=10948 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11000 samples=352000 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11000 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11053 samples=353664 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11052 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11105 samples=355360 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11105 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11157 samples=357024 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11157 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11210 samples=358720 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11210 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11262 samples=360384 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11262 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11314 samples=362048 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11314 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11367 samples=363744 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11367 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:21.857126+00:00] TX
+ps
+
+[2026-08-22T02:18:23.664589+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000009 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000008 EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000009 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000004 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000003 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000005 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000007 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000001 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=11419 samples=365408 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11419 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11471 samples=367072 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11471 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_
+[2026-08-22T02:18:23.929950+00:00] RX_PRE_COMMAND
+queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:23.929950+00:00] TX
+event status
+
+[2026-08-22T02:18:25.742899+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=11524 samples=368768 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11524 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11576 samples=370432 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blo
+[2026-08-22T02:18:36.985140+00:00] RX_PRE_COMMAND
+cks=11576 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11628 samples=372096 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11628 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11681 samples=373760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11680 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11733 samples=375456 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11733 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11785 samples=377120 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11785 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11838 samples=378784 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11837 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11890 samples=380480 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11890 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11942 samples=382144 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11942 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=11995 samples=383808 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=11994 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12047 samples=385504 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12047 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12099 samples=387168 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12099 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:36.985140+00:00] TX
+ps
+
+[2026-08-22T02:18:38.838135+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x0000000a EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000007 EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000006 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000006 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000003 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000002 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000007 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000015 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=12152 samples=388864 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12152 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12204 samples=390528 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12204 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:39.096716+00:00] TX
+event status
+
+[2026-08-22T02:18:40.931706+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=12256 samples=392192 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12256 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12309 samples=393856 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12308 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:52.103637+00:00] RX_PRE_COMMAND
+imu services=12361 samples=395552 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12361 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12413 samples=397216 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12413 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12466 samples=398880 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12465 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12518 samples=400576 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12518 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12570 samples=402240 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12570 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12623 samples=403904 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12622 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12675 samples=405600 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12675 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+firmware_version=phase08-terp-uart3
+git_revision_or_local=0a9ff127c1a2a0a2596c1c61d616f06efc47af0f
+build_time=Aug 22 2026 10:13:27
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=236392
+thread_count=9
+imu services=12728 samples=407296 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12728 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12781 samples=408992 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12781 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12833 samples=410656 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12833 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=12885 samples=412320 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12885 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:52.103637+00:00] TX
+ps
+
+[2026-08-22T02:18:54.020336+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     77%   0x00000002 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000007 EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000004 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000005 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000003 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000003 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000007 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000015 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=12938 samples=413984 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12937 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:54.316738+00:00] RX_PRE_COMMAND
+imu services=12990 samples=415680 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=12990 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:18:54.316738+00:00] TX
+event status
+
+[2026-08-22T02:18:56.119747+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=13042 samples=417344 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13042 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:07.186306+00:00] RX_PRE_COMMAND
+imu services=13095 samples=419008 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13094 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13147 samples=420704 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13147 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13199 samples=422368 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13199 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13252 samples=424032 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13251 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13304 samples=425728 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13304 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13356 samples=427392 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13356 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13409 samples=429088 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13409 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13461 samples=430752 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13461 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13513 samples=432416 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13513 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13566 samples=434112 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13566 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13618 samples=435776 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13618 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:07.186306+00:00] TX
+ps
+
+[2026-08-22T02:19:09.112411+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     79%   0x00000002 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000007 EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000001 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x0000000a EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000002 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000004 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000005 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000012 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=13670 samples=437440 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13670 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13723 samples=439104 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13722 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:09.362844+00:00] TX
+event status
+
+[2026-08-22T02:19:11.204377+00:00] RX
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=13775 samples=440800 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13775 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13827 samples=442464 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13827 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:30.420954+00:00] RX_PRE_COMMAND
+imu services=13880 samples=444128 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13879 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13932 samples=445824 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13932 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=13984 samples=447488 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=13984 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14037 samples=449152 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14036 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14089 samples=450848 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14089 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14141 samples=452512 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14141 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14194 samples=454208 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14194 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14246 samples=455872 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14246 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14298 samples=457536 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14298 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14351 samples=459200 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14350 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14403 samples=460896 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14403 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14455 samples=462560 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14455 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14508 samples=464256 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14508 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14560 samples=465920 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14560 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14612 samples=467584 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14612 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14665 samples=469248 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14664 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14717 samples=470944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14717 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14769 samples=472608 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14769 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:30.420954+00:00] TX
+ps
+
+[2026-08-22T02:19:32.529045+00:00] RX
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001ec 0x00000800     79%   0x00000009 EINTRPT 0x24046068  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     22%   0x00000003 EINTRPT 0x24045da8  N/A
+event          9  suspend 0x00000114 0x00000800     81%   0x00000002 EINTRPT 0x240454e8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     15%   0x00000002 EINTRPT 0x24044c28  N/A
+ai            15  suspend 0x000003c4 0x00000600     91%   0x00000002 EINTRPT 0x24044568  N/A
+terp_rx       18  suspend 0x00000084 0x00001000     34%   0x00000005 EINTRPT 0x240434a8  N/A
+tshell        20  running 0x00000214 0x00000800     56%   0x00000006 OK      0x240427c8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000012 OK      0x24041320  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x24041900  N/A
+msh >
+msh >imu services=14822 samples=474272 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14821 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=14874 samples=475968 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14874 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:32.777244+00:00] TX
+event status
+
+[2026-08-22T02:19:34.870179+00:00] RX
+imu services=14926 samples=477632 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14926 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=14979 samples=479296 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=14978 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:35.165752+00:00] RX_PRE_COMMAND
+imu services=15031 samples=480992 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=15031 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:35.165752+00:00] TX
+log status
+
+[2026-08-22T02:19:37.268467+00:00] RX
+log status
+log state=1 events=48 next_id=49 next_offset=0x001e2000 jedec=ef4017
+msh >
+msh >imu services=15083 samples=482656 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=15083 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=15136 samples=484320 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=15135 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+
+[2026-08-22T02:19:37.518172+00:00] TX
+log inspect
+
+[2026-08-22T02:19:39.607446+00:00] RX
+log inspect
+recovery source=superblock_b generation=4 scanned=15 discarded=0 ticks=9659
+msh >
+msh >imu services=15188 samples=486016 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=15188 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+imu services=15240 samples=487680 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=15240 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=48 class=0 confidence_permille=994
+

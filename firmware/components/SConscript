@@ -1,0 +1,8 @@
+from building import SConscript
+
+
+objects = []
+objects.extend(SConscript("storage/SConscript"))
+objects.extend(SConscript("protocol/SConscript"))
+objects.extend(SConscript("ota/SConscript"))
+Return("objects")

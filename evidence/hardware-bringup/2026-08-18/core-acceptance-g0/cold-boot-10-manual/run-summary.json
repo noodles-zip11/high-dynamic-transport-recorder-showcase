@@ -1,0 +1,134 @@
+{
+  "schema": "core-acceptance-g0-cold-boot-10-manual-v1",
+  "date": "2026-08-18",
+  "gate": "G0",
+  "status": "PASS_10_OF_10_COLD_BOOT",
+  "operation": "physical_board_power_cycle",
+  "transport": {
+    "uart": "UART3/TERP",
+    "port": "COM7",
+    "baud": 115200,
+    "format": "8N1",
+    "pins": "PD8(TX)/PD9(RX), common GND",
+    "logic_voltage": "3.3V",
+    "vcc_from_usb_ttl": "disconnected"
+  },
+  "official_rounds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "round_3_record": "round-03-redo.json",
+  "round_3_initial_timeout": "Excluded from the official count; the operator requested a redo and the redo passed.",
+  "acceptance_assertions": {
+    "all_rounds_pass": true,
+    "identity_stable": true,
+    "event_ids_stable": true,
+    "normal_boots": "10/10 observed and probed after operator-reported physical power cycles",
+    "storage_ready_all_rounds": true,
+    "storage_error_count_all_rounds": 0,
+    "event_export_error_count_all_rounds": 0,
+    "model_valid_all_rounds": true,
+    "pending_install_all_rounds": false,
+    "hardfault_assert_unexpected_reset_observed": false
+  },
+  "device_identity": {
+    "capability_flags": 235,
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "model": "STM32H743",
+    "serial_number": "recorder-001"
+  },
+  "event_observation": {
+    "event_count": 39,
+    "event_id_range": "1-39",
+    "last_event_id": 39
+  },
+  "health_observation": {
+    "state_values": [
+      2
+    ],
+    "state_name": "HEALTH_DEGRADED (known; not treated as overall health PASS)",
+    "storage_ready": true,
+    "storage_error_count": 0,
+    "event_export_error_count": 0
+  },
+  "model_ota_observation": {
+    "active_slot_values": [
+      1
+    ],
+    "model_valid": true,
+    "pending_install": false,
+    "total_bytes": 0,
+    "verified_bytes": 0
+  },
+  "evidence_files": {
+    "rounds_jsonl": {
+      "bytes": 7947,
+      "sha256": "76B13B7AF7964107105DFAE1C19CACD0AA1902C19DF43C8A35D900F2BAD07A4B"
+    },
+    "frame_summary_jsonl": {
+      "bytes": 12606,
+      "sha256": "6407B3B5FAB70FEA991A7D8A66EFB5B11251CF7E38959BBAC7AF5666D4C30EE5"
+    },
+    "round_files": {
+      "round-01.json": {
+        "bytes": 1154,
+        "sha256": "CC2C1CF7F55EA04FE63DEBB43FE3CEC60AEB64CC5AD8FAEE2921C0587E4F76AF"
+      },
+      "round-02.json": {
+        "bytes": 1154,
+        "sha256": "FDF83241FD402407847A513EB15CB90E75C9C227F0A8E3E901411CC5FA07BDA6"
+      },
+      "round-03-redo.json": {
+        "bytes": 1171,
+        "sha256": "2A3DE8BB405424CD5FF4F0AA805CA7101B53225E3A173860756E4096400030C1"
+      },
+      "round-04.json": {
+        "bytes": 1154,
+        "sha256": "6C4AEB0D69B689A956EF56C002009EE3FBF0C8318DB8CC8C043608E34965CD1D"
+      },
+      "round-05.json": {
+        "bytes": 1154,
+        "sha256": "DF1C964E4767C8322DF6DFF2298FBE930344E22E6DBD8893B92C3262641E3E6A"
+      },
+      "round-06.json": {
+        "bytes": 1154,
+        "sha256": "D0B50079DC7385F0112D738B9EEBC90A8DC8AE2CB3DBB90AC6E2CA71BC61F646"
+      },
+      "round-07.json": {
+        "bytes": 1154,
+        "sha256": "8A3F9322F17BF60E111526D5BF9D51793E59C56BC7C518088E284EB9E9582E0E"
+      },
+      "round-08.json": {
+        "bytes": 1154,
+        "sha256": "5E12638CC915BD5A68218C0FB46321D92F2422948BF7D8ADAE7DED8E4BF86CCE"
+      },
+      "round-09.json": {
+        "bytes": 1154,
+        "sha256": "5D04C53244CCE6F8CB787479A41E0D81CD41C22409F7507193A763429EA78004"
+      },
+      "round-10.json": {
+        "bytes": 1155,
+        "sha256": "03C7BC1992DD722AF0A62651F1121FBC9A88C3937175BDBDFFA1F3D2D7694FD5"
+      }
+    }
+  },
+  "excluded_operational_diagnostics": [
+    "cold-boot-10/",
+    "cold-boot-10-final/",
+    "cold-boot-10-formal/",
+    "The first round-3 timeout attempts were not counted; only round-03-redo.json is official."
+  ],
+  "review": {
+    "review_thread": "codex://threads/01a00d9e-973c-7583-b2fb-09f79cdda5da",
+    "requested_after": "all official rounds and documentation updates"
+  }
+}

@@ -1,0 +1,2 @@
+capture_utc=2026-08-12T11:39:40.1102607Z port=COM5 baud=115200 format=8N1 note=u2_7fe000_validation_first_phase
+U2 init=0 probe=0 jedec=EF4017 sr1=00 validation=0 stage=1 flags=1100 sector=0x007FE000 failure=0x00000000

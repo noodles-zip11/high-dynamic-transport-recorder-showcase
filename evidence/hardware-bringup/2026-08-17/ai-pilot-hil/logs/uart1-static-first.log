@@ -1,0 +1,38 @@
+event trigger_delay 3000
+event trigger scheduled delay_ms=3000
+msh >
+msh >imu services=99740 samples=3191648 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=99739 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+imu services=99791 samples=3193312 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=99791 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event trigger delayed start
+imu services=99843 samples=3194976 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=99843 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event log is unavailable; run log status or log format --confirm
+imu services=99895 samples=3196640 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=99895 
+event state=0 pretrigger_blocks=5 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994
+imu services=99947 samples=3198304 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=99947 
+event state=0 pretrigger_blocks=25 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994
+imu services=99999 samples=3199936 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=99998 
+event state=0 pretrigger_blocks=25 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994
+imu services=100050 samples=3201600 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=100050 
+event state=0 pretrigger_blocks=25 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994
+log status
+log state=1 events=0 next_id=1 next_offset=0x00002000 jedec=ef4017
+msh >
+msh >imu services=100102 samples=3203264 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=100102 
+event state=0 pretrigger_blocks=25 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994
+imu services=100154 samples=3204928 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=100154 
+event state=0 pretrigger_blocks=25 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994
+imu services=100206 samples=3206592 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=100206 
+event state=0 pretrigger_blocks=25 busy=0 export_err=1 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 feature_err=0 runtime_err=0 last_event=205 class=0 confidence_permille=994

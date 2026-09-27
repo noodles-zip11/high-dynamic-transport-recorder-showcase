@@ -1,0 +1,32 @@
+{
+  "schema": "model-ota-post-reset-hil-v1",
+  "checked_at_utc": "2026-08-23T12:38:37.072447+00:00",
+  "port": "COM7",
+  "read_only": true,
+  "expected_active_slot": 0,
+  "pass": true,
+  "device_info": {
+    "model": "STM32H743",
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "serial_number": "pending",
+    "capability_flags": 235
+  },
+  "health": {
+    "state": 2,
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "storage_error_count": 0,
+    "event_export_error_count": 0
+  },
+  "model_ota_query": {
+    "total_bytes": 0,
+    "verified_bytes": 0,
+    "pending_install": false,
+    "active_slot": 0,
+    "model_valid": true
+  },
+  "event_count": 179,
+  "first_event_id": 1,
+  "last_event_id": 179
+}

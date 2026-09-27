@@ -1,0 +1,99 @@
+{
+  "session_id": "main-two-hour-regression-001",
+  "started_at": "2026-08-15T17:43:53+08:00",
+  "ended_at": "2026-08-15T20:19:03+08:00",
+  "timezone": "Asia/Shanghai",
+  "operator": "Codex-assisted operator",
+  "branch": "feature/main-hardware-regression-20260815",
+  "head": "60eecbd56338a382256009d3be827149a5f8db41",
+  "main_head_at_start": "60eecbd56338a382256009d3be827149a5f8db41",
+  "source_worktree_clean_at_start": true,
+  "board": {
+    "model": "STM32H743",
+    "device_id": "0x450",
+    "flash_bytes": 2097152,
+    "st_link_serial": "DEVICE_SERIAL_REDACTED__",
+    "st_link_firmware": "V2J46S7",
+    "st_link_voltage": "3.23V",
+    "usb_ttl": "USB-SERIAL CH340",
+    "com_port": "COM8",
+    "serial": "115200 8N1",
+    "power": "board USB; USB-TTL VCC disconnected"
+  },
+  "firmware": {
+    "normal_bin_sha256": "80B55AAB0926518181C302C9767A7C8E65468ECC05FB3084268435422200C1F7",
+    "normal_elf_sha256": "1EB1AECE618678BA67985DB8B6AA8F606318E1F41583959B921E9A70E0654FC8",
+    "normal_map_sha256": "7CE7DC45ACB577F8DF2FA2DCCD06B2D1D052F382CA4B592C602605A0A078ACFA",
+    "program_address": "0x08020000",
+    "program_verify": "PASS"
+  },
+  "pre_program_image": {
+    "terp_firmware_version": "phase08-terp-uart3",
+    "backup_1_path": "LOCAL_USER_HOME\\Desktop\\hw_regression_backup_20260815\\internal-flash-before-1.bin",
+    "backup_2_path": "LOCAL_USER_HOME\\Desktop\\hw_regression_backup_20260815\\internal-flash-before-2.bin",
+    "backup_bytes_each": 2097152,
+    "backup_sha256": "C602B500231914F96A7FA6A1AADA244A89962A82BAC401D22E2D6145D67244A4",
+    "backup_hashes_equal": true
+  },
+  "transport": {
+    "info_exit": 0,
+    "health_exit": 0,
+    "events_list_exit": 0,
+    "event_1_download_exit": 0,
+    "time_get_exit": 3
+  },
+  "follow_up": {
+    "uart1": {
+      "captured_bytes": 909,
+      "startup_signal": "RT-Thread+msh",
+      "finsh_commands": ["sysinfo", "event status", "log status", "log inspect"],
+      "new_event_id": 2,
+      "new_event_log_verify": "OK"
+    },
+    "cubeprogrammer_ascii_staging": {
+      "path_test": "PASS",
+      "program_verify": "PASS"
+    },
+    "local_tests": {
+      "run_tests": "PASS",
+      "host_pytest": "118 passed",
+      "ai_pytest": "1 passed",
+      "firmware_build": "PASS",
+      "git_diff_check": "PASS"
+    },
+    "uart3_event_2_download": {
+      "info_exit": 0,
+      "health_exit": 0,
+      "events_list_exit": 0,
+      "download_exit": 0,
+      "record_bytes": 38560,
+      "record_crc32": 2376085022,
+      "download_sha256": "DB96D6E27F887B18E8F5250BA825B1F93632E8D876056DCC79A6416CFC143E54",
+      "host_decode": "PASS",
+      "time_get_exit": 3
+    },
+    "uart3_com7_cold_retest": {
+      "port": "COM7",
+      "power_cycle": true,
+      "info_exit": 0,
+      "health_exit": 0,
+      "events_list_exit": 0,
+      "download_exit": 0,
+      "record_bytes": 38560,
+      "record_crc32": 2376085022,
+      "download_sha256": "DB96D6E27F887B18E8F5250BA825B1F93632E8D876056DCC79A6416CFC143E54",
+      "host_decode": "PASS"
+    },
+    "uart3_same_handle_reconnect_20": {
+      "iterations": 20,
+      "info_successes": 20,
+      "health_successes": 20,
+      "events_list_successes": 20,
+      "download_successes": 20,
+      "length_stable": true,
+      "record_crc_stable": true,
+      "sha256_stable": true,
+      "physical_unplug_count": 0
+    }
+  }
+}

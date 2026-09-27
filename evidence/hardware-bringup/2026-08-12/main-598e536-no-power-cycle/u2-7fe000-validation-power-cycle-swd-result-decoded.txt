@@ -1,0 +1,20 @@
+U2 0x007FE000 alternate scratch-sector power-cycle decode
+source_uart_first_phase=u2-7fe000-validation-uart3-raw.log
+source_uart_power_on_listener=u2-7fe000-validation-power-on-uart3-raw.log
+source_swd=u2-7fe000-current-swd-result-raw.log
+result_address=0x30000840
+result_size=92
+signature=0x46444C31
+u2_initialization_result=0
+u2_probe_result=0
+u2_jedec=EF4017
+u2_status_register_1=0x00
+u2_validation_result=0
+u2_stage=2 (COMPLETE)
+initial_sector_erased=1
+program_readback_verified=1
+power_cycle_pattern_verified=1
+final_sector_erased=1
+sector_offset=0x007FE000
+failure_offset=0x00000000
+conclusion=power-cycle pattern survived; final 4 KiB scratch sector was erased back to FF

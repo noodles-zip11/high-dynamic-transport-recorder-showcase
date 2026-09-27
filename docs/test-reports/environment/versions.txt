@@ -1,0 +1,19 @@
+Recorded: 2026-07-13 Asia/Shanghai
+
+CLion: 2026.1.3 (build CL-261.26222.59)
+PowerShell: 7.6.3
+Git: 2.54.0.windows.1
+Python: 3.12.10
+pytest: 8.4.2
+SCons: 4.10.1
+GNU Tools for STM32 GCC: 13.3.1 20240614
+GNU binutils size: 2.42.0.20240614
+CLion bundled MinGW GCC: 13.1.0
+STM32CubeCLT: 1.18.0
+STM32CubeProgrammer: 2.19.0
+RT-Thread Standard root: LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard
+RT-Thread Standard commit: ed74810e
+RT-Thread Env: 2.0.0
+
+Project Git status: unavailable; the project root contains an empty .git
+directory and is not currently recognized as a Git repository.

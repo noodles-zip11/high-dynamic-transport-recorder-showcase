@@ -1,0 +1,117 @@
+{
+  "schema": "hardware-acceptance-readback-v1",
+  "label": "g2-preflight",
+  "port": "COM7",
+  "started_at_utc": "2026-08-18T10:56:15.504790+00:00",
+  "read_only": true,
+  "pass": true,
+  "device_info": {
+    "model": "STM32H743",
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "serial_number": "recorder-001",
+    "capability_flags": 235
+  },
+  "health": {
+    "state": 2,
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "storage_error_count": 0,
+    "event_export_error_count": 0
+  },
+  "model_ota_query": {
+    "total_bytes": 0,
+    "verified_bytes": 0,
+    "pending_install": false,
+    "active_slot": 1,
+    "model_valid": true
+  },
+  "event_count": 39,
+  "event_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "identity_match": true,
+  "health_ok": true,
+  "model_ok": true,
+  "event_readback": {
+    "event_id": 39,
+    "listed": true,
+    "event_info": {
+      "event_id": 39,
+      "total_length": 38560,
+      "event_crc32": 3745476147
+    },
+    "download": {
+      "bytes": 38560,
+      "sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5"
+    },
+    "ai_result": {
+      "event_id": 39,
+      "model_version": 0,
+      "status": 2,
+      "class_index": 0,
+      "class_count": 0,
+      "quality_flags": 3,
+      "event_flags": 0,
+      "sample_count": 2400,
+      "model_crc32": 0,
+      "confidence": 0.0,
+      "logits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failure_reason": 1,
+      "result_sequence": 34
+    }
+  },
+  "event_readback_ok": true,
+  "ended_at_utc": "2026-08-18T10:56:23.886452+00:00",
+  "raw_log": {
+    "bytes": 90880,
+    "sha256": "8AEA43C61B6656E9492DF8AFF367F2DDD2C0F3637393B390213A82E2EAD57C2E"
+  },
+  "frame_summary": {
+    "bytes": 5398,
+    "sha256": "71B008848624A9C4AA26245ADFF137DF42B5E6A02DA7F974D8065974BAA547F6"
+  }
+}

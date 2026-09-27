@@ -1,0 +1,57 @@
+imu services=163709 samples=5238656 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=1 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=163708 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+ \ | /
+- RT -     Thread Operating System
+ / | \     5.3.0 build Aug 15 2026 17:44:49
+ 2006 - 2024 Copyright by RT-Thread team
+imu services=0 samples=0 fifo_max_bytes=0 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=0 
+event state=0 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+firmware_version=phase08-terp-uart3
+git_revision_or_local=local
+build_time=Aug 15 2026 17:44:41
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=322368
+thread_count=9
+msh >sysinfo
+firmware_version=phase08-terp-uart3
+git_revision_or_local=local
+build_time=Aug 15 2026 17:44:41
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=323552
+thread_count=8
+msh >
+msh >imu services=52 samples=1664 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=52 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=103 samples=3296 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=103 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=154 samples=4928 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=154 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=205 samples=6560 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=205 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=257 samples=8192 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=256 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+log status
+log state=1 events=1 next_id=2 next_offset=0x0000c000 jedec=ef4017
+msh >
+msh >imu services=308 samples=9856 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=308 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=359 samples=11488 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=359 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+log inspect
+recovery source=superblock_b generation=2 scanned=2 discarded=0 ticks=715
+msh >
+msh >imu services=410 samples=13120 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=410 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=461 samples=14752 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=461 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=513 samples=16384 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=512 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+

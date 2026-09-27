@@ -1,0 +1,10 @@
+=== SW-BOOTLOADER-REGRESSION-001 ===
+timestamp=2026-08-15T13:06:19.7802726+08:00
+scope=native Bootloader tests plus image size/map/stack checks; no hardware write
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\bootloader\tests\native'
+scons: `.' is up to date.
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\bootloader'
+scons: `build\bootloader.elf' is up to date.
+Bootloader image check: PASS (24880 bytes used of 131072 bytes; no RT-Thread symbols)
+Bootloader tests and image checks: PASS
+exit=0

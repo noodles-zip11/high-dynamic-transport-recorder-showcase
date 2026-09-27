@@ -1,0 +1,25 @@
+{
+  "label": "A",
+  "package_path": "evidence\\hardware-bringup\\2026-08-21\\core-acceptance-g3\\two-hour-preacceptance-001\\model\\model-a-v2.trmd",
+  "package": {
+    "bytes": 510,
+    "sha256": "0840CC6CFD2CD38D2ACFF6EB6956E60CB3A7DA7259E3934A700D653C53F2729C"
+  },
+  "started_at_utc": "2026-08-21T10:44:00.953526+00:00",
+  "finalize": {
+    "total_bytes": 510,
+    "verified_bytes": 510,
+    "pending_install": false,
+    "active_slot": 0,
+    "model_valid": true
+  },
+  "query_after_finalize": {
+    "total_bytes": 510,
+    "verified_bytes": 510,
+    "pending_install": false,
+    "active_slot": 0,
+    "model_valid": true
+  },
+  "pass": true,
+  "ended_at_utc": "2026-08-21T10:44:02.127024+00:00"
+}

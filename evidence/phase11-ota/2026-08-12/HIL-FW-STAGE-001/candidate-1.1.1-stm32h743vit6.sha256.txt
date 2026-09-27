@@ -1,0 +1,4 @@
+
+Algorithm : SHA256
+Hash      : 1DBEF7FCE406169FB6ED5373CF5E7880907A14B8BB1E9087A00E7E1C3A744019
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\ota\evidence\phase11-ota\2026-08-12\HIL-FW-STAGE-001\candidate-1.1.1-stm32h743vit6.trfw

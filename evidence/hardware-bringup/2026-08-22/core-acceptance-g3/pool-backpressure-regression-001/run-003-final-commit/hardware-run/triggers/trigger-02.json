@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-08-22T02:17:20.959789+00:00",
+  "command": "event trigger_test",
+  "response_bytes": 1173,
+  "prompt_seen": true,
+  "fatal_marker_seen": false,
+  "metrics": {
+    "fifo_count_err": 0,
+    "fifo_capacity_err": 0,
+    "fifo_read_err": 0,
+    "fifo_parse_err": 0,
+    "dma_start_err": 0,
+    "dma_timeout": 0,
+    "dma_complete_err": 0,
+    "pool_min_free": 49,
+    "pool_backpressure": 0,
+    "export_err": 0,
+    "resource_err": 0,
+    "queue_drop": 0,
+    "result_queue_drop": 0,
+    "store_err": 0,
+    "feature_err": 0,
+    "runtime_err": 0
+  },
+  "text": "event trigger_test\r\nmsh >\r\nmsh >imu services=8229 samples=263328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=8229 \r\nevent state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0\r\nai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994\r\nevent log write begins\r\nevent log write complete\r\nimu services=8331 samples=266592 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=49 pool_backpressure=0 blocks=8331 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nai model_ready=1 submitted=2 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=47 class=0 confidence_permille=994\r\n",
+  "trigger_index": 2
+}

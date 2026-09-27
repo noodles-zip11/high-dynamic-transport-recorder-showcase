@@ -1,0 +1,14 @@
+UART3 closure read-only evidence
+captured_at=2026-08-15T19:46:25.2343573+08:00
+--- uart3-ports-closure.json ---
+[{"description":"\u84dd\u7259\u94fe\u63a5\u4e0a\u7684\u6807\u51c6\u4e32\u884c (COM3)","device":"COM3","serial_number":null},{"description":"\u84dd\u7259\u94fe\u63a5\u4e0a\u7684\u6807\u51c6\u4e32\u884c (COM4)","device":"COM4","serial_number":null},{"description":"USB-SERIAL CH340 (COM8)","device":"COM8","serial_number":""}]
+--- uart3-info-closure.json ---
+{"capability_flags":43,"firmware_version":"phase08-terp-uart3","hardware_version":"openmv4-h743-pd8-pd9","model":"STM32H743","serial_number":"pending"}
+--- uart3-health-closure.json ---
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+--- results/uart3-events-list.json ---
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528},{"event_crc32":2376085022,"event_id":2,"total_length":38560}],"next_event_id":0}
+--- results/event-new-download.json ---
+{"event_id":2,"output":"evidence\\hardware-bringup\\2026-08-15\\main-two-hour-regression-001\\results\\event-new.bin"}
+--- results/event-new-decode.json ---
+{"data_loss_samples": 0, "event_export_error_count": 0, "event_id": 2, "format_version": 3, "host_full_record_crc32": 2376085022, "host_payload_crc32": 2985594667, "imu_dma_error_count": 0, "imu_transport_error_count": 0, "listed_record_crc32": 2376085022, "metadata_payload_crc32": 2985594667, "record_bytes": 38560, "sample_count": 2400, "sample_rate_hz": 1600, "storage_error_count": 0}

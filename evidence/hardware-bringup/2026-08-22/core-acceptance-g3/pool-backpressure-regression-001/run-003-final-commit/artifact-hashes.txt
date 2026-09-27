@@ -1,0 +1,8 @@
+fix_commit=0a9ff127c1a2a0a2596c1c61d616f06efc47af0f
+build_profile=Release
+device_serial=recorder-001
+program_address=0x08020000
+bin_bytes=129088
+bin_sha256=E7836F4D12B3FC7AAB6A7FE7FECF3262393EDCCC0B8785F8CB536D8A3D071D37
+source_and_staged_bin_sha256_match=true
+st_link_verify=PASS

@@ -1,0 +1,7 @@
+INFO DeviceInfo(model='STM32H743', firmware_version='phase08-terp-uart3', hardware_version='openmv4-h743-pd8-pd9', serial_number='pending', capability_flags=43)
+HEALTH HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 318, in _request
+    raise TransportError("TERP response timed out")
+transport_recorder.protocol.client.TransportError: TERP response timed out

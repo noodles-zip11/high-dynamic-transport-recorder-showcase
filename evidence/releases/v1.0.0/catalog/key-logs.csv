@@ -1,0 +1,5 @@
+relative_path,size_bytes,sha256,role,evidence_level
+evidence/v1/2026-08-24/software-gate.md,5980,d8b3a8dbee17513f6df10b2c6cbc2775469a77ea1eaa61f12136367e5d79f613,V1 software gate,software
+evidence/v1/2026-08-25/hardware-acceptance-001.md,5543,c6b7f940cc74aa2dfe4fd904095a1bdd83523397abb5a57ce84b80d85727a682,V1 hardware acceptance,hardware
+evidence/phase2-ai/2026-08-23/real-ai-pilot.md,4230,093c1088c39f4db5bf72c6b9572534be5d62ea6be38016ea228566542f58dd4a,real AI controlled pilot,ai_pilot
+evidence/hardware-bringup/2026-08-17/ai-pilot-hil/summary.md,3362,4480d2d6d509dfac12984c90f4c4d1ec115df7a111a06b9e05b8039040bb31ab,earlier AI HIL smoke,hardware

@@ -1,0 +1,348 @@
+{
+  "schema": "core-acceptance-g1-20260818-v5",
+  "date": "2026-08-18",
+  "gate": "G1",
+  "status": "PASS_MODEL_OTA_UART3_HOST_CONTROLLED_FAILURE",
+  "pre_merge_main_revision": "6195b65b810bab9d9ff07bb73dbd55468b0e7289",
+  "merged_main_revision": "4c47fe69b544ef9327300910d66f04927871f0dc",
+  "candidate_revision": "4c47fe69b544ef9327300910d66f04927871f0dc",
+  "candidate_branch": "fix/model-ota-finalize-stack",
+  "candidate_artifact": {
+    "profile": "Release",
+    "bin_length": 128952,
+    "bin_sha256": "BEDAE83E835A7A3F5E0CF402DFE31ED1038C1DDAB3F0D5BA91D30A5828250EA1",
+    "program_address": "0x08020000",
+    "st_link_serial": "DEVICE_SERIAL_REDACTED__",
+    "program_result": "download_verified_and_software_reset_success"
+  },
+  "merged_main_artifact": {
+    "profile": "Release",
+    "bin_length": 128952,
+    "bin_sha256": "2F0E676507D1591060BA759D8F81C6DE472D302988172A22DEF627365B5E878A",
+    "program_address": "0x08020000",
+    "st_link_serial": "DEVICE_SERIAL_REDACTED__",
+    "program_log": "merged-main-reflash/cubeprogrammer-program.log",
+    "program_log_sha256": "6E0F4D80CCD101226E1306C0A42784472359537164FB79E58CD984150300E769",
+    "post_reflash_smoke": "UART3 info/model/health readback succeeded; model_valid=true"
+  },
+  "device": {
+    "model": "STM32H743",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "serial_number": "recorder-001",
+    "voltage": "3.23V",
+    "flash_size": "2 MiB"
+  },
+  "transport": {
+    "port": "COM7",
+    "uart": "UART3",
+    "baud": 115200,
+    "format": "8N1",
+    "pins": "PD8/PD9"
+  },
+  "uart1_transport": {
+    "port": "COM7",
+    "uart": "UART1",
+    "baud": 115200,
+    "format": "8N1",
+    "pins": "PA9/PA10",
+    "vcc_disconnected": true
+  },
+  "model_packages": {
+    "A": {
+      "file": "model-a-v2.trmd",
+      "bytes": 510,
+      "sha256": "0840CC6CFD2CD38D2ACFF6EB6956E60CB3A7DA7259E3934A700D653C53F2729C",
+      "slot_semantics": "physical target slot alternates from the previous active slot"
+    },
+    "B": {
+      "file": "model-b-v3.trmd",
+      "bytes": 510,
+      "sha256": "E3DC4EDA4CD38E4455FABB57732223A51408DBBF020FCF5BFBA07BFC250AE110",
+      "slot_semantics": "physical target slot alternates from the previous active slot"
+    }
+  },
+  "required_actions": [
+    "UART3 model A to B to A activations",
+    "at least 26 complete activations to cross one state-bank GC",
+    "continuous events crossing one AI sidecar sector boundary",
+    "per-event raw record, GET_AI_RESULT, SQLite/UI/JSON comparison",
+    "restart and re-check"
+  ],
+  "completed_in_this_run": [
+    "Model A 510-byte begin/write/write/finalize completed with model_valid=true",
+    "candidate BIN BEDAE... logged 26 complete A/B alternating activations; every result had total_bytes=verified_bytes=510, pending_install=false and model_valid=true",
+    "merged-main BIN 2F0E... was reflashed, passed a post-merge Model A finalize, and then logged 26 further B/A alternating activations with physical active_slot toggling on every activation",
+    "UART3 remained responsive throughout the logged activation run with no observed HardFault",
+    "GET_HEALTH returned storage_ready=true and zero storage/event-export errors",
+    "UART1 FinSH baseline proved terp_rx uses a 4096-byte stack with a 3% observed high-water mark",
+    "UART1 generated events 6 through 38: 33/33 completed with event/export/resource errors at zero and AI submitted=processed=33",
+    "UART1 post-load observation recorded ai=91%, event=81%, terp_rx=3% and pool_backpressure=597 as non-gating risk observations",
+    "ST-Link software reset returned zero; post-reset boot reported AI result sidecar=ready and log recovery scanned=7 discarded=0",
+    "UART3 downloaded and validated event IDs 6 through 38 (33/33), compared GET_AI_RESULT with event identity/result sequence, and passed SQLite/UI/JSON/Host replay closure",
+    "Controlled model-unavailable diagnostic produced event 39 without Flash/QSPI writes; EV03 download CRC/decode, GET_AI_RESULT failure, Host persistence and annotation independence passed",
+    "After a physical power cycle, event 39 and its failure result remained readable while MODEL_OTA_QUERY reported model_valid=true and pending_install=false"
+  ],
+  "pending_actions": [
+    "complete the current-core G3 two-hour concurrent preacceptance",
+    "G2 controlled power-loss matrix and G3 physical reconnect/72-hour long-run remain DEFERRED_POST_CORE"
+  ],
+  "uart1_hardware_evidence": {
+    "review_status": "APPROVE_LIMITED_SUBGATES",
+    "review_thread": "codex://threads/01a00d9e-973c-7583-b2fb-09f79cdda5da",
+    "finsh_stack_baseline": {
+      "directory": "uart1-finsh-followup",
+      "raw": "uart1-finsh-followup/uart1-finsh.raw.bin",
+      "console": "uart1-finsh-followup/uart1-finsh.console.log",
+      "raw_bytes": 4505,
+      "raw_sha256": "07FCF7BEA829CB68385C1A6809E16F62DA8BED47B01F5AA062EE989A60233BD4",
+      "console_sha256": "2D981CF366E7C888428753566EA0652A200A220F85C6A84AA2D9FAA08F1E0B73",
+      "terp_rx_stack_bytes": 4096,
+      "terp_rx_observed_high_water_percent": 3
+    },
+    "continuous_event_boundary": {
+      "directory": "uart1-event-boundary",
+      "raw": "uart1-event-boundary/uart1-event-boundary.raw.bin",
+      "console": "uart1-event-boundary/uart1-event-boundary.console.log",
+      "raw_bytes": 54704,
+      "raw_sha256": "811584E4640D0DE7CA4685B2D30DF5E471FFEB48B349BCDA227D6915E7568253",
+      "console_sha256": "072ED37CE531FFB2AC64B487DE69DD73AD7AA843DA716429169E8A19DA37274C",
+      "event_id_range": "6-38",
+      "new_event_count": 33,
+      "event_completion": "33/33; each returned to event state 0",
+      "ai_submitted": 33,
+      "ai_processed": 33,
+      "event_export_resource_errors": 0,
+      "queue_store_feature_runtime_errors": 0,
+      "sidecar_write_boundary": "128-byte records and 4096-byte sectors imply 32 records/sector; 33 new results cover at least one sector boundary",
+      "sidecar_readback_status": "VERIFIED_IN_UART3_EVENT_READBACK"
+    },
+    "postload_stack_observation": {
+      "directory": "uart1-postload",
+      "raw": "uart1-postload/uart1-postload.raw.bin",
+      "console": "uart1-postload/uart1-postload.console.log",
+      "raw_bytes": 3205,
+      "raw_sha256": "30875B9F66552D56E6C1490C0503777C71A2D31A30424B9F4B5D52AA0A5DD6E1",
+      "console_sha256": "F9EF964C84D66CBD48EC4A034E295993740BA115D186AB6CBF7D467F4E837189",
+      "terp_rx_percent": 3,
+      "ai_percent": 91,
+      "event_percent": 81,
+      "pool_backpressure": 597,
+      "interpretation": "risk observation only; not a G3/B-08 pass"
+    },
+    "software_reset_remount": {
+      "directory": "uart1-software-reset-remount",
+      "raw": "uart1-software-reset-remount/uart1-software-reset-remount.raw.bin",
+      "console": "uart1-software-reset-remount/uart1-software-reset-remount.console.log",
+      "raw_bytes": 3761,
+      "raw_sha256": "E0E1ABBBAE2F1E59452E7FB2340C9D0269568736D7888FEB3DEF743497D44FA4",
+      "console_sha256": "78D0B11F501F44180D440CB41A2768F9FE675622BB8CB59454413E98D83E4529",
+      "stlink_reset_returncode": 0,
+      "sidecar_ready_after_reset": true,
+      "log_events_after_reset": 38,
+      "recovery_source": "superblock_b",
+      "recovery_generation": 4,
+      "recovery_scanned": 7,
+      "recovery_discarded": 0,
+      "power_cycle_status": "G0_PASS; G2_DEFERRED_POST_CORE; this is a single G1 recovery observation"
+    }
+  },
+  "uart3_event_readback_evidence": {
+    "review_status": "PASS",
+    "review_thread": "codex://threads/01a00d9e-973c-7583-b2fb-09f79cdda5da",
+    "directory": "uart3-event-readback-logged",
+    "port": "COM7",
+    "uart": "UART3",
+    "event_id_range": "6-38",
+    "event_count": 33,
+    "all_records_bytes": 38560,
+    "raw_uart_log": "uart3-event-readback-logged/uart3-terp.raw.log",
+    "raw_uart_log_bytes": 2686362,
+    "raw_uart_log_sha256": "AD171AC30230F1A344C7A8909BDB3500853215D121BE1BD4C5A094220D427D35",
+    "frame_summary": "uart3-event-readback-logged/uart3-frames.jsonl",
+    "frame_summary_bytes": 83246,
+    "frame_summary_sha256": "F4E6539A2B094C5B3C499EBDCF459A238A13E69DA4118AAF65067DB532793969",
+    "event_comparison": "uart3-event-readback-logged/event-comparison.jsonl",
+    "event_comparison_bytes": 47545,
+    "event_comparison_sha256": "40394D248EDC8C50A32FD4515ACC7E7E459488B8447471C704F2180515C93C5E",
+    "ai_results": "uart3-event-readback-logged/ai-results.jsonl",
+    "ai_results_bytes": 10316,
+    "ai_results_sha256": "94C79271AC6B7345D3BC26CD0A2396B463626578E0C92B95ACD23719945C6ABF",
+    "host_database": "uart3-event-readback-logged/host-replay/recorder.db",
+    "host_database_sha256": "812034E801D7F03139E0363CD73115BE14696746DD76E6A0749078DF2EB03B1E",
+    "machine_summary": "uart3-event-readback-logged/run-summary.json",
+    "machine_summary_bytes": 92512,
+    "machine_summary_sha256": "C6FC8510DA6B8A9705D41152D563D04B575A6513A347A8A930199D19F09229B6",
+    "checks": [
+      "event identity and result sequence increased 1 through 33",
+      "model version/status/failure identity matched each result",
+      "raw event CRC and EV02/EV03 decode passed",
+      "SQLite, JSON export and Qt replay passed",
+      "label and note remained separate from model result"
+    ]
+  },
+  "controlled_model_failure_evidence": {
+    "review_status": "PASS",
+    "review_thread": "codex://threads/01a00d9e-973c-7583-b2fb-09f79cdda5da",
+    "directory": "stlink-controlled-model-failure",
+    "injection_scope": "ST-Link SWD volatile SRAM diagnostic injection only; not a public UART command; no Flash/QSPI write",
+    "successful_injection_log": "stlink-controlled-model-failure.log",
+    "successful_injection_log_bytes": 2623,
+    "successful_injection_log_sha256": "4EAA6E28E336416A39EC19932D38D80A70DBF6EA5C636195E1C0C6E17CFBBAAE",
+    "historical_gdb_diagnostic_logs": [
+      {
+        "path": "gdb-controlled-model-failure.log",
+        "bytes": 1631,
+        "sha256": "62761AF03559F7B34BB3AEEFEEB3DC49F0991E02B16F9A041050B04AB5B4ECDC",
+        "role": "historical failed attempt; no acceptance event"
+      },
+      {
+        "path": "gdb-controlled-model-failure-after-reset.log",
+        "bytes": 1515,
+        "sha256": "EBCF262F367BC5B8CCE4604B69326177FE21936E291600DD655878209340CAFC",
+        "role": "historical failed attempt; no acceptance event"
+      },
+      {
+        "path": "gdb-controlled-model-failure-after-power-cycle.log",
+        "bytes": 251,
+        "sha256": "C7CBE728540645CAA5B4BCA1663041D5BAD9979707D2D9E1267BBF4104BD8A5D",
+        "role": "historical failed attempt; no acceptance event"
+      },
+      {
+        "path": "gdb-controlled-model-failure-booted.log",
+        "bytes": 178,
+        "sha256": "45C5E7A403EA3056F79118E6D661704AC9442DF70AF01FB4BB514768CFFB4A56",
+        "role": "historical failed attempt; no acceptance event"
+      }
+    ],
+    "target_event": {
+      "event_id": 39,
+      "format": "EV03",
+      "bytes": 38560,
+      "device_crc32": 3745476147,
+      "downloaded_full_record_crc32": 3745476147,
+      "raw_event": "stlink-controlled-model-failure/raw-events/39.terp-event",
+      "raw_event_sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5",
+      "decoded_sample_count": 2400
+    },
+    "ai_result": {
+      "path": "stlink-controlled-model-failure/ai-result.json",
+      "sha256": "C90E237ABDC8C0796FE0BA29DD12C29D83D80D2ED23D749DCA2A97FA7211AF71",
+      "status": 2,
+      "failure_reason": 1,
+      "model_version": 0,
+      "model_crc32": 0,
+      "result_sequence": 34
+    },
+    "comparison": {
+      "path": "stlink-controlled-model-failure/event-comparison.json",
+      "bytes": 3404,
+      "sha256": "47BF7028D758E44457C4B3C6CB41B28D830A2890E5FBE2E253527789B44CC1F3",
+      "raw_event_preserved_independently_of_ai": true,
+      "annotation_independent_from_ai": true,
+      "host_sqlite_valid": true,
+      "host_json_valid": true,
+      "ui_event_id_match": true
+    },
+    "uart3_raw_io": {
+      "path": "stlink-controlled-model-failure/uart3-raw-io.jsonl",
+      "bytes": 63308,
+      "sha256": "D9DA6545A38D954DA90CB7B5737208E5BA449FE18B212C4A1C965B8726F96E00"
+    },
+    "uart3_frames": {
+      "path": "stlink-controlled-model-failure/uart3-frames.jsonl",
+      "bytes": 3569,
+      "sha256": "FEFD8474268480E98F5C1D695910FCDDA53C46A34C42BD7A188697C4257C49BA"
+    },
+    "host_database": {
+      "path": "stlink-controlled-model-failure/host-replay/recorder.db",
+      "bytes": 36864,
+      "sha256": "1455892A89BBCC567000562A10E4AC86B320B16A4A9C123CA48EF566185AFE8B"
+    },
+    "host_json": {
+      "path": "stlink-controlled-model-failure/host-replay/exports/39.json",
+      "bytes": 1652,
+      "sha256": "9CE162302DCEDF5A0D02F2E8BD7D369DBA878F1BA0A84EFDA599C6C5D1199012"
+    },
+    "recovery_after_power_cycle": {
+      "path": "stlink-controlled-model-failure/recovery-after-power-cycle.json",
+      "bytes": 1377,
+      "sha256": "1548C94DF7E88610E0E9DB30087581C895DF6FCC0ADFBD7637B67634BCCEC6FA",
+      "storage_ready": true,
+      "storage_error_count": 0,
+      "event_export_error_count": 0,
+      "event_39_persisted": true,
+      "ai_failure_result_persisted": true,
+      "model_valid": true,
+      "pending_install": false
+    },
+    "machine_summary": {
+      "path": "stlink-controlled-model-failure/run-summary.json",
+      "bytes": 5619,
+      "sha256": "77E0FE5CAB9B0DE4FA1A4F7E2254CECACF38DE57D5F9BDA82559E14A1E05417D",
+      "status": "PASS"
+    }
+  },
+  "health_observation": {
+    "state": 2,
+    "state_name": "HEALTH_DEGRADED",
+    "storage_ready": true,
+    "free_log_bytes": 0,
+    "storage_error_count": 0,
+    "event_export_error_count": 0,
+    "interpretation": "model OTA sub-gate observation only; not an overall health PASS"
+  },
+  "logged_activation_evidence": {
+    "directory": "model-ota-activation-logged",
+    "raw_uart3_log": "model-ota-activation-logged/uart3-activation.raw.log",
+    "frame_summary": "model-ota-activation-logged/uart3-frames.jsonl",
+    "machine_summary": "model-ota-activation-logged/run-summary.json",
+    "activation_count": 26,
+    "raw_log_sha256": "9D693488F130EB9168D11F1BFA336646F27BDF1B7EFF6054A8F1D0F0333C26CA",
+    "frame_summary_sha256": "D080A0BEE204EB893F8CF4517BC506F6135628114227226D0C9D324185442B5A",
+    "machine_summary_sha256": "DBED280839F11977D53ACDCAE9A227D04F3CF66668F3F6AEE03A89DBCBD050D6"
+  },
+  "merged_main_logged_activation_evidence": {
+    "directory": "model-ota-activation-logged-main",
+    "raw_uart3_log": "model-ota-activation-logged-main/uart3-activation.raw.log",
+    "frame_summary": "model-ota-activation-logged-main/uart3-frames.jsonl",
+    "machine_summary": "model-ota-activation-logged-main/run-summary.json",
+    "activation_count": 26,
+    "sequence": "B-A-B-A repeated; preceded by merged-main Model A finalize",
+    "raw_log_sha256": "BEA122C271A9A2AF1F1EB64ED355CD0307F89AAA63B63DA4481BE60C0564B6E1",
+    "frame_summary_sha256": "D080A0BEE204EB893F8CF4517BC506F6135628114227226D0C9D324185442B5A",
+    "machine_summary_sha256": "7644080CFEEC8EF605748B92165D2D3B0B11E194A9F06B96C024A907C20DB1B0"
+  },
+  "artifact_difference_note": "BEDAE... and 2F0E... are separate builds of the same 4c47fe6 source; they differ in 11 bytes from __TIME__ strings, so evidence is attributed to each exact BIN separately",
+  "historical_failure": {
+    "stage": "model_a_finalize",
+    "terp_result": "response_timeout",
+    "fault": "HardFault",
+    "cfsr": "0x01000000",
+    "fault_class": "UFSR_UNALIGNED",
+    "stacked_pc": "0x08033730",
+    "pc_symbol": "icm45686_read_fifo_count",
+    "root_cause": "optimized unaligned halfword load from the SPI response buffer"
+  },
+  "software_fix_review": {
+    "branch": "fix/model-ota-finalize-stack",
+    "worktree": "LOCAL_USER_HOME/Desktop/高动态运输事件记录器-worktrees/fix-model-ota-finalize-stack",
+    "review_thread": "codex://threads/01a00d9e-973c-7583-b2fb-09f79cdda5da",
+    "review_status": "APPROVE",
+    "verification": [
+      "Native and Bootloader tests PASS",
+      "Host 131 passed",
+      "AI 66 passed",
+      "Release ARM build and memory map PASS",
+      "ICM45686 dual-path disassembly alignment gate PASS"
+    ],
+    "change": "TERP_UART3_THREAD_STACK_BYTES 2048 -> 4096",
+    "hardware_result": "candidate image Model A finalize and 26 online activations passed"
+  },
+  "hardware_review": {
+    "review_thread": "codex://threads/01a00d9e-973c-7583-b2fb-09f79cdda5da",
+    "status": "PASS",
+    "conclusion": "PASS: UART3 raw event/GET_AI_RESULT/Host closure, controlled model-unavailable failure with raw-event preservation, annotation independence and post-power-cycle recovery are indexed and verified. G0 is PASS; G2 and G3 physical/72-hour reliability contracts are DEFERRED_POST_CORE; the current core blocker is G3 two-hour preacceptance.",
+    "standards_findings": [],
+    "spec_findings": []
+  }
+}

@@ -1,0 +1,62 @@
+COMMAND 'initial prompt' bytes=1440
+imu services=2817 samples=90144 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=2817 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=2868 samples=91776 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=2868 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=2919 samples=93408 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=2919 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=2971 samples=95040 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=2970 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+imu services=3022 samples=96704 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3022 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+COMMAND 'sysinfo' bytes=223
+sysinfo
+firmware_version=phase08-terp-uart3
+git_revision_or_local=local
+build_time=Aug 14 2026 19:23:23
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=331024
+thread_count=8
+msh >
+msh >
+COMMAND 'log status before format' bytes=582
+log status
+log state=1 events=0 next_id=1 next_offset=0x00002000 jedec=ef4017
+msh >
+msh >imu services=3073 samples=98336 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3073 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+firmware_version=phase08-terp-uart3
+git_revision_or_local=local
+build_time=Aug 14 2026 19:23:23
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=331024
+thread_count=8
+
+COMMAND 'event status before format' bytes=97
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >
+COMMAND 'log status after format/skip' bytes=92
+log status
+log state=1 events=0 next_id=1 next_offset=0x00002000 jedec=ef4017
+msh >
+msh >
+COMMAND 'event arm' bytes=23
+event arm
+msh >
+msh >
+COMMAND 'event trigger_test' bytes=321
+imu services=3125 samples=100000 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3125 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+event trigger_test
+msh >
+msh >
+imu services=3176 samples=101632 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=3176 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+event log write begins

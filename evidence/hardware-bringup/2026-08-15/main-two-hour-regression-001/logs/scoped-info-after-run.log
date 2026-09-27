@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\main-hardware-regression-20260815\host\transport_recorder\cli.py", line 22, in <module>
+    from .protocol.serial_transport import SerialTransport, list_serial_ports
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\main-hardware-regression-20260815\host\transport_recorder\protocol\serial_transport.py", line 7, in <module>
+    import serial
+ModuleNotFoundError: No module named 'serial'

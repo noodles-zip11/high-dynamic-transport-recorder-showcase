@@ -1,0 +1,25 @@
+bad-hardware-id CONNECT=1
+bad-hardware-id BEGIN=(147188, 0, 0)
+bad-hardware-id UPLOAD=(147188, 147188, 0)
+bad-hardware-id FINALIZE_REJECTED code=5 request=0x0103
+bad-hardware-id QUERY_AFTER_REJECT=(147188, 147188, 0)
+bad-hardware-id CANCEL_SENT
+bad-hardware-id-settle CONNECT=1
+bad-hardware-id CANCEL_SETTLED=(0, 0, 0)
+bad-target-address CONNECT=1
+bad-target-address BEGIN=(147188, 0, 0)
+bad-target-address UPLOAD=(147188, 147188, 0)
+bad-target-address FINALIZE_REJECTED code=5 request=0x0103
+bad-target-address QUERY_AFTER_REJECT=(147188, 147188, 0)
+bad-target-address CANCEL_SENT
+bad-target-address-settle CONNECT=1
+bad-target-address CANCEL_SETTLED=(0, 0, 0)
+bad-payload-crc CONNECT=1
+bad-payload-crc BEGIN=(147188, 0, 0)
+bad-payload-crc UPLOAD=(147188, 147188, 0)
+bad-payload-crc FINALIZE_REJECTED code=5 request=0x0103
+bad-payload-crc QUERY_AFTER_REJECT=(147188, 147188, 0)
+bad-payload-crc CANCEL_SENT
+bad-payload-crc-settle CONNECT=1
+bad-payload-crc CANCEL_SETTLED=(0, 0, 0)
+HIL-FW-BADPKG-004 REMAINING PASS

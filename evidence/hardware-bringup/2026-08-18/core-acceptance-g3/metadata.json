@@ -1,0 +1,53 @@
+{
+  "schema": "core-acceptance-g3-20260818-v1",
+  "date": "2026-08-18",
+  "gate": "G3",
+  "status": "CURRENT_CORE_PENDING_TWO_HOUR_PREACCEPTANCE",
+  "current_core_scope": "Only the two-hour concurrent preacceptance is required before current core-delivery closeout.",
+  "main_revision": "4c47fe69b544ef9327300910d66f04927871f0dc",
+  "release_bin_sha256": "2F0E676507D1591060BA759D8F81C6DE472D302988172A22DEF627365B5E878A",
+  "device_serial": "recorder-001",
+  "transport": {
+    "uart3_port": "COM7",
+    "uart3_role": "UART3/TERP",
+    "baud": 115200,
+    "format": "8N1",
+    "pins": "PD8/PD9"
+  },
+  "physical_reconnect": {
+    "historical_reported_rounds": 7,
+    "target_rounds": 20,
+    "additional_planned_rounds": 13,
+    "status": "DEFERRED_POST_CORE",
+    "formal_confirmation_required": true,
+    "skip_physical_prompt_formal_use": false,
+    "diagnostic_status_when_skipped": "DIAGNOSTIC_NOT_PHYSICAL"
+  },
+  "diagnostic_dry_run": {
+    "status": "DIAGNOSTIC_NOT_PHYSICAL",
+    "formal_pass_eligible": false,
+    "physical_confirmation": false,
+    "rounds": 1,
+    "path": "diagnostic-dry-run/results.json"
+  },
+  "long_run": {
+    "two_hour_preacceptance": "PENDING_CURRENT_CORE",
+    "seventy_two_hour_continuous_run": "DEFERRED_POST_CORE",
+    "status": "CURRENT_CORE_TWO_HOUR_ONLY"
+  },
+  "required_metrics": [
+    "hardfault_assert_unexpected_reset",
+    "ev03_lost_samples",
+    "ai_queue_drop",
+    "pool_minimum",
+    "pool_backpressure",
+    "task_stack_high_water",
+    "storage_and_event_export_errors",
+    "event_and_ai_result_traceability"
+  ],
+  "evidence": {
+    "readme": "evidence/hardware-bringup/2026-08-18/core-acceptance-g3/README.md",
+    "readback_tool": "scripts/hardware_acceptance_readback.py",
+    "physical_matrix_tool": "scripts/terp_physical_matrix.ps1"
+  }
+}

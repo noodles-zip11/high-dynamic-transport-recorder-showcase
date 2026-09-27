@@ -1,0 +1,62 @@
+{
+  "ai_result_39": {
+    "class_count": 0,
+    "class_index": 0,
+    "confidence": 0.0,
+    "event_flags": 0,
+    "event_id": 39,
+    "failure_reason": 1,
+    "logits": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "model_crc32": 0,
+    "model_version": 0,
+    "quality_flags": 3,
+    "result_sequence": 34,
+    "sample_count": 2400,
+    "status": 2
+  },
+  "assertions": {
+    "ai_failure_result_persisted": true,
+    "event_39_persisted": true,
+    "export_errors_zero": true,
+    "model_valid_after_power_cycle": true,
+    "no_pending_install": true,
+    "storage_errors_zero": true,
+    "storage_ready": true
+  },
+  "device_info": {
+    "capability_flags": 235,
+    "firmware_version": "phase08-terp-uart3",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "model": "STM32H743",
+    "serial_number": "recorder-001"
+  },
+  "event_39": [
+    {
+      "event_crc32": 3745476147,
+      "event_id": 39,
+      "total_length": 38560
+    }
+  ],
+  "health": {
+    "event_export_error_count": 0,
+    "free_log_bytes": 0,
+    "state": 2,
+    "storage_error_count": 0,
+    "storage_ready": true
+  },
+  "model_ota_query": {
+    "active_slot": 1,
+    "model_valid": true,
+    "pending_install": false,
+    "total_bytes": 0,
+    "verified_bytes": 0
+  },
+  "next_event_id": 0,
+  "port": "COM7",
+  "uart": "UART3"
+}

@@ -1,0 +1,12 @@
+from building import DefineGroup, GetCurrentDir
+
+
+current_dir = GetCurrentDir()
+group = DefineGroup(
+    "OtaCore",
+    ["ota_crc32.c", "ota_sha256.c", "ota_package.c", "ota_slots.c", "ota_state.c"],
+    depend=[""],
+    CPPPATH=[current_dir],
+)
+
+Return("group")

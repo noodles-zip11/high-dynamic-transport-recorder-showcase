@@ -1,0 +1,10 @@
+{
+  "firmware_version": "candidate-1.1.0",
+  "hardware_id": "openmv4-h743",
+  "image_crc32": "0xD2DF2BCC",
+  "image_length": 146992,
+  "image_sha256": "5b14233fcdbae35fbc32523991ee52403e915d73e111f829901b8936228c1443",
+  "minimum_bootloader_version": "1.0.0",
+  "product_id": "transport-recorder",
+  "target_address": "0x08020000"
+}

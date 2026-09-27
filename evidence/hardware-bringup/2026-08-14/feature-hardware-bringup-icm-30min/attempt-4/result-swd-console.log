@@ -1,0 +1,39 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+
+
+Log output file:   LOCAL_USER_HOME\AppData\Local\Temp\codex-icm30-20260814\result-swd.log
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Core halted
+
+Reading 32-bit memory content
+  Size          : 136 Bytes
+  Address:      : 0x30004940
+
+0x30004940 : 53444C32 00000000 00000000 00000000
+0x30004950 : 00000000 0000000D 00000007 0004646D
+0x30004960 : 00000000 07210000 00000007 00000000
+0x30004970 : 00000000 00000000 00000000 00000000
+0x30004980 : 00000000 00000000 00000000 00000000
+0x30004990 : 00000000 00038918 0004646D 002BEC42
+0x300049A0 : 000000A0 00000000 00000000 00000000
+0x300049B0 : 00000000 00000000 00000000 00000000
+0x300049C0 : 00000000 00000001
+
+

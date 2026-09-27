@@ -1,0 +1,12 @@
+PACKAGE bad-product-id bytes=147188 sha256=8cfd845538f3c43fe0cd1becb4009b1122ac5439309f90b0fb1c83a19101b92f
+PACKAGE bad-hardware-id bytes=147188 sha256=63cfff8ff9c28ac0959edac5a0fb42cc1fdfee837a2f44d356f30be9df1e59e2
+PACKAGE bad-target-address bytes=147188 sha256=84942e788a602b8bdb9e4f848e0d1016b66afac3acb3685d7ce521fc49d5fc16
+PACKAGE bad-payload-crc bytes=147188 sha256=85c38709efa1f5adc84a668d8d65beaa05b03aa58de76a5fd132f2844731dbc8
+bad-product-id CONNECT attempt=1
+bad-product-id BEGIN=(147188, 0, 0)
+bad-product-id UPLOAD_COMPLETE=(147188, 147188, 0)
+bad-product-id FINALIZE_REJECTED code=5 request=0x0103
+bad-product-id QUERY_AFTER_REJECT=(147188, 147188, 0)
+Traceback (most recent call last):
+  File "<stdin>", line 55, in <module>
+TypeError: TerpClient._request() missing 1 required positional argument: 'payload'

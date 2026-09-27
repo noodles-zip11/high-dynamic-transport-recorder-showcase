@@ -1,0 +1,329 @@
+{
+  "dataset_manifest_sha256": "32a79446620bbf1c549ad5833febd708a3786a5af444e3667b060b7547092931",
+  "feature_matrix_sha256": "bbc7faef1305254542e3dd0668409ddbce293969be234ed74fc0ae16c6f99394",
+  "model_manifest_sha256": "ae90f42663b224330c35c457084e17d33f4040a4c2434ce7209daed9bf23019b",
+  "weights_sha256": "6f095ed0f1df634ecca5b1fa9d901fcf89085ae4a77111233ff8877baac1fa64",
+  "generated_c_sha256": "6efb9e555325fb2a15f29b1d7e9dfbdd8fae17ac9d2864ae7694e44c7a9db526",
+  "training_revision": "203bfaa55ab905375c640216e78b8d438e25a89c",
+  "training_config": {
+    "seed": 20260816,
+    "hidden_units": 8,
+    "epochs": 400,
+    "learning_rate": 0.03,
+    "l2": 0.0001
+  },
+  "float_reference_metrics": {
+    "train_accuracy": 0.9861111111111112,
+    "validation_accuracy": 1.0,
+    "test_accuracy": 1.0
+  },
+  "float_split_groups": {
+    "train": [
+      "bench_bg_02",
+      "bench_bg_03",
+      "bench_impact_01",
+      "legacy_impact"
+    ],
+    "validation": [
+      "bench_impact_02",
+      "legacy_bg"
+    ],
+    "test": [
+      "bench_bg_01",
+      "bench_impact_03"
+    ]
+  },
+  "quantized_runtime_evaluation": {
+    "overall_accuracy": 0.9931506849315068,
+    "misclassified_ids": [
+      62
+    ],
+    "misclassified_groups": [
+      "bench_impact_01"
+    ],
+    "counts": {
+      "background": {
+        "n": 89,
+        "correct": 89
+      },
+      "impact": {
+        "n": 57,
+        "correct": 56
+      }
+    },
+    "train": {
+      "accuracy": 0.9861111111111112,
+      "n": 72,
+      "groups": [
+        "bench_bg_02",
+        "bench_bg_03",
+        "bench_impact_01",
+        "legacy_impact"
+      ],
+      "misclassified_indices": [
+        62
+      ]
+    },
+    "validation": {
+      "accuracy": 1.0,
+      "n": 46,
+      "groups": [
+        "bench_impact_02",
+        "legacy_bg"
+      ],
+      "misclassified_indices": []
+    },
+    "test": {
+      "accuracy": 1.0,
+      "n": 28,
+      "groups": [
+        "bench_bg_01",
+        "bench_impact_03"
+      ],
+      "misclassified_indices": []
+    }
+  },
+  "seed_stability": [
+    {
+      "seed": 20260811,
+      "train_accuracy": 0.9841269841269841,
+      "validation_accuracy": 0.8918918918918919,
+      "test_accuracy": 0.9782608695652174,
+      "split_groups": {
+        "train": [
+          "bench_bg_01",
+          "bench_bg_02",
+          "bench_impact_03",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_bg_03",
+          "bench_impact_01"
+        ],
+        "test": [
+          "bench_impact_02",
+          "legacy_bg"
+        ]
+      }
+    },
+    {
+      "seed": 20260812,
+      "train_accuracy": 0.9629629629629629,
+      "validation_accuracy": 1.0,
+      "test_accuracy": 0.8108108108108109,
+      "split_groups": {
+        "train": [
+          "bench_bg_02",
+          "bench_impact_02",
+          "legacy_bg",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_bg_01",
+          "bench_impact_03"
+        ],
+        "test": [
+          "bench_bg_03",
+          "bench_impact_01"
+        ]
+      }
+    },
+    {
+      "seed": 20260813,
+      "train_accuracy": 0.9841269841269841,
+      "validation_accuracy": 0.9130434782608695,
+      "test_accuracy": 0.972972972972973,
+      "split_groups": {
+        "train": [
+          "bench_bg_01",
+          "bench_bg_02",
+          "bench_impact_03",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_impact_01",
+          "legacy_bg"
+        ],
+        "test": [
+          "bench_bg_03",
+          "bench_impact_02"
+        ]
+      }
+    },
+    {
+      "seed": 20260814,
+      "train_accuracy": 0.9583333333333334,
+      "validation_accuracy": 0.8913043478260869,
+      "test_accuracy": 1.0,
+      "split_groups": {
+        "train": [
+          "bench_bg_01",
+          "bench_bg_03",
+          "bench_impact_02",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_impact_01",
+          "legacy_bg"
+        ],
+        "test": [
+          "bench_bg_02",
+          "bench_impact_03"
+        ]
+      }
+    },
+    {
+      "seed": 20260815,
+      "train_accuracy": 0.9864864864864865,
+      "validation_accuracy": 1.0,
+      "test_accuracy": 0.9428571428571428,
+      "split_groups": {
+        "train": [
+          "bench_bg_02",
+          "bench_impact_01",
+          "bench_impact_03",
+          "legacy_bg"
+        ],
+        "validation": [
+          "bench_bg_01",
+          "bench_impact_02"
+        ],
+        "test": [
+          "bench_bg_03",
+          "legacy_impact"
+        ]
+      }
+    },
+    {
+      "seed": 20260816,
+      "train_accuracy": 0.9861111111111112,
+      "validation_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "split_groups": {
+        "train": [
+          "bench_bg_02",
+          "bench_bg_03",
+          "bench_impact_01",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_impact_02",
+          "legacy_bg"
+        ],
+        "test": [
+          "bench_bg_01",
+          "bench_impact_03"
+        ]
+      }
+    },
+    {
+      "seed": 20260817,
+      "train_accuracy": 0.9876543209876543,
+      "validation_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "split_groups": {
+        "train": [
+          "bench_bg_03",
+          "bench_impact_01",
+          "legacy_bg",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_bg_01",
+          "bench_impact_02"
+        ],
+        "test": [
+          "bench_bg_02",
+          "bench_impact_03"
+        ]
+      }
+    },
+    {
+      "seed": 20260818,
+      "train_accuracy": 0.9753086419753086,
+      "validation_accuracy": 1.0,
+      "test_accuracy": 0.8378378378378378,
+      "split_groups": {
+        "train": [
+          "bench_bg_01",
+          "bench_impact_02",
+          "legacy_bg",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_bg_02",
+          "bench_impact_03"
+        ],
+        "test": [
+          "bench_bg_03",
+          "bench_impact_01"
+        ]
+      }
+    },
+    {
+      "seed": 20260819,
+      "train_accuracy": 0.972972972972973,
+      "validation_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "split_groups": {
+        "train": [
+          "bench_bg_02",
+          "bench_bg_03",
+          "bench_impact_01",
+          "bench_impact_02"
+        ],
+        "validation": [
+          "bench_bg_01",
+          "legacy_impact"
+        ],
+        "test": [
+          "bench_impact_03",
+          "legacy_bg"
+        ]
+      }
+    },
+    {
+      "seed": 20260820,
+      "train_accuracy": 0.9861111111111112,
+      "validation_accuracy": 0.972972972972973,
+      "test_accuracy": 0.8918918918918919,
+      "split_groups": {
+        "train": [
+          "bench_bg_02",
+          "bench_impact_03",
+          "legacy_bg",
+          "legacy_impact"
+        ],
+        "validation": [
+          "bench_bg_03",
+          "bench_impact_02"
+        ],
+        "test": [
+          "bench_bg_01",
+          "bench_impact_01"
+        ]
+      }
+    }
+  ],
+  "excluded_event_ids": [
+    151,
+    158,
+    162,
+    172,
+    178,
+    188,
+    191,
+    196,
+    201,
+    202,
+    203,
+    204
+  ],
+  "warning": "pilot controlled bench simulation; no field box-in-box HIL validation; seed sensitivity reflects small session count",
+  "c_runtime_smoke": {
+    "status": "pass",
+    "vectors": 3,
+    "model_validation": "pass",
+    "notes": "native GCC harness linked generated ai_model_data.c with firmware ai_runtime.c and ota_crc32.c"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "pool-backpressure-smoke-v1",
+  "status": "SCOPED_PASS",
+  "uart1": "COM6",
+  "uart3": "COM7",
+  "duration_seconds": 360.0,
+  "heartbeat_seconds": 15.0,
+  "trigger_offsets": [
+    20.0,
+    140.0,
+    260.0
+  ],
+  "started_at_utc": "2026-08-22T02:04:15.567825+00:00",
+  "t0_started_at_utc": "2026-08-22T02:04:28.934859+00:00",
+  "ended_at_utc": "2026-08-22T02:10:51.663949+00:00",
+  "trigger_count": 3,
+  "new_event_ids": [
+    44,
+    45,
+    46
+  ],
+  "event_readback_count": 3,
+  "heartbeat_count": 24,
+  "counter_max": {
+    "fifo_count_err": 0,
+    "fifo_capacity_err": 0,
+    "fifo_read_err": 0,
+    "fifo_parse_err": 0,
+    "dma_start_err": 0,
+    "dma_timeout": 0,
+    "dma_complete_err": 0,
+    "pool_backpressure": 0,
+    "export_err": 0,
+    "resource_err": 0,
+    "queue_drop": 0,
+    "result_queue_drop": 0,
+    "store_err": 0,
+    "feature_err": 0,
+    "runtime_err": 0
+  },
+  "critical_counters": {},
+  "pool_min_free_min": 51,
+  "fatal_marker_seen": false,
+  "error": null,
+  "pass_candidate": true,
+  "scope": "short event-export regression; not the deferred two-hour G3 gate",
+  "uart1_raw": {
+    "bytes": 237268,
+    "sha256": "78D602C658CB62D4C9C5EAA7022DBCBFF5BC92C64B235FBF9B9B1155C148799F"
+  },
+  "uart1_console": {
+    "bytes": 243835,
+    "sha256": "26C7C72AADF3BA56E0B03C09D712068493CF7646BEDCE6F9997C3BC36844469E"
+  },
+  "uart3_raw": {
+    "bytes": 331207,
+    "sha256": "A99964F99521FE674C2C3CB9827663EA86D8F19277FC49082ACC7C4445C5A256"
+  }
+}

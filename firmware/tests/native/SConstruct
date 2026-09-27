@@ -1,0 +1,650 @@
+import os
+
+native_toolchain = os.environ.get(
+    "NATIVE_TOOLCHAIN_PATH",
+    r"C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin",
+)
+native_gcc = os.path.join(native_toolchain, "gcc.exe")
+
+if not os.path.isfile(native_gcc):
+    raise RuntimeError(f"Native GCC not found: {native_gcc}")
+
+env = Environment(
+    tools=["mingw"],
+    ENV=os.environ,
+)
+env.PrependENVPath("PATH", native_toolchain)
+env.Replace(CC="gcc", LINK="gcc")
+env.Append(CCFLAGS=["-Wall", "-Wextra"])
+env.Append(CPPPATH=[
+    "include",
+    "../../app",
+    "../../app/acquisition",
+    "../../app/pipeline",
+    "../../app/event",
+    "../../app/storage",
+    "../../app/diagnostics",
+    "../../app/ota",
+    "../../app/runtime",
+    "../../app/reliability",
+    "../../app/health",
+    "../../app/environment",
+    "../../app/reset_power",
+    "../../app/time",
+    "../../app/transport",
+    "../../app/ai_inference",
+    "../../app/power",
+    "../../config",
+    "../../drivers/icm45686",
+    "../../drivers/sht4x",
+    "../../components/storage",
+    "../../components/protocol",
+    "../../components/ota",
+    "../../bsp/weact_h743",
+])
+
+gc_env = env.Clone()
+gc_env.Append(CCFLAGS=["-ffunction-sections"])
+gc_env.Append(LINKFLAGS=["-Wl,--gc-sections"])
+
+critical_env = env.Clone()
+critical_env.Append(CPPDEFINES=["NATIVE_POWER_CRITICAL_TEST"])
+
+system_report_format_object = env.Object(
+    target=os.path.join("build", "system_report_format.o"),
+    source="../../app/diagnostics/system_report_format.c",
+)
+
+power_policy_object = critical_env.Object(
+    target=os.path.join("build", "power_policy.o"),
+    source="../../app/power/power_policy.c",
+)
+
+power_status_format_object = env.Object(
+    target=os.path.join("build", "power_status_format.o"),
+    source="../../app/power/power_status_format.c",
+)
+
+board_power_openmv_object = env.Object(
+    target=os.path.join("build", "board_power_openmv4.o"),
+    source="../../bsp/openmv4_h743/board_power.c",
+)
+
+board_power_weact_object = env.Object(
+    target=os.path.join("build", "board_power_weact.o"),
+    source="../../bsp/weact_h743/board_power.c",
+)
+
+power_runtime_object = critical_env.Object(
+    target=os.path.join("build", "power_runtime.o"),
+    source="../../app/power/power_runtime.c",
+)
+
+icm45686_object = env.Object(
+    target=os.path.join("build", "icm45686.o"),
+    source="../../drivers/icm45686/icm45686.c",
+)
+
+icm45686_fifo_object = env.Object(
+    target=os.path.join("build", "icm45686_fifo.o"),
+    source="../../drivers/icm45686/icm45686_fifo.c",
+)
+
+imu_acquisition_service_object = env.Object(
+    target=os.path.join("build", "imu_acquisition_service.o"),
+    source="../../app/acquisition/imu_acquisition_service.c",
+)
+
+imu_dma_power_guard_object = env.Object(
+    target=os.path.join("build", "imu_dma_power_guard.o"),
+    source="../../app/acquisition/imu_dma_power_guard.c",
+)
+
+imu_sample_batcher_object = env.Object(
+    target=os.path.join("build", "imu_sample_batcher.o"),
+    source="../../app/acquisition/imu_sample_batcher.c",
+)
+
+imu_acquisition_stats_object = env.Object(
+    target=os.path.join("build", "imu_acquisition_stats.o"),
+    source="../../app/acquisition/imu_acquisition_stats.c",
+)
+
+sample_block_pool_object = env.Object(
+    target=os.path.join("build", "sample_block_pool.o"),
+    source="../../app/pipeline/sample_block_pool.c",
+)
+
+trigger_detector_object = env.Object(
+    target=os.path.join("build", "trigger_detector.o"),
+    source="../../app/event/trigger_detector.c",
+)
+
+pretrigger_ring_object = env.Object(
+    target=os.path.join("build", "pretrigger_ring.o"),
+    source="../../app/event/pretrigger_ring.c",
+)
+
+event_assembler_object = env.Object(
+    target=os.path.join("build", "event_assembler.o"),
+    source="../../app/event/event_assembler.c",
+)
+
+event_export_debug_object = env.Object(
+    target=os.path.join("build", "event_export_debug.o"),
+    source="../../app/event/event_export_debug.c",
+)
+
+reliability_env = env.Clone()
+reliability_env.Append(
+    CPPDEFINES=["TRANSPORT_RELIABILITY_EVIDENCE_ENABLED"],
+    CPPPATH=["../../bsp/openmv4_h743"],
+)
+
+reliability_sample_block_pool_object = reliability_env.Object(
+    target=os.path.join("build", "sample_block_pool_reliability.o"),
+    source="../../app/pipeline/sample_block_pool.c",
+)
+
+crash_record_test_env = reliability_env.Clone()
+crash_record_test_env.Append(CPPDEFINES=["CRASH_RECORD_TEST_HOOKS"])
+
+crash_record_object = crash_record_test_env.Object(
+    target=os.path.join("build", "crash_record.o"),
+    source="../../app/reliability/crash_record.c",
+)
+
+reliability_ai_env = reliability_env.Clone()
+reliability_ai_env.Append(
+    CPPDEFINES=[
+        "TRANSPORT_AI_INFERENCE_ENABLED",
+        "TRANSPORT_FAULT_INJECTION_ENABLED",
+    ]
+)
+
+reliability_event_export_debug_object = reliability_env.Object(
+    target=os.path.join("build", "event_export_debug_reliability.o"),
+    source="../../app/event/event_export_debug.c",
+)
+
+event_quality_object = reliability_env.Object(
+    target=os.path.join("build", "event_quality.o"),
+    source="../../app/event/event_quality.c",
+)
+
+reliability_evidence_object = reliability_env.Object(
+    target=os.path.join("build", "reliability_evidence.o"),
+    source="../../app/reliability/reliability_evidence.c",
+)
+
+storage_format_confirmation_object = env.Object(
+    target=os.path.join("build", "storage_format_confirmation.o"),
+    source="../../app/storage/storage_format_confirmation.c",
+)
+
+event_log_object = env.Object(
+    target=os.path.join("build", "event_log.o"),
+    source="../../components/storage/event_log.c",
+)
+
+fake_nor_object = env.Object(
+    target=os.path.join("build", "fake_nor.o"),
+    source="fake_nor.c",
+)
+
+nor_flash_w25q_object = env.Object(
+    target=os.path.join("build", "nor_flash_w25q.o"),
+    source="../../components/storage/nor_flash_w25q.c",
+)
+
+sht4x_object = env.Object(
+    target=os.path.join("build", "sht4x.o"),
+    source="../../drivers/sht4x/sht4x.c",
+)
+
+health_service_object = env.Object(
+    target=os.path.join("build", "health_service.o"),
+    source="../../app/health/health_service.c",
+)
+
+environment_service_object = env.Object(
+    target=os.path.join("build", "environment_service.o"),
+    source="../../app/environment/environment_service.c",
+)
+
+time_service_object = env.Object(
+    target=os.path.join("build", "time_service.o"),
+    source="../../app/time/time_service.c",
+)
+
+monotonic_clock_object = env.Object(
+    target=os.path.join("build", "monotonic_clock.o"),
+    source="../../app/time/monotonic_clock.c",
+)
+
+reset_power_service_object = env.Object(
+    target=os.path.join("build", "reset_power_service.o"),
+    source="../../app/reset_power/reset_power_service.c",
+)
+
+terp_codec_object = env.Object(
+    target=os.path.join("build", "terp_codec.o"),
+    source="../../components/protocol/terp_codec.c",
+)
+
+terp_parser_object = env.Object(
+    target=os.path.join("build", "terp_parser.o"),
+    source="../../components/protocol/terp_parser.c",
+)
+
+terp_device_object = env.Object(
+    target=os.path.join("build", "terp_device.o"),
+    source="../../components/protocol/terp_device.c",
+)
+
+terp_service_object = env.Object(
+    target=os.path.join("build", "terp_service.o"),
+    source="../../app/transport/terp_service.c",
+)
+
+reliability_terp_service_object = reliability_env.Object(
+    target=os.path.join("build", "terp_service_reliability.o"),
+    source="../../app/transport/terp_service.c",
+)
+
+reliability_terp_service_test_object = reliability_env.Object(
+    target=os.path.join("build", "test_terp_service_reliability.o"),
+    source="test_terp_service.c",
+)
+
+ota_crc32_object = env.Object(
+    target=os.path.join("build", "ota_crc32.o"),
+    source="../../components/ota/ota_crc32.c",
+)
+
+ota_sha256_object = env.Object(
+    target=os.path.join("build", "ota_sha256.o"),
+    source="../../components/ota/ota_sha256.c",
+)
+
+ota_package_object = env.Object(
+    target=os.path.join("build", "ota_package.o"),
+    source="../../components/ota/ota_package.c",
+)
+
+ota_state_object = env.Object(
+    target=os.path.join("build", "ota_state.o"),
+    source="../../components/ota/ota_state.c",
+)
+
+ota_slots_object = env.Object(
+    target=os.path.join("build", "ota_slots.o"),
+    source="../../components/ota/ota_slots.c",
+)
+
+ota_download_service_object = env.Object(
+    target=os.path.join("build", "ota_download_service.o"),
+    source="../../app/ota/ota_download_service.c",
+)
+
+ota_model_package_object = env.Object(
+    target=os.path.join("build", "ota_model_package.o"),
+    source="../../app/ota/ota_model_package.c",
+)
+
+ota_model_lifecycle_object = env.Object(
+    target=os.path.join("build", "ota_model_lifecycle.o"),
+    source="../../app/ota/ota_model_lifecycle.c",
+)
+
+uart3_echo_object = env.Object(
+    target=os.path.join("build", "uart3_echo.o"),
+    source="../../app/diagnostics/uart3_echo.c",
+)
+
+ai_features_object = env.Object(
+    target=os.path.join("build", "ai_features.o"),
+    source="../../app/ai_inference/ai_features.c",
+)
+
+ai_runtime_object = env.Object(
+    target=os.path.join("build", "ai_runtime.o"),
+    source="../../app/ai_inference/ai_runtime.c",
+)
+
+ai_model_data_object = env.Object(
+    target=os.path.join("build", "ai_model_data.o"),
+    source="../../app/ai_inference/ai_model_data.c",
+)
+
+ai_inference_service_object = env.Object(
+    target=os.path.join("build", "ai_inference_service.o"),
+    source="../../app/ai_inference/ai_inference_service.c",
+)
+
+ai_stack_observer_env = env.Clone()
+ai_stack_observer_env.Append(CCFLAGS=["-DNATIVE_AI_STACK_OBSERVER"])
+ai_inference_service_stack_observer_object = ai_stack_observer_env.Object(
+    target=os.path.join("build", "ai_inference_service_stack_observer.o"),
+    source="../../app/ai_inference/ai_inference_service.c",
+)
+
+fault_injection_ai_env = ai_stack_observer_env.Clone()
+fault_injection_ai_env.Append(
+    CPPDEFINES=["TRANSPORT_FAULT_INJECTION_ENABLED"],
+)
+fault_injection_ai_service_object = fault_injection_ai_env.Object(
+    target=os.path.join("build", "ai_inference_service_queue_pressure.o"),
+    source="../../app/ai_inference/ai_inference_service.c",
+)
+
+ai_result_sidecar_object = env.Object(
+    target=os.path.join("build", "ai_result_sidecar.o"),
+    source="../../app/ai_inference/ai_result_sidecar.c",
+)
+
+ota_crc32_object = env.Object(
+    target=os.path.join("build", "ota_crc32.o"),
+    source="../../components/ota/ota_crc32.c",
+)
+
+programs = [
+    env.Program(
+        target=os.path.join("build", "native_smoke"),
+        source=["test_main.c"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_memory_layout"),
+        source=["test_memory_layout.c"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_power_policy"),
+        source=["test_power_policy.c", power_policy_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_power_status_format"),
+        source=["test_power_status_format.c", power_status_format_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_board_power_openmv4"),
+        source=["test_board_power.c", board_power_openmv_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_board_power_weact"),
+        source=["test_board_power.c", board_power_weact_object],
+    ),
+    critical_env.Program(
+        target=os.path.join("build", "test_power_runtime"),
+        source=["test_power_runtime.c", power_runtime_object,
+                power_policy_object, power_status_format_object,
+                board_power_weact_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_system_report_format"),
+        source=["test_system_report_format.c", system_report_format_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_icm45686"),
+        source=["test_icm45686.c", icm45686_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_icm45686_fifo"),
+        source=["test_icm45686_fifo.c", icm45686_fifo_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_imu_acquisition"),
+        source=["test_imu_acquisition.c", icm45686_object,
+                icm45686_fifo_object, imu_acquisition_service_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_imu_dma_power_guard"),
+        source=["test_imu_dma_power_guard.c", imu_dma_power_guard_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_imu_sample_batcher"),
+        source=["test_imu_sample_batcher.c", imu_sample_batcher_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_imu_acquisition_stats"),
+        source=["test_imu_acquisition_stats.c", imu_acquisition_stats_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_sample_block_pool"),
+        source=["test_sample_block_pool.c", sample_block_pool_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_trigger_detector"),
+        source=["test_trigger_detector.c", trigger_detector_object,
+                icm45686_fifo_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_pretrigger_ring"),
+        source=["test_pretrigger_ring.c", pretrigger_ring_object,
+                sample_block_pool_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_event_assembler"),
+        source=["test_event_assembler.c", event_assembler_object,
+                pretrigger_ring_object, sample_block_pool_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_event_export_debug"),
+        source=["test_event_export_debug.c", event_export_debug_object,
+                event_assembler_object, pretrigger_ring_object,
+                sample_block_pool_object],
+    ),
+    reliability_env.Program(
+        target=os.path.join("build", "test_event_quality"),
+        source=["test_event_quality.c", event_quality_object,
+                reliability_event_export_debug_object,
+                event_assembler_object,
+                pretrigger_ring_object,
+                reliability_sample_block_pool_object],
+    ),
+    reliability_ai_env.Program(
+        target=os.path.join("build", "test_event_quality_service"),
+        source=["test_event_quality_service.c", event_quality_object,
+                reliability_event_export_debug_object,
+                event_assembler_object,
+                pretrigger_ring_object,
+                reliability_sample_block_pool_object],
+    ),
+    reliability_env.Program(
+        target=os.path.join("build", "test_reliability_evidence"),
+        source=["test_reliability_evidence.c", reliability_evidence_object,
+                event_quality_object, reliability_event_export_debug_object,
+                event_assembler_object, pretrigger_ring_object,
+                reliability_sample_block_pool_object, crash_record_object],
+    ),
+    crash_record_test_env.Program(
+        target=os.path.join("build", "test_crash_record"),
+        source=["test_crash_record.c", crash_record_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_storage_format_confirmation"),
+        source=["test_storage_format_confirmation.c",
+                storage_format_confirmation_object],
+    ),
+    gc_env.Program(
+        target=os.path.join("build", "test_storage_service_format"),
+        source=["test_storage_service_format.c",
+                storage_format_confirmation_object,
+                event_log_object, fake_nor_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_event_service"),
+        source=["test_event_service.c", event_export_debug_object,
+                event_assembler_object,
+                pretrigger_ring_object, sample_block_pool_object,
+                health_service_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_event_log"),
+        source=["test_event_log.c", event_log_object, fake_nor_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_fake_nor"),
+        source=["test_fake_nor.c", fake_nor_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_nor_flash_w25q"),
+        source=["test_nor_flash_w25q.c", nor_flash_w25q_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_sht4x"),
+        source=["test_sht4x.c", sht4x_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_health_service"),
+        source=["test_health_service.c", health_service_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_environment_service"),
+        source=["test_environment_service.c", environment_service_object, sht4x_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_time_service"),
+        source=["test_time_service.c", time_service_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_monotonic_clock"),
+        source=["test_monotonic_clock.c", monotonic_clock_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_reset_power_service"),
+        source=["test_reset_power_service.c", reset_power_service_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_terp"),
+        source=["test_terp.c", terp_codec_object, terp_parser_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_terp_device"),
+        source=["test_terp_device.c", terp_codec_object, terp_parser_object,
+                terp_device_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_terp_reliability"),
+        source=["test_terp_reliability.c", terp_codec_object,
+                terp_parser_object, terp_device_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_terp_service"),
+        source=["test_terp_service.c", terp_codec_object, terp_parser_object,
+                terp_device_object, terp_service_object, ota_crc32_object,
+                ota_sha256_object, ota_package_object, ota_download_service_object,
+                ota_model_package_object, ota_model_lifecycle_object,
+                ai_runtime_object, ai_model_data_object],
+        LIBS=["m"],
+    ),
+    reliability_env.Program(
+        target=os.path.join("build", "test_terp_service_reliability"),
+        source=[reliability_terp_service_test_object,
+                terp_codec_object, terp_parser_object, terp_device_object,
+                reliability_terp_service_object, reliability_evidence_object,
+                event_quality_object, reliability_event_export_debug_object,
+                event_assembler_object, pretrigger_ring_object,
+                reliability_sample_block_pool_object, crash_record_object,
+                ota_crc32_object, ota_sha256_object, ota_package_object,
+                ota_download_service_object, ota_model_package_object,
+                ota_model_lifecycle_object, ai_runtime_object,
+                ai_model_data_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ota_package"),
+        source=["test_ota_package.c", ota_crc32_object, ota_sha256_object,
+                ota_package_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ota_state"),
+        source=["test_ota_state.c", ota_crc32_object, ota_state_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ota_slots"),
+        source=["test_ota_slots.c", ota_slots_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ota_download_service"),
+        source=["test_ota_download_service.c", ota_crc32_object, ota_sha256_object,
+                ota_package_object, ota_download_service_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ota_model_package"),
+        source=["test_ota_model_package.c", ai_model_data_object,
+                ai_runtime_object, ota_model_package_object, ota_crc32_object,
+                ota_sha256_object],
+        LIBS=["m"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ota_model_lifecycle"),
+        source=["test_ota_model_lifecycle.c", ai_model_data_object,
+                ai_runtime_object, ota_download_service_object,
+                ota_model_package_object, ota_model_lifecycle_object,
+                ota_crc32_object, ota_sha256_object, ota_package_object],
+        LIBS=["m"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_uart3_echo"),
+        source=["test_uart3_echo.c", uart3_echo_object],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ai_features"),
+        source=["test_ai_features.c", ai_features_object],
+        LIBS=["m"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ai_runtime"),
+        source=["test_ai_runtime.c", ai_runtime_object, ota_crc32_object],
+        LIBS=["m"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ai_model_data"),
+        source=["test_ai_model_data.c", ai_model_data_object,
+                ai_runtime_object, ota_crc32_object],
+        LIBS=["m"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ai_golden_vectors"),
+        source=["test_ai_golden_vectors.c", ai_model_data_object,
+                ai_runtime_object, ota_crc32_object],
+        LIBS=["m"],
+    ),
+    ai_stack_observer_env.Program(
+        target=os.path.join("build", "test_ai_inference_service"),
+        source=["test_ai_inference_service.c",
+                ai_inference_service_stack_observer_object,
+                ai_features_object, ai_runtime_object, ai_model_data_object,
+                ai_result_sidecar_object, sample_block_pool_object,
+                ota_crc32_object],
+        LIBS=["m"],
+    ),
+    env.Program(
+        target=os.path.join("build", "test_ai_result_sidecar"),
+        source=["test_ai_result_sidecar.c",
+                "../../app/ai_inference/ai_result_sidecar.c",
+                ota_crc32_object],
+    ),
+]
+
+fault_injection_ai_program = fault_injection_ai_env.Program(
+    target=os.path.join("build", "test_ai_inference_queue_pressure"),
+    source=["test_ai_inference_queue_pressure.c",
+            fault_injection_ai_service_object,
+            ai_features_object, ai_runtime_object, ai_model_data_object,
+            ai_result_sidecar_object, sample_block_pool_object,
+            ota_crc32_object],
+    LIBS=["m"],
+)
+
+fault_injection_ai_arm_program = fault_injection_ai_env.Program(
+    target=os.path.join("build", "test_ai_inference_queue_pressure_arm"),
+    source=["test_ai_inference_queue_pressure_arm.c",
+            fault_injection_ai_service_object,
+            ai_features_object, ai_runtime_object, ai_model_data_object,
+            ai_result_sidecar_object, sample_block_pool_object,
+            ota_crc32_object],
+    LIBS=["m"],
+)
+
+programs.extend([fault_injection_ai_program, fault_injection_ai_arm_program])
+Default(programs)

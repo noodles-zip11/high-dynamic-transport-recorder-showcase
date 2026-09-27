@@ -1,0 +1,4 @@
+2026-08-15T18:20:47.2577610+08:00 COM8 opened 115200 8N1; reset follows
+reset_exit_code=0
+
+captured_bytes=0

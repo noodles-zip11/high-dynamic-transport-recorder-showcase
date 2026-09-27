@@ -1,0 +1,98 @@
+version: 1
+
+# Relative paths are resolved from this config file. The manifest and raw
+# private dataset are intentionally not committed with the repository.
+manifest_path: ../datasets/manifest_v1.yaml
+
+allowed_labels:
+  - background
+  - impact
+  - continuous_vibration
+  - drop
+  - unknown
+
+# Frozen from the completed hardware acceptance evidence.  mounting_id is not
+# global: the physical position and six-axis orientation belong to each session.
+hardware:
+  board_model: openmv4_h743
+  mcu: STM32H743VIT6
+  imu_model: ICM45686
+  sample_rate_hz: 1600
+  accel_range: "16g"
+  gyro_range: "2000dps"
+  firmware_version: phase08-terp-uart3
+  # Historical AI collection baseline. Keep this immutable for provenance;
+  # it is not the current V1 main/tag revision.
+  firmware_revision: 203bfaa55ab905375c640216e78b8d438e25a89c
+  evidence:
+    - evidence/hardware-bringup/curated-closeout.md
+    - evidence/hardware-bringup/2026-08-14/feature-hardware-bringup-icm-30min/attempt-4/verification-summary.md
+    - evidence/hardware-bringup/2026-08-15/main-two-hour-regression-001/results/main-final-verification.json
+    - evidence/hardware-bringup/2026-08-17/ai-pilot-hil/summary.md
+
+quality:
+  expected_sample_rate_hz: 1600
+  max_saturation_ratio: 0.01
+  reject_data_loss: true
+
+split:
+  seed: 20260811
+  # Default: strict independent-session grouping.  The pilot mode is an
+  # explicit opt-in only for one controlled batch per class:
+  # grouping: pilot_event_stratified
+  ratios:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+  # A differing existing file is never overwritten; use a versioned path.
+  output_path: ../artifacts/split_manifest_v1.json
+
+windows:
+  # The first MLP consumes the complete fixed-size EV03 event.  Trigger index
+  # is retained as metadata; it is not fed to the model in this route.
+  event:
+    length_samples: 2400
+  trigger_aligned:
+    pretrigger_samples: null
+    posttrigger_samples: null
+  background_sliding:
+    length_samples: null
+    step_samples: null
+
+features:
+  version: counts_v1
+  axis_order: [ax, ay, az, gx, gy, gz]
+  names:
+    - accel_peak_magnitude_counts
+    - accel_peak_to_peak_counts
+    - accel_rms_magnitude_counts
+    - duration_seconds
+    - accel_crest_factor
+    - gyro_peak_magnitude_counts
+
+model:
+  class_names: [background, impact, continuous_vibration, drop]
+  architecture: feature_mlp_v1
+  quantization: int8
+
+baseline:
+  feature_version: counts_v1
+  default_label: unknown
+  # Populate and freeze rules only from training/validation data.
+  # Rule shape:
+  # - label: impact
+  #   conditions:
+  #     - feature_name: accel_peak_magnitude_counts
+  #       minimum: 1234.0
+  #       maximum: null
+  rules: []
+
+evaluation:
+  class_names:
+    - background
+    - impact
+    - continuous_vibration
+    - drop
+  background_label: background
+  # Measured background exposure is required for false positives per hour.
+  background_duration_hours: null

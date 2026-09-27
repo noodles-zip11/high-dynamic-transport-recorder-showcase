@@ -1,0 +1,44 @@
+COMMAND 'ps' bytes=327
+imu services=973 samples=31136 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=973 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ps
+�ps: command not found.
+msh >
+msh >
+COMMAND 'sysinfo' bytes=511
+imu services=1025 samples=32768 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=1024 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+sysinfo
+firmware_version=phase08-terp-uart3
+git_revision_or_local=local
+build_time=Aug 14 2026 19:23:23
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=331024
+thread_count=8
+msh >
+msh >
+COMMAND 'event status' bytes=385
+imu services=1076 samples=34432 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=1076 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >
+COMMAND 'log status' bytes=668
+imu services=1127 samples=36064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=1127 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+log status
+log state=1 events=1 next_id=2 next_offset=0x0000c000 jedec=ef4017
+msh >
+msh >imu services=1178 samples=37696 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=1178 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+
+COMMAND 'log inspect' bytes=388
+imu services=1229 samples=39328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=1229 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+log inspect
+recovery source=superblock_b generation=2 scanned=2 discarded=0 ticks=715
+msh >
+msh >

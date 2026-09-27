@@ -1,0 +1,118 @@
+{
+  "ai_errors_before_result": [],
+  "ai_result": {
+    "class_count": 0,
+    "class_index": 0,
+    "confidence": 0.0,
+    "event_flags": 0,
+    "event_id": 39,
+    "failure_reason": 1,
+    "logits": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "model_crc32": 0,
+    "model_version": 0,
+    "quality_flags": 3,
+    "result_sequence": 34,
+    "sample_count": 2400,
+    "status": 2
+  },
+  "annotation_independent_from_ai": true,
+  "controlled_failure_assertions": {
+    "failure_no_model": true,
+    "model_crc_zero": true,
+    "model_version_zero": true,
+    "status_model_unavailable": true
+  },
+  "device_event_info": {
+    "event_crc32": 3745476147,
+    "event_id": 39,
+    "total_length": 38560
+  },
+  "host": {
+    "json_ai_result": {
+      "class_count": 0,
+      "class_index": 0,
+      "confidence": 0.0,
+      "event_flags": 0,
+      "event_id": 39,
+      "failure_reason": 1,
+      "logits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_crc32": 0,
+      "model_version": 0,
+      "quality_flags": 3,
+      "result_sequence": 34,
+      "sample_count": 2400,
+      "status": 2
+    },
+    "json_annotation": {
+      "label": null,
+      "note": null
+    },
+    "json_path": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g1\\stlink-controlled-model-failure\\host-replay\\exports\\39.json",
+    "sqlite_ai_result_present": true,
+    "sqlite_annotation_row": null,
+    "sqlite_event_row": [
+      "recorder-001",
+      39,
+      "valid",
+      "cd30bc5a5b01058d9fcee7cf5a4383711c02e8b79e601260120e7afc7ff545e5"
+    ],
+    "stored_ai_result": {
+      "class_count": 0,
+      "class_index": 0,
+      "confidence": 0.0,
+      "event_flags": 0,
+      "event_id": 39,
+      "failure_reason": 1,
+      "logits": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_crc32": 0,
+      "model_version": 0,
+      "quality_flags": 3,
+      "result_sequence": 34,
+      "sample_count": 2400,
+      "status": 2
+    },
+    "stored_key": {
+      "device_serial": "recorder-001",
+      "event_id": 39
+    },
+    "stored_label": null,
+    "stored_note": null,
+    "stored_sha256": "cd30bc5a5b01058d9fcee7cf5a4383711c02e8b79e601260120e7afc7ff545e5",
+    "stored_validation_state": "valid"
+  },
+  "raw_event": {
+    "decoded_event_id": 39,
+    "decoded_format": "EV03",
+    "decoded_payload_crc32": 1933197524,
+    "decoded_sample_count": 2400,
+    "device_crc32": 3745476147,
+    "device_crc_match": true,
+    "downloaded_full_record_crc32": 3745476147,
+    "path": "LOCAL_USER_HOME\\Desktop\\\u9ad8\u52a8\u6001\u8fd0\u8f93\u4e8b\u4ef6\u8bb0\u5f55\u5668-worktrees\\hardware-acceptance-route\\evidence\\hardware-bringup\\2026-08-18\\core-acceptance-g1\\stlink-controlled-model-failure\\raw-events\\39.terp-event",
+    "sha256": "cd30bc5a5b01058d9fcee7cf5a4383711c02e8b79e601260120e7afc7ff545e5",
+    "size": 38560
+  },
+  "raw_event_preserved_independently_of_ai": true,
+  "target_event_id": 39,
+  "ui": {
+    "event_id_match": true,
+    "event_id_text": "39",
+    "warning_present": true,
+    "warning_text": "UTC INVALID: absolute event time is unavailable | ENVIRONMENT SNAPSHOT UNAVAILABLE"
+  }
+}

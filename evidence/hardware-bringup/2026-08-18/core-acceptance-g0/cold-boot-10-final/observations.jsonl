@@ -1,0 +1,42 @@
+{"error": "TransportError: TERP response timed out", "phase": "preflight", "result": null}
+{"cycle": 1, "off_seconds_after_first_failure": 5.297, "phase": "off_confirmed"}
+{"attempt": 1, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 2, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 3, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 4, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 5, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 6, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 7, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 8, "cycle": 1, "error": "TransportDisconnected: GetOverlappedResult failed (PermissionError(13, '\u62d2\u7edd\u8bbf\u95ee\u3002', None, 5))", "phase": "on_probe_error"}
+{"attempt": 9, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 10, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 11, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 12, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 13, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 14, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 15, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 16, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 17, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 18, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 19, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 20, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 21, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 22, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 23, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 24, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 25, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 26, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 27, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 28, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 29, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 30, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 31, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 32, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 33, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 34, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 35, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 36, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 37, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 38, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"attempt": 39, "cycle": 1, "error": "TransportError: TERP response timed out", "phase": "on_probe_error"}
+{"cycle": 1, "phase": "fail", "reason": "no_valid_uart3_probe_within_60s"}

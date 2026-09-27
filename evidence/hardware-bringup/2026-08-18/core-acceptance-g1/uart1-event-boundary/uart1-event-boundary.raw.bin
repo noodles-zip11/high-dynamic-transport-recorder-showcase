@@ -1,0 +1,798 @@
+imu services=20854 samples=667328 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=20854 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=5 next_id=6 next_offset=0x00034000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=20906 samples=668992 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=20906 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=5 next_id=6 next_offset=0x00034000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21021 samples=672672 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=16 blocks=21005 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=6 next_id=7 next_offset=0x0003e000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21074 samples=674336 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=16 blocks=21057 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=6 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=6 next_id=7 next_offset=0x0003e000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21172 samples=677504 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=32 blocks=21140 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=6 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=7 next_id=8 next_offset=0x00048000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21224 samples=679168 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=32 blocks=21192 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=2 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=7 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=7 next_id=8 next_offset=0x00048000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21326 samples=682400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=47 blocks=21278 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=3 processed=2 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=7 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=8 next_id=9 next_offset=0x00052000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21378 samples=684096 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=47 blocks=21331 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=3 processed=3 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=8 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=8 next_id=9 next_offset=0x00052000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21476 samples=687232 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=63 blocks=21413 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=4 processed=3 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=8 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=9 next_id=10 next_offset=0x0005c000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21529 samples=688896 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=63 blocks=21465 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=4 processed=4 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=9 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=9 next_id=10 next_offset=0x0005c000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21634 samples=692256 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=85 blocks=21548 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=5 processed=4 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=9 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=10 next_id=11 next_offset=0x00066000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21686 samples=693952 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=85 blocks=21601 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=5 processed=5 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=10 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=10 next_id=11 next_offset=0x00066000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21790 samples=697280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=104 blocks=21686 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=6 processed=5 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=10 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=11 next_id=12 next_offset=0x00070000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21842 samples=698944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=104 blocks=21738 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=6 processed=6 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=11 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=11 next_id=12 next_offset=0x00070000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=21947 samples=702304 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=122 blocks=21825 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=7 processed=6 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=11 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=12 next_id=13 next_offset=0x0007a000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=21999 samples=703968 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=122 blocks=21877 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=7 processed=7 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=12 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=12 next_id=13 next_offset=0x0007a000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=22100 samples=707200 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=140 blocks=21960 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=8 processed=7 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=12 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=13 next_id=14 next_offset=0x00084000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=22152 samples=708864 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=140 blocks=22012 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=8 processed=8 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=13 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=13 next_id=14 next_offset=0x00084000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=22253 samples=712096 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=158 blocks=22095 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=9 processed=8 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=13 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=14 next_id=15 next_offset=0x0008e000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=22305 samples=713760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=158 blocks=22147 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=9 processed=9 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=14 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=14 next_id=15 next_offset=0x0008e000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=22409 samples=717088 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=176 blocks=22233 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=10 processed=9 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=14 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=15 next_id=16 next_offset=0x00098000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=22462 samples=718752 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=176 blocks=22285 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=10 processed=10 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=15 class=0 confidence_permille=994
+firmware_version=phase08-terp-uart3
+git_revision_or_local=4c47fe69b544ef9327300910d66f04927871f0dc
+build_time=Aug 18 2026 13:56:41
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x00fe0000
+heap_free_bytes=312168
+thread_count=9
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=15 next_id=16 next_offset=0x00098000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=22569 samples=722208 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=198 blocks=22371 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=11 processed=10 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=15 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=16 next_id=17 next_offset=0x000a2000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=22621 samples=723872 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=198 blocks=22423 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=11 processed=11 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=16 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=16 next_id=17 next_offset=0x000a2000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=22724 samples=727168 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=216 blocks=22508 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=12 processed=11 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=16 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=17 next_id=18 next_offset=0x000ac000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=22777 samples=728832 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=216 blocks=22560 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=12 processed=12 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=17 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=17 next_id=18 next_offset=0x000ac000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=22878 samples=732096 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=235 blocks=22643 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=13 processed=12 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=17 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=18 next_id=19 next_offset=0x000b6000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=22930 samples=733760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=235 blocks=22695 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=13 processed=13 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=18 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=18 next_id=19 next_offset=0x000b6000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23034 samples=737056 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=253 blocks=22780 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=14 processed=13 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=18 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=19 next_id=20 next_offset=0x000c0000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=23086 samples=738752 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=253 blocks=22833 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=14 processed=14 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=19 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=19 next_id=20 next_offset=0x000c0000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23185 samples=741920 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=271 blocks=22914 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=15 processed=14 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=19 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=20 next_id=21 next_offset=0x000ca000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=23238 samples=743584 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=271 blocks=22966 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=15 processed=15 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=20 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=20 next_id=21 next_offset=0x000ca000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23342 samples=746912 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=289 blocks=23052 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=16 processed=15 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=20 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=21 next_id=22 next_offset=0x000d4000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=23394 samples=748608 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=289 blocks=23105 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=16 processed=16 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=21 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=21 next_id=22 next_offset=0x000d4000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23497 samples=751904 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=308 blocks=23189 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=17 processed=16 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=21 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=22 next_id=23 next_offset=0x000de000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=23549 samples=753568 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=308 blocks=23241 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=17 processed=17 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=22 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=22 next_id=23 next_offset=0x000de000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23652 samples=756864 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=326 blocks=23326 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=18 processed=17 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=22 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=23 next_id=24 next_offset=0x000e8000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=23704 samples=758528 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=326 blocks=23378 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=18 processed=18 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=23 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=23 next_id=24 next_offset=0x000e8000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23805 samples=761760 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=344 blocks=23461 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=19 processed=18 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=23 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=24 next_id=25 next_offset=0x000f2000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=23857 samples=763424 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=344 blocks=23513 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=19 processed=19 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=24 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=24 next_id=25 next_offset=0x000f2000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=23960 samples=766720 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=362 blocks=23598 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=20 processed=19 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=24 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=25 next_id=26 next_offset=0x000fc000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24012 samples=768384 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=362 blocks=23650 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=20 processed=20 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=25 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=25 next_id=26 next_offset=0x000fc000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=24113 samples=771616 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=379 blocks=23734 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=21 processed=20 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=25 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=26 next_id=27 next_offset=0x00106000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24165 samples=773280 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=379 blocks=23786 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=21 processed=21 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=26 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=26 next_id=27 next_offset=0x00106000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=24266 samples=776512 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=397 blocks=23869 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=22 processed=21 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=26 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=27 next_id=28 next_offset=0x00110000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24319 samples=778176 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=397 blocks=23921 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=22 processed=22 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=27 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=27 next_id=28 next_offset=0x00110000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=24420 samples=781408 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=415 blocks=24004 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=23 processed=22 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=27 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=28 next_id=29 next_offset=0x0011a000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24472 samples=783104 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=415 blocks=24057 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=23 processed=23 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=28 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=28 next_id=29 next_offset=0x0011a000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=24575 samples=786400 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=433 blocks=24142 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=24 processed=23 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=28 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=29 next_id=30 next_offset=0x00124000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24627 samples=788064 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=433 blocks=24194 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=24 processed=24 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=29 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=29 next_id=30 next_offset=0x00124000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=24727 samples=791264 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=451 blocks=24276 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=25 processed=24 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=29 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=30 next_id=31 next_offset=0x0012e000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24780 samples=792928 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=451 blocks=24328 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=25 processed=25 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=30 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=30 next_id=31 next_offset=0x0012e000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=24883 samples=796256 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=469 blocks=24414 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=26 processed=25 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=30 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=31 next_id=32 next_offset=0x00138000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=24935 samples=797920 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=469 blocks=24466 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=26 processed=26 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=31 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=31 next_id=32 next_offset=0x00138000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25042 samples=801312 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=490 blocks=24551 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=27 processed=26 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=31 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=32 next_id=33 next_offset=0x00142000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=25094 samples=803008 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=490 blocks=24604 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=27 processed=27 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=32 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=32 next_id=33 next_offset=0x00142000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25196 samples=806272 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=508 blocks=24688 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=28 processed=27 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=32 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=33 next_id=34 next_offset=0x0014c000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=25248 samples=807936 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=508 blocks=24740 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=28 processed=28 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=33 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=33 next_id=34 next_offset=0x0014c000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25351 samples=811232 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=526 blocks=24825 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=29 processed=28 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=33 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=34 next_id=35 next_offset=0x00156000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=25403 samples=812896 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=526 blocks=24877 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=29 processed=29 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=34 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=34 next_id=35 next_offset=0x00156000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25506 samples=816192 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=544 blocks=24962 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=30 processed=29 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=34 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=35 next_id=36 next_offset=0x00160000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=25558 samples=817856 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=544 blocks=25014 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=30 processed=30 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=35 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=35 next_id=36 next_offset=0x00160000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25661 samples=821152 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=562 blocks=25099 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=31 processed=30 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=35 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=36 next_id=37 next_offset=0x0016a000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=25713 samples=822816 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=562 blocks=25151 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=31 processed=31 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=36 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=36 next_id=37 next_offset=0x0016a000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25817 samples=826144 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=580 blocks=25237 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=32 processed=31 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=36 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=37 next_id=38 next_offset=0x00174000 jedec=ef4017
+msh >
+msh >event trigger_test
+msh >
+msh >imu services=25870 samples=827808 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=580 blocks=25289 
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=32 processed=32 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=37 class=0 confidence_permille=994
+event status
+event state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=37 next_id=38 next_offset=0x00174000 jedec=ef4017
+msh >
+msh >event log write begins
+event log write complete
+imu services=25973 samples=831136 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=25376 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=32 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=37 class=0 confidence_permille=994
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=38 next_id=39 next_offset=0x0017e000 jedec=ef4017
+msh >
+msh >event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >log status
+log state=1 events=38 next_id=39 next_offset=0x0017e000 jedec=ef4017
+msh >
+msh >imu services=26025 samples=832800 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=25428 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994
+log list
+event=1 offset=0x00002000 span=40960 ev01=38560
+event=2 offset=0x0000c000 span=40960 ev01=38560
+event=3 offset=0x00016000 span=40960 ev01=38560
+event=4 offset=0x00020000 span=40960 ev01=38560
+event=5 offset=0x0002a000 span=40960 ev01=38560
+event=6 offset=0x00034000 span=40960 ev01=38560
+event=7 offset=0x0003e000 span=40960 ev01=38560
+event=8 offset=0x00048000 span=40960 ev01=38560
+event=9 offset=0x00052000 span=40960 ev01=38560
+event=10 offset=0x0005c000 span=40960 ev01=38560
+event=11 offset=0x00066000 span=40960 ev01=38560
+event=12 offset=0x00070000 span=40960 ev01=38560
+event=13 offset=0x0007a000 span=40960 ev01=38560
+event=14 offset=0x00084000 span=40960 ev01=38560
+event=15 offset=0x0008e000 span=40960 ev01=38560
+event=16 offset=0x00098000 span=40960 ev01=38560
+event=17 offset=0x000a2000 span=40960 ev01=38560
+event=18 offset=0x000ac000 span=40960 ev01=38560
+event=19 offset=0x000b6000 span=40960 ev01=38560
+event=20 offset=0x000c0000 span=40960 ev01=38560
+event=21 offset=0x000ca000 span=40960 ev01=38560
+event=22 offset=0x000d4000 span=40960 ev01=38560
+event=23 offset=0x000de000 span=40960 ev01=38560
+event=24 offset=0x000e8000 span=40960 ev01=38560
+event=25 offset=0x000f2000 span=40960 ev01=38560
+event=26 offset=0x000fc000 span=40960 ev01=38560
+event=27 offset=0x00106000 span=40960 ev01=38560
+event=28 offset=0x00110000 span=40960 ev01=38560
+event=29 offset=0x0011a000 span=40960 ev01=38560
+event=30 offset=0x00124000 span=40960 ev01=38560
+event=31 offset=0x0012e000 span=40960 ev01=38560
+event=32 offset=0x00138000 span=40960 ev01=38560
+event=33 offset=0x00142000 span=40960 ev01=38560
+event=34 offset=0x0014c000 span=40960 ev01=38560
+event=35 offset=0x00156000 span=40960 ev01=38560
+event=36 offset=0x00160000 span=40960 ev01=38560
+event=37 offset=0x0016a000 span=40960 ev01=38560
+event=38 offset=0x00174000 span=40960 ev01=38560
+msh >
+msh >log inspect
+recovery source=superblock_b generation=2 scanned=6 discarded=0 ticks=3450
+msh >
+msh >imu services=26077 samples=834464 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=25480 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994

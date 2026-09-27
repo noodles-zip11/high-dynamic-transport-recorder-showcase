@@ -1,0 +1,13 @@
+{
+  "port": "COM7",
+  "baud": 115200,
+  "format": "8N1",
+  "requested_seconds": 5.0,
+  "elapsed_seconds": 5.093,
+  "raw_bytes": 1663,
+  "imu_report_count": 5,
+  "event_report_count": 5,
+  "log_report_count": 0,
+  "error_markers": [],
+  "repro": "imu_report_seen"
+}

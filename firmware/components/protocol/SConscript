@@ -1,0 +1,13 @@
+from building import DefineGroup, GetCurrentDir
+
+
+current_dir = GetCurrentDir()
+group = DefineGroup(
+    "Protocol",
+    ["terp_codec.c", "terp_parser.c", "terp_device.c"],
+    depend=[""],
+    CPPPATH=[current_dir],
+    LOCAL_CFLAGS=" -Wall -Wextra",
+)
+
+Return("group")

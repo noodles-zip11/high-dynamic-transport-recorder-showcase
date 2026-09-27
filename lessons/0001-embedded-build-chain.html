@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>嵌入式构建链：从 .c 到 .bin</title>
+<style>
+body{max-width:860px;margin:40px auto;padding:0 24px;font:17px/1.7 system-ui,"Microsoft YaHei",sans-serif;color:#202124}
+code,pre{background:#f3f5f7;border-radius:6px;padding:2px 5px} pre{padding:16px;overflow:auto}
+h1{line-height:1.25} table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd2d8;padding:8px;text-align:left}
+.note{border-left:4px solid #4677c8;padding:8px 16px;background:#f5f8ff}
+</style>
+<h1>嵌入式构建链：从 <code>.c</code> 到 <code>.bin</code></h1>
+<p class="note"><strong>核心结论：</strong>Env 不负责把代码编译成某个文件。GCC 编译，SCons 编排，RT-Thread Env 准备环境和管理依赖。</p>
+<pre>.c + .h
+  │ gcc -c
+  ▼
+.o        单个源文件的机器码和重定位信息
+  │ linker + startup + libraries + link.lds
+  ▼
+.elf      完整、可调试、带地址和符号的固件
+  │ objcopy -O binary
+  ▼
+.bin      原始烧录字节
+  │ OpenOCD / STM32CubeProgrammer
+  ▼
+MCU Flash</pre>
+<h2>每个工具做什么</h2>
+<table><tr><th>工具</th><th>作用</th></tr>
+<tr><td>arm-none-eabi-gcc</td><td>把 C 编译成 ARM 目标文件，并参与最终链接。</td></tr>
+<tr><td>SCons</td><td>读取 SConstruct/SConscript，决定调用哪些编译和链接命令。</td></tr>
+<tr><td>RT-Thread Env</td><td>准备 PATH、RTT_ROOT、SCons、pkgs 和 menuconfig 命令。</td></tr>
+<tr><td>pkgs</td><td>下载 CMSIS、HAL 等依赖包。</td></tr>
+<tr><td>OpenOCD</td><td>通过调试器把已经生成的镜像写入芯片。</td></tr></table>
+<h2>RTT_ROOT 是什么</h2>
+<p>它是外部 RT-Thread SDK 的路径：<code>LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard</code>。自己的项目保存应用、配置和 BSP 适配；构建时通过 RTT_ROOT 找到 RT-Thread 的内核和构建框架。它类似引用一个 SDK，不等于复制或修改整个 SDK。</p>
+<h2>本项目现在在哪一步</h2>
+<ol><li>本机测试已经生成并运行 <code>.exe</code>。</li><li>ARM GCC 已经把 <code>app/main.c</code> 编译成 <code>firmware/build/main.o</code>。</li><li>参考 Apollo BSP 已经完整生成过 <code>rt-thread.elf</code> 和 <code>rtthread.bin</code>。</li><li>自己的 BSP 目前只是骨架，还没有足够硬件事实生成最终固件。</li></ol>
+<p>下一次学习：逐行拆解 RT-Thread 的 SConstruct，观察它如何把内核、HAL、BSP 和应用连成一个 ELF。</p>
+<p><small>推荐主资料：<a href="https://gcc.gnu.org/onlinedocs/">GNU GCC 官方文档</a>；<a href="https://www.rt-thread.org/document/site/">RT-Thread 官方文档</a>。不清楚的地方可以继续提问。</small></p>
+</html>

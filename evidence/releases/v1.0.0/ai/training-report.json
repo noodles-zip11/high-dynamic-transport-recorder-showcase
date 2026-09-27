@@ -1,0 +1,39 @@
+{
+  "class_names": [
+    "background",
+    "impact",
+    "continuous_vibration",
+    "drop"
+  ],
+  "eligible_events": 91,
+  "limitations": [
+    "每类只有一个受控 session",
+    "结果不代表独立 session 泛化",
+    "continuous_vibration recall 偏低"
+  ],
+  "metrics": {
+    "float_int8_test_prediction_parity": 1.0,
+    "macro_f1": 0.755952,
+    "recall": {
+      "background": 0.75,
+      "continuous_vibration": 0.3333,
+      "drop": 1.0,
+      "impact": 1.0
+    },
+    "test_accuracy": 0.7692308,
+    "test_correct": 10,
+    "test_total": 13
+  },
+  "snapshot_kind": "canonical-evidence-summary",
+  "source": {
+    "path": "evidence/phase2-ai/2026-08-23/real-ai-pilot.md",
+    "sha256": "093c1088c39f4db5bf72c6b9572534be5d62ea6be38016ea228566542f58dd4a"
+  },
+  "split": {
+    "mode": "pilot_event_stratified",
+    "test": 13,
+    "train": 64,
+    "validation": 14,
+    "within_session_pilot": true
+  }
+}

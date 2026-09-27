@@ -1,0 +1,10 @@
+{
+  "firmware_version": "1.1.2",
+  "hardware_id": "stm32h743vit6",
+  "image_crc32": "0xCB1DDEF6",
+  "image_length": 146992,
+  "image_sha256": "122494f1a17e6a6d07924accf7e599e01314bcecb3a661aab814207c987b37fa",
+  "minimum_bootloader_version": "1.0.0",
+  "product_id": "transport-recorder",
+  "target_address": "0x08020000"
+}

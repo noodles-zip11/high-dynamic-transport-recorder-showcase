@@ -1,0 +1,31 @@
+=== HIL-BOOT-SNAPSHOT-002 (application vector) ===
+timestamp=2026-08-15T13:09:09.4448470+08:00
+scope=read-only internal application vector; no reset/write; no SPI Event Flash access
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 8 Bytes
+  Address:      : 0x08020000
+
+0x08020000 : E7DF2000 2402B80C
+
+
+exit=0

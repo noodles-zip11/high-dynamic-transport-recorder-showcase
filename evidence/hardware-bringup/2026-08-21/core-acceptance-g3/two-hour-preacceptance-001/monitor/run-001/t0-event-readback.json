@@ -1,0 +1,36 @@
+{
+  "event_id": 39,
+  "label": "t0-trace",
+  "started_at_utc": "2026-08-21T10:34:00.773324+00:00",
+  "event_info": {
+    "event_id": 39,
+    "total_length": 38560,
+    "event_crc32": 3745476147
+  },
+  "download": {
+    "bytes": 38560,
+    "sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5"
+  },
+  "ai_result": {
+    "event_id": 39,
+    "model_version": 0,
+    "status": 2,
+    "class_index": 0,
+    "class_count": 0,
+    "quality_flags": 3,
+    "event_flags": 0,
+    "sample_count": 2400,
+    "model_crc32": 0,
+    "confidence": 0.0,
+    "logits": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "failure_reason": 1,
+    "result_sequence": 34
+  },
+  "pass": true,
+  "ended_at_utc": "2026-08-21T10:34:07.554190+00:00"
+}

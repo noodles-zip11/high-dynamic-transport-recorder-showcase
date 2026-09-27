@@ -1,0 +1,6 @@
+0x240273b8 <ai_stats+52>:	0x00000000
+0x240273bc <ai_model>:	0x00000000
+0x240273c0 <ai_model_quarantined>:	0x00000001
+0x24028df0 <event_assembler>:	0x00000000
+$3 = 0
+$4 = 0

@@ -1,0 +1,12 @@
+sample=1 elapsed=0.6s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=2 elapsed=7.3s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=3 elapsed=14.0s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=4 elapsed=20.6s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=5 elapsed=27.3s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=6 elapsed=33.9s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=7 elapsed=40.6s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=8 elapsed=47.2s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=9 elapsed=53.9s caps=0x0000002B health=HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+sample=10+ elapsed>=60s hello= DeviceInfo(model='STM32H743', firmware_version='phase08-terp-uart3', hardware_version='openmv4-h743-pd8-pd9', serial_number='pending', capability_flags=43)
+health= HealthInfo(state=0, storage_ready=False, free_log_bytes=0, storage_error_count=0, event_export_error_count=0)
+PASS

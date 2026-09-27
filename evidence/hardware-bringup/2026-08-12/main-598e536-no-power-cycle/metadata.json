@@ -1,0 +1,92 @@
+{
+  "session_date": "2026-08-12",
+  "scope": "feature/hardware-bringup worktree; not main acceptance",
+  "main_reference_commit": "598e536164fb95823dba0e1fc57047bfefe05bce",
+  "stlink_serial": "DEVICE_SERIAL_REDACTED__",
+  "mcu": "STM32H743VIT6",
+  "device_id": "0x450",
+  "internal_flash_bytes": 2097152,
+  "stlink_voltage_report_v": 3.23,
+  "usb_ttl": "CH340 COM5 UART3 115200 8N1",
+  "manual_power_cycle_performed": true,
+  "session_image_restored": true,
+  "full_internal_flash_backup_sha256": "419DF5205641FD01A6DBF5D74F0330E95DEA61F435710EB8580C18E00F4F4B35",
+  "restored_full_flash_verify_sha256": "419DF5205641FD01A6DBF5D74F0330E95DEA61F435710EB8580C18E00F4F4B35",
+  "restored_after_u3_full_flash_verify_sha256": "419DF5205641FD01A6DBF5D74F0330E95DEA61F435710EB8580C18E00F4F4B35",
+  "worktree_ordinary_image_sha256": "B7D3D62AEFF57C0CB87B92DB8CA4EBEB9BA11B0180BAA8AEBF28662607953FA1",
+  "sht40_long_run_image_sha256": "F24D52EC6A03DD27AA69FB6F6112A67EFB16AEF1BDF698C4518C88EE7B121ECA",
+  "sht40_long_run_result": {
+    "attempts": 1800,
+    "writes": 1800,
+    "reads": 1800,
+    "success": 1800,
+    "errors": 0,
+    "completed": 1,
+    "temperature_c": 28.27,
+    "humidity_rh_percent": 44.989
+  },
+  "sht40_full_h5_design_gate": "pass_uart3_and_swd_evidence",
+  "sht40_hv1_image_sha256": "902AAF95F1418CE307BD072964A03194FB2D5E2079A65C5EF812609AA0360701",
+  "sht40_hv1_uart_progress_lines": 30,
+  "u3_flash_power_cycle_phase": "result_block_pass; full_uart_evidence_incomplete; test_sector_cleaned",
+  "u3_phase1_image_sha256": "5F5C7E900B63BBB12F69367EC9370B2C45B2FCB09349E77CF9018AEA79D708D7",
+  "u3_power_cycle_result": "stage2; power_cycle_pattern_verified=1; final_sector_erased=1",
+  "u3_full_h4_gate": "not_closed_missing_automatic_power_on_uart3_line",
+  "u2_default_sector": {
+    "offset": "0x007FF000",
+    "read_only_backup_sha256": "0780A3EB73176CD0375B4453E19A48A3FBBC00925BBD1F8D6C72CA61E1A3CB83",
+    "status": "non_empty_refused_and_untouched"
+  },
+  "u2_alternate_scratch_sector": {
+    "offset": "0x007FE000",
+    "read_only_backup_sha256": "F47A8EC3E9AFF2318D896942282AD4FE37D6391C82914F54A5DA8A37DE1300C6",
+    "validation_image_sha256": "D1265CEE5BC1973F5A1CFC85F23B590018E75480EA4CAAAB0E503D9917DE0227",
+    "first_phase": "stage1; initial_erased=1; program_readback_verified=1",
+    "second_phase": "stage2; power_cycle_pattern_verified=1; final_sector_erased=1; failure_offset=0",
+    "second_phase_swd_result_sha256": "8E213640E99FB528314ABA15323F8327CCC6F861620AB9EB7A8D12E0E4AD09B8",
+    "gate": "pass_with_direct_swd_result_evidence"
+  },
+  "restored_after_u3_controlled_full_flash_verify_sha256": "419DF5205641FD01A6DBF5D74F0330E95DEA61F435710EB8580C18E00F4F4B35",
+  "worktree_ordinary_terp_read_only": {
+    "port": "COM5",
+    "commands": ["info", "health", "time get", "events list"],
+    "result": "all response timed out; UART3 raw capture contained only capture header",
+    "uart1_tested": false
+  },
+  "worktree_ordinary_after_u2_build": {
+    "sha256": "A4655A0207D5F9E261A048F18A46BB2A091103A11B4842ED14598B79127DDA14",
+    "size": 155856,
+    "build_exit": 0,
+    "uart1_tested": false
+  },
+  "worktree_ordinary_after_u2_program": {
+    "sha256": "A4655A0207D5F9E261A048F18A46BB2A091103A11B4842ED14598B79127DDA14",
+    "program_exit": 0,
+    "uart1_capture_sha256": "FA18F3BFF9D027B0B82888B7C336C0A4BBEDCCC27C415BC3FCCE7C56932C0941",
+    "uart1_capture_result": "listener_header_only_no_startup_bytes",
+    "uart1_reset_only_capture_sha256": "85D0A6383AC38A0BD489B264EFABFE60B41C32AF1E52BD4EA7EA74C31C587E98",
+    "uart1_reset_only_capture_result": "listener_header_only_no_startup_bytes",
+    "swd_runtime_state": {
+      "board_sensor_long_run_imu_start_stage_address": "0x240262FC",
+      "board_sensor_long_run_imu_start_stage": 13,
+      "imu_acquisition_started_address": "0x240016C4",
+      "imu_acquisition_started": 1,
+      "runtime_event_started_address": "0x24026F28",
+      "runtime_event_started": 1,
+      "interpretation": "application_reached_imu_and_event_start_paths; UART1 output still unobserved"
+    },
+    "usart1_register_state": {
+      "base": "0x40011000",
+      "cr1": "0x0000002D",
+      "brr": "0x00000412",
+      "interpretation": "UE_RE_TE_enabled; configured for the design's 115200 UART1 console"
+    },
+    "finsh_sysinfo_probe": {
+      "command": "sysinfo",
+      "raw_capture_sha256": "A8F2A96FC9F5E7A136EC63056F6A53598B263B282C51AC89F53B1B67434ACC5F",
+      "result": "no_echo_or_response"
+    },
+    "finsh_tested": false
+  },
+  "evidence_policy": "raw UART/SWD/CubeProgrammer logs retained; sha256-manifest.txt excludes itself"
+}

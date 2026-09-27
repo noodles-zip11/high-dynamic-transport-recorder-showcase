@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<stdin>", line 19, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 119, in hello
+    response = self._request(MessageType.HELLO, b"\x01")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 312, in _request
+    raise ProtocolError("unexpected TERP response type")
+host.transport_recorder.protocol.codec.ProtocolError: unexpected TERP response type

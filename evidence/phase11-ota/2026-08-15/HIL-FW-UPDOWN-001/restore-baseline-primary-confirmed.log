@@ -1,0 +1,54 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Opening and parsing file: restore-confirmed-primary-gen100.hex
+
+
+Memory Programming ...
+  File          : restore-confirmed-primary-gen100.hex
+  Size          : 48.00 B
+  Address       : 0x081C0000
+
+
+
+Erasing memory corresponding to sector 0:
+Erasing internal memory sector 14
+Download in Progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+File download complete
+Time elapsed during download operation: 00:00:00.939
+
+
+
+Verifying ...
+
+
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Download verified successfully
+
+
+
+MCU Reset
+
+Software reset is performed

@@ -1,0 +1,54 @@
+{
+  "schema": "project-chain-closure-1",
+  "status": "INCOMPLETE",
+  "core_chain_status": "PASS",
+  "chain": "build->program->uart1->sensor-samples->event-log->uart3-terp->host-decode",
+  "baseline": {
+    "main_commit": "60eecbd56338a382256009d3be827149a5f8db41",
+    "program_address": "0x08020000",
+    "firmware_bin_sha256": "80B55AAB0926518181C302C9767A7C8E65468ECC05FB3084268435422200C1F7"
+  },
+  "core_chain_evidence": {
+    "build": "logs/build-after-fix.log",
+    "program_verify": "logs/program-script-ascii-regression.log",
+    "uart1_startup_finsh": "logs/uart1-followup.txt",
+    "event_trigger_and_verify": "logs/uart1-event-e2e-followup.txt",
+    "event_id": 2,
+    "uart3_info_health_list": ["logs/uart3-info-closure.json", "logs/uart3-health-closure.json", "results/uart3-events-list.json"],
+    "uart3_download": "results/event-new-download.json",
+    "host_decode": "results/event-new-decode.json",
+    "download_sha256": "DB96D6E27F887B18E8F5250BA825B1F93632E8D876056DCC79A6416CFC143E54",
+    "same_handle_reconnect_20": "logs/terp-handle-reconnect-20-current.json"
+  },
+  "required_gates": {
+    "R0": "PASS",
+    "H1": "PARTIAL",
+    "H2": "PARTIAL",
+    "H3": "PARTIAL",
+    "H4": "NOT_EXECUTED",
+    "H5": "NOT_EXECUTED",
+    "H6": "NOT_EXECUTED",
+    "H7": "PARTIAL",
+    "H8": "PARTIAL",
+    "H9": "NOT_EXECUTED",
+    "H10": "NOT_EXECUTED",
+    "H11": "SMOKE_PASS"
+  },
+  "subgates": {
+    "H8_same_handle_reconnect_20": "PASS",
+    "H8_physical_reconnect_20": "NOT_EXECUTED",
+    "H8_physical_matrix_script_dry_run": "PASS_NOT_PHYSICAL"
+  },
+  "blocking_items": [
+    "Formal 10/10 cold-start UART1 count",
+    "20-round physical USB-TTL reconnect/download matrix",
+    "1800-second sensor HV1 and 7200-second system run",
+    "RTC/VBAT/LSE implementation before enabling TERP time capability",
+    "USB CDC implementation and hardware evidence"
+  ],
+  "regressions": {
+    "REG-001": "RESOLVED_BY_REWIRE_AND_RETEST",
+    "REG-002": "FIXED_IN_WORKTREE",
+    "REG-003": "DESIGN_BOUNDARY_OPEN"
+  }
+}

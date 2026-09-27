@@ -1,0 +1,20 @@
+{
+  "class_count": 0,
+  "class_index": 0,
+  "confidence": 0.0,
+  "event_flags": 0,
+  "event_id": 39,
+  "failure_reason": 1,
+  "logits": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_crc32": 0,
+  "model_version": 0,
+  "quality_flags": 3,
+  "result_sequence": 34,
+  "sample_count": 2400,
+  "status": 2
+}

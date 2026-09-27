@@ -1,0 +1,33 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.22.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.10V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+NVM size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+0x081C0000 : 4F 54 53 54 01 00 30 00 00 00 00 00 00 00 00 00
+0x081C0010 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0x081C0020 : 00 00 00 00 00 00 00 00 72 C3 A2 F7 A5 C3 3C 5A
+0x081C0030 : FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+0x081E0000 : 4F 54 53 54 01 00 30 00 01 00 00 00 01 00 00 00
+0x081E0010 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0x081E0020 : 00 00 00 00 00 00 00 00 C5 3B CD 07 A5 C3 3C 5A
+0x081E0030 : FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF

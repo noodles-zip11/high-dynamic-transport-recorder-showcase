@@ -1,0 +1,31 @@
+from building import DefineGroup, GetCurrentDir
+from SCons.Script import Import
+
+
+Import("env")
+
+
+current_dir = GetCurrentDir()
+sources = [
+    "board.c",
+    "board_power.c",
+    "dma_buffer.c",
+    "imu_spi.c",
+    "sht4x_i2c.c",
+    "u8_nor_spi.c",
+    "stm32h7xx_hal_msp.c",
+]
+
+if env.get("TRANSPORT_RELIABILITY_EVIDENCE_ENABLED", False):
+    sources.append("crash_record_target.c")
+    sources.append("crash_fault_entry.S")
+
+group = DefineGroup(
+    "Board",
+    sources,
+    depend=[""],
+    CPPPATH=[current_dir],
+    CPPDEFINES=["STM32H743xx"],
+)
+
+Return("group")

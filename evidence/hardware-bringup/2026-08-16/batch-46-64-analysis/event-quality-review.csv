@@ -1,0 +1,20 @@
+event_id,operator_phase,proposed_label,training_action,quality,peak_delta_post_counts,peak_time_ms_post,secondary_peak_time_ms_post,secondary_peak_delta_counts,pretrigger_std_counts,accel_near_fullscale_samples,lost_sample_count,sample_count,sample_rate_hz,sha256,notes
+46,normal_handling,background,keep_background_candidate,candidate,162.78,936.9,,,5.50,0,0,2400,1600,c03963851b9ebd75a725afbd1f798b9a2aa03cbf0efc2b0b6d6f97d802e94ed1,moderate handling motion
+47,normal_handling,background,keep_background_candidate,candidate,1913.50,831.9,,,34.85,0,0,2400,1600,e1adac13b55e8db53d768005a9b2d82411a0224870046df269060937dada9adf,handling motion
+48,normal_handling,background,keep_background_candidate,candidate,593.43,936.2,,,132.47,0,0,2400,1600,ff6e5e422e458510cb923332cccbbbe89c596e5c90327f1b206351cca65b702f,handling motion
+49,normal_handling,background,keep_background_candidate,candidate,517.55,923.8,,,77.99,0,0,2400,1600,579cd12df3e1ed270df6d7e8efc88b5e0cdfc39096a31cf680bf6203851b1b3a,handling motion
+50,normal_handling,background,keep_background_candidate,candidate,902.80,161.9,678.8,843.85,37.40,0,0,2400,1600,b79e7ec761b86bef4f637fa9b12a51a2250f9eb50362acb4b7799437c00a2fc6,handling motion with multiple movement peaks
+51,normal_handling,background,keep_background_candidate,candidate,320.71,246.9,,,49.56,0,0,2400,1600,83360d9e68eeac1a02365ab0e8b7b58b32ad606806ada3187939ff556b9c19a7,handling motion
+52,normal_handling,background,keep_background_candidate,candidate,242.86,901.9,,,21.14,0,0,2400,1600,b3d68e59091c9faa01c684647208ff864d5c1dfd972b2aac2f65c79eda0c30a4,handling motion
+53,normal_handling,background,keep_background_candidate,candidate,158.10,921.9,,,35.23,0,0,2400,1600,2283f0f9e901e68d7de7504d0afb7e54a4bd8ee66c2dd2df93e0cc342e1d896f,handling motion
+54,normal_handling,background,keep_background_candidate,candidate,638.85,408.8,,,79.60,0,0,2400,1600,c7325d69a68f4aa911fa69710b6e298e990ec99d4ae0f884823ec863b1928f67,handling motion
+55,normal_handling,background_review,exclude_until_review,review,29977.84,955.0,,,16.89,0,0,2400,1600,9562e7566121e884699a308a87eeceff11060de709d299ee1996e4c7d254181,large mixed-action or hard-bump outlier
+56,single_tap,single_tap,keep_candidate,candidate,7642.61,856.2,,,2.63,0,0,2400,1600,4c2d28f3856e08d3c6b53737f26e67aa70d21db785542f0863f2a1bdc9abfb5c,one clear impact peak
+57,single_tap,single_tap_review_saturated,exclude_until_review,review,36559.18,540.6,,,3.45,2,0,2400,1600,ff5f9026dac6439864ae12698a7b2d1f74e8090d0a69c5f9dd2933c14a63283a,accelerometer reached +32767
+58,single_tap,multi_tap,exclude_from_single_tap,review,8500.37,18.8,116.9,324.3,6.16,0,0,2400,1600,9bb983394d69de6739cdde28400b4920372838a98ab2c1797f71d3a85e24a818,two distinct peaks
+59,single_tap,unknown_no_capture,exclude_from_training,unknown,36.25,,,,6.77,0,0,2400,1600,f5a79d3e98a4039a363fcc28d0e70398b2bba70eec3c30b03ce00a5c2af8eab3,no post-trigger impact captured
+60,single_tap,multi_tap_review,exclude_until_review,review,33618.45,478.8,415.6,137.3,2.73,1,0,2400,1600,e0c6dc73977aa8995f045431b6ce6037aeeecfa61c40b2f3c3b35d5d74820d34,weak precursor plus near-full-scale main peak
+61,single_tap,single_tap,keep_candidate,candidate,10962.37,762.5,835.6,472.8,2.79,0,0,2400,1600,4caee22a5149fa5ba7b6a8c0d875811f094d6e87cc4b8b054e3cb0a38c189c52,one main impact and weak rebound
+62,single_tap,single_tap_review_pretrigger_motion,exclude_until_review,review,18949.65,428.8,,,1453.80,0,0,2400,1600,d9b4440444866b287166aa2176b647c825fcd0b62807506c6a1782b6bfdc9ed8,strong pre-trigger motion contaminates alignment
+63,single_tap,multi_tap,exclude_from_single_tap,review,19769.30,918.8,338.1,14766.2,62.78,0,0,2400,1600,59ffa94b0eebfab642b0956833b5417be511fdfa85141723196e024105cd59ec,two distinct strong peaks
+64,single_tap,unknown_no_capture,exclude_from_training,unknown,15.13,,,,6.68,0,0,2400,1600,8a7ef32344dd9e8fac0391ca2718815c0edc1a1ebf53c8731c9a7d419e1a2625,no post-trigger impact captured

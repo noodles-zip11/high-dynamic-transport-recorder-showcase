@@ -1,0 +1,16 @@
+
+
+STMicroelectronics ST-LINK GDB server. Version 7.10.0
+Copyright (c) 2025, STMicroelectronics. All rights reserved.
+
+Starting server with the following options:
+        Persistent Mode            : Enabled
+        Logging Level              : 1
+        Listen Port Number         : 61234
+        Status Refresh Delay       : 15s
+        Verbose Mode               : Enabled
+
+Target unknown MCU target
+
+Error in initializing ST-LINK device.
+Reason: Unknown MCU found on target.

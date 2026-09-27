@@ -1,0 +1,105 @@
+{
+  "schema": "g3-two-hour-metrics-summary-20260821-v1",
+  "strict_gate_result": "FAIL_POOL_BACKPRESSURE_OBSERVED",
+  "run": {
+    "t0_started_at_utc": "2026-08-21T10:34:00.767179+00:00",
+    "ended_at_utc": "2026-08-21T12:34:00.791932+00:00",
+    "duration_seconds": 7200,
+    "heartbeats": 130,
+    "detailed_heartbeats": 41,
+    "light_heartbeats": 89,
+    "ports": {
+      "uart1": "COM6",
+      "uart3": "COM7"
+    }
+  },
+  "required_metrics": {
+    "hardfault_assert_unexpected_reset": {
+      "fatal_markers": 0,
+      "pass": true
+    },
+    "ev03_lost_samples": {
+      "events": [39, 40, 41],
+      "lost_sample_count": 0,
+      "loss_episode_count": 0,
+      "pass": true
+    },
+    "ai": {
+      "submitted_max": 2,
+      "processed_max": 2,
+      "queue_drop_max": 0,
+      "result_queue_drop_max": 0,
+      "result_queue_backpressure_max": 0,
+      "pass": true
+    },
+    "pool_minimum": {
+      "value": 0,
+      "available": false,
+      "pass": false,
+      "note": "The runtime health input is not wired to expose the free-block minimum; zero in EV03 headers is unavailable/default, not evidence of free capacity."
+    },
+    "pool_backpressure": {
+      "max_counter": 26,
+      "pass": false,
+      "note": "The acquisition pool backpressure counter increased during the two event triggers; the strict G3 contract requires zero."
+    },
+    "task_stack_high_water": {
+      "max_usage_pct": 86,
+      "by_thread_max_usage_pct": {
+        "sysreport": 79,
+        "led_hb": 22,
+        "event": 79,
+        "imu_acq": 15,
+        "ai": 86,
+        "terp_rx": 55,
+        "tshell": 56,
+        "tidle0": 12,
+        "timer": 22
+      },
+      "pass": true
+    },
+    "storage_and_event_export_errors": {
+      "fifo_count_err_max": 0,
+      "fifo_capacity_err_max": 0,
+      "fifo_read_err_max": 0,
+      "fifo_parse_err_max": 0,
+      "dma_start_err_max": 0,
+      "dma_timeout_max": 0,
+      "dma_complete_err_max": 0,
+      "export_err_max": 0,
+      "resource_err_max": 0,
+      "store_err_max": 0,
+      "feature_err_max": 0,
+      "runtime_err_max": 0,
+      "pass": true
+    },
+    "event_and_ai_result_traceability": {
+      "trace_event_id": 39,
+      "downloaded_and_decoded_events": [39, 40, 41],
+      "event_downloads_passed": 3,
+      "ai_results_read": 3,
+      "model_switches": [
+        {"label": "A", "active_slot": 0, "verified_bytes": 510, "pending_install": false, "model_valid": true},
+        {"label": "B", "active_slot": 1, "verified_bytes": 510, "pending_install": false, "model_valid": true},
+        {"label": "A", "active_slot": 0, "verified_bytes": 510, "pending_install": false, "model_valid": true},
+        {"label": "B", "active_slot": 1, "verified_bytes": 510, "pending_install": false, "model_valid": true}
+      ],
+      "pass": true
+    }
+  },
+  "health_observation": {
+    "state": 2,
+    "interpretation": "HEALTH_DEGRADED observation retained; storage_ready remained true and storage/export errors remained zero."
+  },
+  "evidence": {
+    "run_summary": "monitor/run-001/run-summary.json",
+    "run_state": "monitor/run-001/run-state.json",
+    "heartbeats": "monitor/run-001/heartbeats/",
+    "uart1_raw": "monitor/run-001/uart1/runtime.raw.bin",
+    "uart1_console": "monitor/run-001/uart1/runtime.console.log",
+    "uart3_raw": "monitor/run-001/uart3/runtime.raw.jsonl",
+    "uart3_frames": "monitor/run-001/uart3/runtime.frames.jsonl",
+    "event_readback": "monitor/run-001/event-readback/",
+    "model_switches": "monitor/run-001/model-switches/"
+  }
+}

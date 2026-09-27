@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-08-22T02:06:52.964837+00:00",
+  "command": "event trigger_test",
+  "response_bytes": 1410,
+  "prompt_seen": true,
+  "fatal_marker_seen": false,
+  "metrics": {
+    "fifo_count_err": 0,
+    "fifo_capacity_err": 0,
+    "fifo_read_err": 0,
+    "fifo_parse_err": 0,
+    "dma_start_err": 0,
+    "dma_timeout": 0,
+    "dma_complete_err": 0,
+    "pool_min_free": 51,
+    "pool_backpressure": 0,
+    "export_err": 0,
+    "resource_err": 0,
+    "queue_drop": 0,
+    "result_queue_drop": 0,
+    "store_err": 0,
+    "feature_err": 0,
+    "runtime_err": 0
+  },
+  "text": "event trigger_test\r\nmsh >\r\nmsh >imu services=9432 samples=301792 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=52 pool_backpressure=0 blocks=9431 \r\nevent state=1 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0\r\nai model_ready=1 submitted=1 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=44 class=0 confidence_permille=994\r\nevent log write begins\r\nevent log write complete\r\nimu services=9544 samples=305408 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_min_free=51 pool_backpressure=0 blocks=9544 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nai model_ready=1 submitted=2 processed=1 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=44 class=0 confidence_permille=994\r\nfirmware_version=phase08-terp-uart3\r\ngit_revision_or_local=ee588c47ffaf07436626b00f4a3884c908a5138f\r\nbuild_time=Aug 22 2026 09:44:21\r\nsysclk_hz=240000000\r\nrt_tick_hz=1000\r\nreset_reason=0x01fe0000\r\nheap_free_bytes=236392\r\nthread_count=9\r\n",
+  "trigger_index": 2
+}

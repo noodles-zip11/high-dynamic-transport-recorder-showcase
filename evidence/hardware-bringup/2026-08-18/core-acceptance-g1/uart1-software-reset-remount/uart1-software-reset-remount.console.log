@@ -1,0 +1,78 @@
+UART1 software reset and QSPI remount evidence
+port=COM7 baudrate=115200 format=8N1
+stlink_cli=C:\ST\STM32CubeCLT_1.18.0\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe
+stlink_serial=DEVICE_SERIAL_REDACTED__
+
+=== ST-LINK RESET ===
+{
+  "returncode": 0,
+  "elapsed_seconds": 0.892,
+  "stdout": "      -------------------------------------------------------------------\n                       STM32CubeProgrammer v2.19.0                  \n      -------------------------------------------------------------------\n\nST-LINK SN  : DEVICE_SERIAL_REDACTED__\nST-LINK FW  : V2J46S7\nBoard       : --\nVoltage     : 3.23V\nSWD freq    : 4000 KHz\nConnect mode: Normal\nReset mode  : Software reset\nDevice ID   : 0x450\nRevision ID : Rev V\nDevice name : STM32H7xx\nFlash size  : 2 MBytes\nDevice type : MCU\nDevice CPU  : Cortex-M7\nBL Version  : 0x92\n\n\nMCU Reset\n\nSoftware reset is performed\n",
+  "stderr": ""
+}
+
+=== before_reset ===
+imu services=30835 samples=986720 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=30238 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994
+
+
+=== after_reset_capture ===
+imu services=30887 samples=988384 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=597 blocks=30290 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=33 processed=33 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=1 store_err=0 feature_err=0 runtime_err=0 last_event=38 class=0 confidence_permille=994
+
+
+=== COMMAND sysinfo ===
+
+-  AI inference model=validated-runtime-model
+AI result sidecar=ready
+imu services=0 samples=0 fifo_max_bytes=0 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=0 
+event state=0 pretrigger_blocks=0 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+firmware_version=phase08-terp-uart3
+git_revision_or_local=4c47fe69b544ef9327300910d66f04927871f0dc
+build_time=Aug 18 2026 13:56:41
+sysclk_hz=240000000
+rt_tick_hz=1000
+reset_reason=0x01fe0000
+heap_free_bytes=310984
+thread_count=10
+msh >
+
+=== COMMAND ps ===
+ps
+thread       pri  status      sp     stack size max used left tick   error  tcb addr   usage
+------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----
+sysreport     12  suspend 0x000001e4 0x00000800     69%   0x00000004 EINTRPT 0x24033868  N/A
+led_hb        20  suspend 0x0000006c 0x00000200     21%   0x0000000a EINTRPT 0x240335a8  N/A
+event          9  suspend 0x00000114 0x00000800     13%   0x0000000a EINTRPT 0x24032ce8  N/A
+imu_acq        8  suspend 0x00000094 0x00000800     14%   0x0000000a EINTRPT 0x24032428  N/A
+ai            15  suspend 0x0000033c 0x00000600     54%   0x0000000a EINTRPT 0x24031d68  N/A
+terp_rx       18  suspend 0x00000084 0x00001000      3%   0x0000000a EINTRPT 0x24030ca8  N/A
+tshell        20  running 0x0000018c 0x00000800     21%   0x00000002 OK      0x2402ffc8  N/A
+tidle0        31  ready   0x00000054 0x00000400     12%   0x00000010 OK      0x2402eb20  N/A
+timer          4  suspend 0x00000074 0x00000200     22%   0x0000000a EINTRPT 0x2402f100  N/A
+msh >
+msh >
+
+=== COMMAND event status ===
+event status
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+msh >
+msh >imu services=53 samples=1696 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=53 
+event state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0
+ai model_ready=1 submitted=0 processed=0 queue_drop=0 result_queue_drop=0 result_queue_backpressure=0 result_queue_depth=0 result_queue_high_watermark=0 store_err=0 feature_err=0 runtime_err=0 last_event=0 class=0 confidence_permille=0
+
+
+=== COMMAND log status ===
+log status
+log state=1 events=38 next_id=39 next_offset=0x0017e000 jedec=ef4017
+msh >
+msh >
+
+=== COMMAND log inspect ===
+log inspect
+recovery source=superblock_b generation=4 scanned=7 discarded=0 ticks=4140
+msh >
+msh >

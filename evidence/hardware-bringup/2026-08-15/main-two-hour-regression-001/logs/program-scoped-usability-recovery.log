@@ -1,0 +1,81 @@
+git version 2.54.0.windows.1
+PowerShell 7.6.4
+Python: 3.12.10
+pytest 8.4.2
+SCons by Steven Knight et al.:
+	SCons: v4.10.1.055b01f429d58b686701a56df863a817c36bb103, Sun, 16 Nov 2025 14:18:20 -0700, by bdbaddog on M1Dog2021
+arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614
+gcc.exe (GCC) 15.2.0
+ARM GCC: C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe
+Native GCC: C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin\gcc.exe
+RTT_ROOT: LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard
+Environment self-check (HostOnly): PASS
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\main-hardware-regression-20260815\firmware'
+Newlib version: 4.4.0
+scons: `build\transport_recorder.elf' is up to date.
+Building compilation database compile_commands.json
+Memory map: PASS (application Flash/vector 0x08020000, AXI SRAM heap, D2 DMA 32-byte aligned)
+   text	   data	    bss	    dec	    hex	filename
+ 175292	   1532	 186676	 363500	  58bec	LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\firmware\build\transport_recorder.elf
+Firmware artifacts: PASS (LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\firmware\build\transport_recorder.elf, LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\firmware\build\transport_recorder.bin, LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\main-hardware-regression-20260815\firmware\build\transport_recorder.map)
+Application vector and memory map: PASS
+CubeProgrammer artifact: LOCAL_USER_HOME\AppData\Local\Temp\transport-recorder-cubeprogrammer\session-a3bf3bb47a124811ab1ffe2acbb5fe15\transport_recorder.bin
+CubeProgrammer log: LOCAL_USER_HOME\AppData\Local\Temp\transport-recorder-cubeprogrammer\session-a3bf3bb47a124811ab1ffe2acbb5fe15\program.log
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+
+
+Log output file:   LOCAL_USER_HOME\AppData\Local\Temp\transport-recorder-cubeprogrammer\session-a3bf3bb47a124811ab1ffe2acbb5fe15\program.log
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Opening and parsing file: transport_recorder.bin
+
+
+Memory Programming ...
+  File          : transport_recorder.bin
+  Size          : 172.68 KB 
+  Address       : 0x08020000 
+
+
+
+Erasing memory corresponding to sector 0:
+Erasing internal memory sectors [1 2]
+Download in Progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+File download complete
+Time elapsed during download operation: 00:00:03.388
+
+
+
+Verifying ...
+
+
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Download verified successfully 
+
+
+
+MCU Reset
+
+Software reset is performed
+SWD program and verify: PASS

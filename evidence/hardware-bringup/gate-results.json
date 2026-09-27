@@ -1,0 +1,87 @@
+{
+  "schema": "transport-recorder.hardware-validation.gates.v1",
+  "as_of": "2026-08-15",
+  "source_branch": "feature/hardware-bringup",
+  "main_reference": "148d7c3d913c206592eb5a8e285c8d2adaea3dbc",
+  "integration_claim": "software_fixes_and_historical_hardware_evidence_only",
+  "hardware_retested_after_integration": false,
+  "bootloader_ota": {
+    "worktree": "feature/ota",
+    "status": "out_of_scope",
+    "touched": false
+  },
+  "u3_qspi": {
+    "status": "out_of_scope",
+    "merged_code": false
+  },
+  "gates": [
+    {
+      "id": "H0",
+      "status": "partial",
+      "passed": ["mcu_identity", "swd_connection", "voltage_check"],
+      "missing": ["board_front_photo", "board_back_photo", "final_wiring_photo"]
+    },
+    {
+      "id": "H1",
+      "status": "pass",
+      "passed": ["swd_connect_10_of_10", "internal_flash_backup_hash_match"]
+    },
+    {
+      "id": "H2",
+      "status": "partial",
+      "passed": ["historical_image_cold_boot_10_of_10", "sysreport_stack_fix_short_regression"],
+      "missing": ["post_merge_final_image_cold_boot_10_of_10"]
+    },
+    {
+      "id": "H3",
+      "status": "pass_with_documented_equivalent",
+      "passed": ["icm45686_who_am_i_e9", "sht40_address_44_and_serial_crc", "u2_jedec_ef4017", "u2_safe_refusal_stage_3_flags_0000"],
+      "note": "stage=3 flags=0000 is the diagnostic image equivalent of zero write commands"
+    },
+    {
+      "id": "H4-U2",
+      "status": "pass",
+      "passed": ["controlled_scratch_erase_write_read", "power_cycle_persistence", "ordinary_image_restore"]
+    },
+    {
+      "id": "H5",
+      "status": "pass",
+      "passed": ["sht40_uart3_hv1_start_progress_result", "sht40_swd_result_match", "measurements_1800_of_1800", "errors_0"]
+    },
+    {
+      "id": "H6",
+      "status": "partial",
+      "passed": ["icm_core_long_run_1802_seconds", "samples_2878530", "fifo_dma_parser_capacity_errors_0"],
+      "missing": ["uart3_hv1_json", "pool_backpressure_count_field", "published_block_count_field"]
+    },
+    {
+      "id": "H7",
+      "status": "partial",
+      "passed": ["u2_events_100_of_100", "event_ids_1_through_100", "crc_100_of_100", "committed_data_power_cycle_persistence"],
+      "missing": ["formal_h6_dependency"]
+    },
+    {
+      "id": "H8",
+      "status": "partial",
+      "passed": ["current_connection_info_health_list_download", "serial_handle_reopen_20_of_20", "physical_reconnect_7_runs"],
+      "missing": ["physical_reconnect_download_resume_consistency_20_runs"]
+    },
+    {
+      "id": "H9",
+      "status": "partial",
+      "passed": ["software_entry_audit"],
+      "missing": ["rtc_vbat_lse_entry", "watchdog_reset_reason_entry", "sht40_disconnect_recovery_entry", "hardware_runs"]
+    },
+    {
+      "id": "H10",
+      "status": "not_implemented",
+      "missing": ["usb_cdc_clock_pins_vid_pid_enumeration", "physical_enumeration_20_runs", "terp_equivalent_commands"]
+    },
+    {
+      "id": "H11",
+      "status": "partial",
+      "passed": ["post_fix_swd_read_only_window_1020_seconds_errors_0"],
+      "missing": ["post_fix_continuous_7200_second_result"]
+    }
+  ]
+}

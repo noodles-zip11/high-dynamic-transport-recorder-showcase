@@ -1,0 +1,6 @@
+#ifndef TRANSPORT_RECORDER_RTCONFIG_WRAPPER_H
+#define TRANSPORT_RECORDER_RTCONFIG_WRAPPER_H
+
+#include "config/rtconfig.h"
+
+#endif

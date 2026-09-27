@@ -1,0 +1,109 @@
+{
+  "events": [
+    {
+      "ai_prediction": {
+        "class_count": 4,
+        "class_index": 1,
+        "class_name": "impact",
+        "confidence": 0.7805291414260864,
+        "model_version": 2,
+        "source": {
+          "summary": "full-qspi-event-backup/summary.json",
+          "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+        },
+        "status": 1
+      },
+      "event_id": 180,
+      "evidence_level": "derived",
+      "human_label": null,
+      "metadata": "event-180.json",
+      "planned_action": null,
+      "png": "event-180.png",
+      "verified_individual": false
+    },
+    {
+      "ai_prediction": {
+        "class_count": 4,
+        "class_index": 0,
+        "class_name": "background",
+        "confidence": 0.5372567772865295,
+        "model_version": 2,
+        "source": {
+          "summary": "full-qspi-event-backup/summary.json",
+          "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+        },
+        "status": 1
+      },
+      "event_id": 181,
+      "evidence_level": "derived",
+      "human_label": null,
+      "metadata": "event-181.json",
+      "planned_action": null,
+      "png": "event-181.png",
+      "verified_individual": false
+    },
+    {
+      "ai_prediction": {
+        "class_count": 4,
+        "class_index": 3,
+        "class_name": "drop",
+        "confidence": 0.8080127239227295,
+        "model_version": 2,
+        "source": {
+          "summary": "full-qspi-event-backup/summary.json",
+          "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+        },
+        "status": 1
+      },
+      "event_id": 191,
+      "evidence_level": "derived",
+      "human_label": null,
+      "metadata": "event-191.json",
+      "planned_action": "drop",
+      "png": "event-191.png",
+      "verified_individual": false
+    },
+    {
+      "ai_prediction": {
+        "class_count": 4,
+        "class_index": 3,
+        "class_name": "drop",
+        "confidence": 0.9966437816619873,
+        "model_version": 2,
+        "source": {
+          "summary": "full-qspi-event-backup/summary.json",
+          "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+        },
+        "status": 1
+      },
+      "event_id": 195,
+      "evidence_level": "derived",
+      "human_label": null,
+      "metadata": "event-195.json",
+      "planned_action": "drop",
+      "png": "event-195.png",
+      "verified_individual": false
+    },
+    {
+      "ai_prediction": {
+        "class_count": 4,
+        "class_index": 3,
+        "class_name": "drop",
+        "confidence": 0.5017959475517273,
+        "model_version": 2,
+        "source": {
+          "summary": "full-qspi-event-backup/summary.json",
+          "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+        },
+        "status": 1
+      },
+      "event_id": 202,
+      "evidence_level": "derived",
+      "human_label": null,
+      "metadata": "event-202.json",
+      "planned_action": null,
+      "png": "event-202.png",
+      "verified_individual": false
+    }
+  ]
+}

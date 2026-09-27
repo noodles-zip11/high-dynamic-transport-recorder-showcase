@@ -1,0 +1,7 @@
+backup1_path=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-1.bin
+backup1_bytes=2097152
+backup1_sha256=C602B500231914F96A7FA6A1AADA244A89962A82BAC401D22E2D6145D67244A4
+backup2_path=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-2.bin
+backup2_bytes=2097152
+backup2_sha256=C602B500231914F96A7FA6A1AADA244A89962A82BAC401D22E2D6145D67244A4
+backup_hash_equal=True

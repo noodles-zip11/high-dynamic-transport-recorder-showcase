@@ -1,0 +1,9 @@
+from building import SConscript
+
+
+objects = []
+objects.extend(SConscript("app/SConscript"))
+objects.extend(SConscript("bsp/openmv4_h743/SConscript"))
+objects.extend(SConscript("components/SConscript"))
+objects.extend(SConscript("drivers/SConscript"))
+Return("objects")

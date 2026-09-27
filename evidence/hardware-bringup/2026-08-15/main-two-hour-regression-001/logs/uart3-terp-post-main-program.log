@@ -1,0 +1,17 @@
+2026-08-15T18:19:16.9588437+08:00 COM8 UART3 post-main-program read-only
+
+[2026-08-15T18:19:16.9715823+08:00] info --port COM8 --json
+{"capability_flags":43,"firmware_version":"phase08-terp-uart3","hardware_version":"openmv4-h743-pd8-pd9","model":"STM32H743","serial_number":"pending"}
+exit_code=0
+
+[2026-08-15T18:19:18.1291001+08:00] health --port COM8 --json
+{"event_export_error_count":0,"free_log_bytes":0,"state":2,"storage_error_count":0,"storage_ready":true}
+exit_code=0
+
+[2026-08-15T18:19:19.0202679+08:00] time --port COM8 --json get
+device rejected 0x0004: 2
+exit_code=3
+
+[2026-08-15T18:19:19.9115221+08:00] events list --port COM8 --json
+{"events":[{"event_crc32":2522325444,"event_id":1,"total_length":38528}],"next_event_id":0}
+exit_code=0

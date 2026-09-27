@@ -1,0 +1,12 @@
+=== HIL-FW-BASELINE-RESTORE-001 build ===
+timestamp=2026-08-15T13:09:53.6130459+08:00
+scope=build phase11_ota_only app; no SPI Event Flash service compiled/run
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\firmware'
+Newlib version: 4.4.0
+scons: `build\transport_recorder.elf' is up to date.
+Building compilation database compile_commands.json
+build_exit=0
+image=LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\ota\firmware\build\transport_recorder.bin
+image_size=148064
+image_sha256=BA21D149B14CB226218D7CCBDA39FF34FF94A1CB47838AF0C2FD085B06AE4279
+copied_evidence_sha256=BA21D149B14CB226218D7CCBDA39FF34FF94A1CB47838AF0C2FD085B06AE4279

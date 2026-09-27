@@ -1,0 +1,10 @@
+=== HIL-FW-TERP-003 ===
+timestamp=2026-08-15T13:13:03.9730691+08:00
+port=COM7
+scope=read-only TERP info and health after formal Bootloader/app restore; no SPI Event Flash access
+--- info ---
+Cannot configure port, something went wrong. Original message: PermissionError(13, '����ϵͳ�ϵ��豸û�з������á�', None, 31)
+info_exit=2
+--- health ---
+Cannot configure port, something went wrong. Original message: PermissionError(13, '����ϵͳ�ϵ��豸û�з������á�', None, 31)
+health_exit=2

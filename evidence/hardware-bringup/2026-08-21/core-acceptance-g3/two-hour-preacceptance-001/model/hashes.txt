@@ -1,0 +1,8 @@
+
+Algorithm : SHA256
+Hash      : 0840CC6CFD2CD38D2ACFF6EB6956E60CB3A7DA7259E3934A700D653C53F2729C
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\evidence\hardware-bringup\2026-08-21\core-acceptance-g3\two-hour-preacceptance-001\model\model-a-v2.trmd
+
+Algorithm : SHA256
+Hash      : E3DC4EDA4CD38E4455FABB57732223A51408DBBF020FCF5BFBA07BFC250AE110
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\evidence\hardware-bringup\2026-08-21\core-acceptance-g3\two-hour-preacceptance-001\model\model-b-v3.trmd

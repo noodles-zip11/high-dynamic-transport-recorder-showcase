@@ -1,0 +1,52 @@
+{
+  "schema": "g3-uart1-finsh-baseline-20260821-v1",
+  "port": "COM6",
+  "baud": 115200,
+  "format": "8N1",
+  "started_at_utc": "2026-08-21T10:18:52.506498+00:00",
+  "ended_at_utc": "2026-08-21T10:19:09.226763+00:00",
+  "power_cycle_performed_by_script": false,
+  "timer_started_by_script": false,
+  "commands": [
+    {
+      "command": "sysinfo",
+      "prompt_seen": true,
+      "response_bytes": 1699,
+      "fatal_marker_seen": false
+    },
+    {
+      "command": "ps",
+      "prompt_seen": true,
+      "response_bytes": 2249,
+      "fatal_marker_seen": false
+    },
+    {
+      "command": "event status",
+      "prompt_seen": true,
+      "response_bytes": 1681,
+      "fatal_marker_seen": false
+    },
+    {
+      "command": "log status",
+      "prompt_seen": true,
+      "response_bytes": 1678,
+      "fatal_marker_seen": false
+    },
+    {
+      "command": "log inspect",
+      "prompt_seen": true,
+      "response_bytes": 1685,
+      "fatal_marker_seen": false
+    }
+  ],
+  "error": null,
+  "pass": true,
+  "raw_log": {
+    "bytes": 10100,
+    "sha256": "7CD2A2B54D4D7D0E59DABBCF31FA0B640B655FA62D52BFE4B8B3E61F753A41CD"
+  },
+  "console_log": {
+    "bytes": 10540,
+    "sha256": "0AF84D31899706A1F299B93C1E2ABFAD3001236D651A5E2373564E41A0386D71"
+  }
+}

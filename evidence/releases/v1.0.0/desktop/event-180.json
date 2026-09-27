@@ -1,0 +1,55 @@
+{
+  "ai_prediction": {
+    "class_count": 4,
+    "class_index": 1,
+    "class_name": "impact",
+    "confidence": 0.7805291414260864,
+    "model_version": 2,
+    "source": {
+      "summary": "full-qspi-event-backup/summary.json",
+      "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+    },
+    "status": 1
+  },
+  "crc": {
+    "device_crc32": "0x86823E18",
+    "payload_crc32": "0x3A741099",
+    "record_crc_verified": true
+  },
+  "decoded": {
+    "format_version": 3,
+    "lost_sample_count": 0,
+    "posttrigger_samples": 1592,
+    "pretrigger_samples": 808,
+    "sample_count": 2400,
+    "sample_rate_hz": 1600,
+    "subtrigger_count": 0
+  },
+  "derived_from": {
+    "decoder": "host.transport_recorder.analysis.event_record.load_event",
+    "raw_event": "full-qspi-event-backup/event-180.terp-event",
+    "raw_event_sha256": "42185a18b49f9e3a13618dfed5e477fb5cd21a166223cac32556323bda468d60",
+    "summary": "full-qspi-event-backup/summary.json",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  },
+  "event_id": 180,
+  "evidence_level": "derived",
+  "human_label": {
+    "confidence": "not individually asserted; the field action sequence was not fully deterministic",
+    "planned_action": null,
+    "source": null,
+    "value": null,
+    "verified_individual": false
+  },
+  "label_semantics": "human_label.value is populated only for individually verified action truth; planned_action is a non-truth action plan mapping; ai_prediction is the MCU model output and is never used as the label",
+  "png": {
+    "relative_path": "desktop/event-180.png",
+    "sha256": "4f2c8f3173356d64060c7212b00dcf0f3984151668b9890df5ba7cfc1fd8fb12",
+    "size_bytes": 37834
+  },
+  "source_raw": {
+    "relative_name": "full-qspi-event-backup/event-180.terp-event",
+    "sha256": "42185a18b49f9e3a13618dfed5e477fb5cd21a166223cac32556323bda468d60",
+    "summary_sha256": "e24a44b1c9c6b8df4e119cc23e35ca7c80034263683e076bf106f2a0a0392228"
+  }
+}

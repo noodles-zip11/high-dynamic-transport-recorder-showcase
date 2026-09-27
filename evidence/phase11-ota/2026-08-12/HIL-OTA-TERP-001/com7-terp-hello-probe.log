@@ -1,0 +1,5 @@
+TX_HEX=54520114010000001100000001000000424e02ab011bdf05a5
+RX_HEX=5452011401800080110000000d0000002ac460f00100100000a00f00002b00000096e42257
+RX_LENGTH=37
+TERP_FRAMES=[Frame(message_type=32769, flags=32768, sequence=17, payload=b'\x01\x00\x10\x00\x00\xa0\x0f\x00\x00+\x00\x00\x00')]
+PARSER_STATS=ParserStats(header_crc_error_count=0, payload_crc_error_count=0, length_error_count=0, version_error_count=0, unknown_message_count=0, resync_byte_count=0, timeout_count=0)

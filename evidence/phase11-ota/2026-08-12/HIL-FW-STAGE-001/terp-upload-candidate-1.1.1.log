@@ -1,0 +1,18 @@
+QUERY_BEFORE_WRITE (147188, 0, 0)
+WRITE verified=256/147188
+WRITE verified=16384/147188
+WRITE verified=32768/147188
+WRITE verified=49152/147188
+WRITE verified=65536/147188
+WRITE verified=81920/147188
+WRITE verified=98304/147188
+WRITE verified=114688/147188
+WRITE verified=131072/147188
+WRITE verified=147188/147188
+Traceback (most recent call last):
+  File "<stdin>", line 25, in <module>
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 310, in _request
+    self._raise_device_error(response)
+  File "LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\ota\host\transport_recorder\protocol\client.py", line 340, in _raise_device_error
+    raise DeviceError(code, request_type)
+transport_recorder.protocol.client.DeviceError: device rejected 0x0103: 5

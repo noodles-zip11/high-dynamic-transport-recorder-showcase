@@ -1,0 +1,29 @@
+version: 1
+
+# Resolve event source_path values from this directory. Raw private data must
+# remain outside Git; replace this example with a versioned metadata manifest.
+dataset_root: ../../private-datasets/transport-recorder/raw
+
+sessions:
+  - session_id: 20260811_01
+    device_id: pending
+    operator_id: operator_01
+    date_local: 2026-08-11
+    mounting_id: box_bottom_right_xright_yrear_zup
+    package_id: carton_a_foam_01
+    action_class: impact
+    repetition: "01"
+    sample_rate_hz: 1600
+    accel_range: "16g"
+    gyro_range: "2000dps"
+    firmware_revision: 203bfaa55ab905375c640216e78b8d438e25a89c
+    notes: example_only_not_training_ready; controlled_bench_simulation
+
+events:
+  - session_id: 20260811_01
+    event_id: 1
+    source_path: device_01/1.terp-event
+    source_sha256: replace_with_64_lowercase_hex_characters
+    label: impact
+    label_confidence: high
+    notes: example_only_not_training_ready

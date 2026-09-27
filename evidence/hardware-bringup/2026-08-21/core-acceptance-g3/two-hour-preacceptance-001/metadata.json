@@ -1,0 +1,158 @@
+{
+  "schema": "core-acceptance-g3-two-hour-preacceptance-20260821-v1",
+  "prepared_on": "2026-08-21",
+  "gate": "G3",
+  "status": "COMPLETED_STRICT_FAIL_POOL_BACKPRESSURE",
+  "current_core_scope": "Two-hour concurrent preacceptance only; G2 power-loss matrix, G3 physical reconnect and 72-hour run remain deferred.",
+  "worktree": {
+    "path": "LOCAL_USER_HOME/Desktop/高动态运输事件记录器-worktrees/hardware-2h-run-20260821",
+    "branch": "fix/hardware-2h-run-20260821",
+    "base_main_revision": "ee588c47ffaf07436626b00f4a3884c908a5138f",
+    "base_commit_checked": true,
+    "tracked_changes_at_preparation_check": [],
+    "untracked_changes_at_preparation_check": "This session evidence directory only; it was created after the clean base checkout was created.",
+    "main_worktree_modified": false
+  },
+  "firmware": {
+    "board_embedded_revision": "4c47fe69b544ef9327300910d66f04927871f0dc",
+    "profile": "Release",
+    "bin_bytes": 128952,
+    "bin_sha256": "2F0E676507D1591060BA759D8F81C6DE472D302988172A22DEF627365B5E878A",
+    "elf_sha256": "AC3B7CFFD5034E8D6E2669DE8D50793ED139985D4403A2D6E4BB9544FC78454E",
+    "map_sha256": "ADA8A0DAB124D6B584EED399E067465342327488598C4B44AED225E5F52F3089",
+    "program_address": "0x08020000",
+    "reflash_planned_before_user_start": false,
+    "artifact_source": "main/firmware/build exact hash match to recorded G0/G1 Release artifact"
+  },
+  "source_build_check": {
+    "status": "PASS",
+    "revision": "ee588c47ffaf07436626b00f4a3884c908a5138f",
+    "profile": "Release",
+    "device_serial": "recorder-001",
+    "bin_sha256": "9889FABF602D0B0A1AFDB8482A28F7C26D9960365F1DCC2A79498880EED53563",
+    "elf_sha256": "740F0EE36657352A34C17EF7B2A1653BA29B597FE13FB2C3B4F7986AE1B88352",
+    "map_sha256": "ADA8A0DAB124D6B584EED399E067465342327488598C4B44AED225E5F52F3089",
+    "interpretation": "Build/vector/alignment check passed; this newly built artifact was not programmed and is not substituted for the board's exact G0/G1 image."
+  },
+  "device": {
+    "mcu": "STM32H743VIT6",
+    "device_serial": "recorder-001",
+    "stlink_serial": "DEVICE_SERIAL_REDACTED__",
+    "target_voltage_v_historical": 3.23
+  },
+  "transports": {
+    "uart1": {
+      "expected_port": "COM8",
+      "role": "FinSH control, event trigger and runtime metrics",
+      "pins": "PA9/PA10/GND",
+      "baud": 115200,
+      "format": "8N1",
+      "vcc_connected": false,
+      "adapter": "TTL-A",
+      "actual_port": "COM6",
+      "role_confirmed_by_user": true
+    },
+    "uart3": {
+      "expected_port": "COM7",
+      "role": "TERP health, model query, event download and result readback",
+      "pins": "PD8/PD9/GND",
+      "baud": 115200,
+      "format": "8N1",
+      "vcc_connected": false,
+      "adapter": "TTL-B",
+      "actual_port": "COM7",
+      "role_confirmed_by_user": true
+    },
+    "independent_adapters_required": true,
+    "actual_ports_verified": true,
+    "enumerated_devices": ["COM3", "COM4", "COM6", "COM7"]
+  },
+  "model_packages": {
+    "A": {
+      "path": "model/model-a-v2.trmd",
+      "bytes": 510,
+      "sha256": "0840CC6CFD2CD38D2ACFF6EB6956E60CB3A7DA7259E3934A700D653C53F2729C"
+    },
+    "B": {
+      "path": "model/model-b-v3.trmd",
+      "bytes": 510,
+      "sha256": "E3DC4EDA4CD38E4455FABB57732223A51408DBBF020FCF5BFBA07BFC250AE110"
+    }
+  },
+  "required_metrics": [
+    "hardfault_assert_unexpected_reset",
+    "ev03_lost_samples",
+    "ai_queue_drop",
+    "pool_minimum",
+    "pool_backpressure",
+    "task_stack_high_water",
+    "storage_and_event_export_errors",
+    "event_and_ai_result_traceability"
+  ],
+  "preflight": {
+    "full_selfcheck": "PASS",
+    "release_artifact_hash_match": "PASS",
+    "release_source_build_check": "PASS",
+    "ports_observed_before_start": ["COM3", "COM4", "COM6", "COM7"],
+    "expected_uart_ports_observed": true,
+    "board_power_operation_started": true,
+    "uart_io_started": true,
+    "two_hour_timer_started": true,
+    "t0_started_at_utc": "2026-08-21T10:34:00.767179+00:00",
+    "two_hour_timer_completed": true,
+    "two_hour_timer_result": "FAIL_POOL_BACKPRESSURE_OBSERVED",
+    "user_start_instruction_received": true,
+    "waiting_for_power_on": false,
+    "blocked_on_uart3_baseline": false,
+    "baseline_completed": true,
+    "t0_started": true
+  },
+  "baseline": {
+    "uart1": {
+      "status": "PASS",
+      "port": "COM6",
+      "commands": ["sysinfo", "ps", "event status", "log status", "log inspect"],
+      "prompt_seen_for_all_commands": true,
+      "fatal_marker_seen": false,
+      "result": "uart1/baseline/baseline.json"
+    },
+    "uart3": {
+      "status": "PASS",
+      "port": "COM7",
+      "retry_after_replug_timeout_seconds": 5,
+      "rx_frames_received": true,
+      "device_identity_match": true,
+      "health_ok": true,
+      "model_ok": true,
+      "event_readback_ok": true,
+      "event_count": 39,
+      "first_attempt": "uart3/baseline/baseline.json",
+      "retry_attempt": "uart3/baseline-retry-5s/retry-5s.json",
+      "result": "uart3/retry-after-replug/retry-after-replug.json",
+      "interpretation": "The initial no-response condition cleared after the user replugged the UART3 adapter; the complete COM7 TERP readback baseline now passes."
+    }
+  },
+  "run_result": {
+    "status": "COMPLETED_STRICT_FAIL_POOL_BACKPRESSURE",
+    "t0_started_at_utc": "2026-08-21T10:34:00.767179+00:00",
+    "ended_at_utc": "2026-08-21T12:34:00.791932+00:00",
+    "duration_seconds": 7200,
+    "heartbeats": 130,
+    "model_switches": 4,
+    "event_triggers": 2,
+    "events_traceable": [39, 40, 41],
+    "pool_backpressure_max": 26,
+    "stack_usage_max_pct": 86,
+    "fifo_dma_lost_sample_queue_storage_errors": 0,
+    "strict_gate_result": "FAIL_POOL_BACKPRESSURE_OBSERVED",
+    "evidence": "monitor/run-001/metrics-summary.json"
+  },
+  "safety_exclusions": [
+    "board_flash_diagnostic=1",
+    "log format --confirm",
+    "U2 erase",
+    "write-window power interruption",
+    "physical power-cut stress",
+    "USB-TTL unplug/reconnect stress"
+  ]
+}

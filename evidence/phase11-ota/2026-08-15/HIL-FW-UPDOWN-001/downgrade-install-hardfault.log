@@ -1,0 +1,171 @@
+=== core register snapshot ===
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+PC       = 0x0800305C
+MSP      = 0x2407FC78
+LR       = 0xFFFFFFF1
+XPSR     = 0x21000003
+=== fault registers ===
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED24
+
+0xE000ED24 : 00000800
+
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED28
+
+0xE000ED28 : 00008200
+
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED2C
+
+0xE000ED2C : 40000000
+
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED34
+
+0xE000ED34 : 00010000
+
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED38
+
+0xE000ED38 : 00010000
+
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0xE000ED08
+
+0xE000ED08 : 08000000
+
+
+=== stacked exception frame at MSP 0x2407FC78 ===
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 32 Bytes
+  Address:      : 0x2407FC78
+
+0x2407FC78 : 00000002 00000001 52002000 00000001
+0x2407FC88 : 00000000 FFFFFFF9 08001AA0 2100000F
+=== state pages ===
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 48 Bytes
+  Address:      : 0x081C0000
+
+0x081C0000 : 5453544F 00300001 00000066 00000001
+0x081C0010 : 00000000 00000000 00000000 00000000
+0x081C0020 : 00000000 00000000 F08F4F26 5A3CC3A5
+
+Reading 32-bit memory content
+  Size          : 48 Bytes
+  Address:      : 0x081E0000
+
+0x081E0000 : 5453544F 00300001 00000067 00000002
+0x081E0010 : 00000000 00000000 00000000 00000000
+0x081E0020 : 00000000 00000000 038B4DAB 5A3CC3A5
+=== symbol location ===
+SysTick_Handler
+LOCAL_USER_HOME/Desktop/高动态运输事件记录器-worktrees/ota/bootloader/src/bootloader_platform_hal.c:25
+RTC_Alarm_IRQHandler
+LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_cmsis_driver-latest\Source\Templates\gcc/startup_stm32h743xx.s:115
+=== package hashes ===
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          1DBEF7FCE406169FB6ED5373CF5E7880907A14B8BB1E9087A00E7E1C3A744019       LOCAL_USER_HOME\Desktop\高动态运…
+
+
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          7D6D355DF9F8A08F79F407DEB0A2F78C29955E838D3DF669C1E2D66FF75909F2       LOCAL_USER_HOME\Desktop\高动态运…

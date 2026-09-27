@@ -1,0 +1,57 @@
+{
+  "schema": "pool-backpressure-smoke-v1",
+  "status": "SCOPED_PASS",
+  "uart1": "COM6",
+  "uart3": "COM7",
+  "duration_seconds": 240.0,
+  "heartbeat_seconds": 15.0,
+  "trigger_offsets": [
+    20.0,
+    120.0
+  ],
+  "started_at_utc": "2026-08-22T02:15:04.714243+00:00",
+  "t0_started_at_utc": "2026-08-22T02:15:18.057211+00:00",
+  "ended_at_utc": "2026-08-22T02:19:40.750101+00:00",
+  "trigger_count": 2,
+  "new_event_ids": [
+    47,
+    48
+  ],
+  "event_readback_count": 2,
+  "heartbeat_count": 16,
+  "counter_max": {
+    "fifo_count_err": 0,
+    "fifo_capacity_err": 0,
+    "fifo_read_err": 0,
+    "fifo_parse_err": 0,
+    "dma_start_err": 0,
+    "dma_timeout": 0,
+    "dma_complete_err": 0,
+    "pool_backpressure": 0,
+    "export_err": 0,
+    "resource_err": 0,
+    "queue_drop": 0,
+    "result_queue_drop": 0,
+    "store_err": 0,
+    "feature_err": 0,
+    "runtime_err": 0
+  },
+  "critical_counters": {},
+  "pool_min_free_min": 49,
+  "fatal_marker_seen": false,
+  "error": null,
+  "pass_candidate": true,
+  "scope": "short event-export regression; not the deferred two-hour G3 gate",
+  "uart1_raw": {
+    "bytes": 164892,
+    "sha256": "1E5318E61EF7BF081F5E7AD03EC3C95EA4F104C1950BB01F2734C14F163F4C1D"
+  },
+  "uart1_console": {
+    "bytes": 169470,
+    "sha256": "55167C268FC8C27BB283A50A4A4A43292954CBC24B36450EF62CAC7E877C001D"
+  },
+  "uart3_raw": {
+    "bytes": 223894,
+    "sha256": "8228DB40AF5C19DCFF0D5DC9882868A564112756AD8C3F9700BE8FD1A32F1F9F"
+  }
+}

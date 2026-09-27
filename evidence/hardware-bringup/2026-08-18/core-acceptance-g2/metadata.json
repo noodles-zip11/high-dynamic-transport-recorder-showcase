@@ -1,0 +1,62 @@
+{
+  "schema": "core-acceptance-g2-20260818-v1",
+  "date": "2026-08-18",
+  "gate": "G2",
+  "status": "DEFERRED_POST_CORE_PREFLIGHT_PASS_NOT_EXECUTED",
+  "current_core_blocking": false,
+  "deferred_reason": "The 100-cycle power-loss matrix is retained for post-core reliability validation.",
+  "main_revision": "4c47fe69b544ef9327300910d66f04927871f0dc",
+  "release_bin_sha256": "2F0E676507D1591060BA759D8F81C6DE472D302988172A22DEF627365B5E878A",
+  "device": {
+    "model": "STM32H743",
+    "hardware_version": "openmv4-h743-pd8-pd9",
+    "serial_number": "recorder-001",
+    "stlink_serial": "DEVICE_SERIAL_REDACTED__"
+  },
+  "transport": {
+    "uart": "UART3/TERP",
+    "port": "COM7",
+    "baud": 115200,
+    "format": "8N1",
+    "pins": "PD8/PD9",
+    "ttl_vcc_connected": false
+  },
+  "required_power_cycles": 100,
+  "planned_segments": {
+    "firmware_ota_existing_30_point_contract": 30,
+    "raw_event_commit_and_rotation": 20,
+    "ai_sidecar_body_commit_and_rotation": 20,
+    "model_payload_state_commit_and_gc": 30
+  },
+  "completed_power_cycles": 0,
+  "preflight": {
+    "status": "PASS",
+    "readback": "preflight/g2-preflight.json",
+    "raw_uart_log": "preflight/g2-preflight.raw.jsonl",
+    "raw_uart_log_bytes": 90880,
+    "raw_uart_log_sha256": "8AEA43C61B6656E9492DF8AFF367F2DDD2C0F3637393B390213A82E2EAD57C2E",
+    "frame_summary": "preflight/g2-preflight.frames.jsonl",
+    "frame_summary_bytes": 5398,
+    "frame_summary_sha256": "71B008848624A9C4AA26245ADFF137DF42B5E6A02DA7F974D8065974BAA547F6",
+    "event_id": 39,
+    "event_bytes": 38560,
+    "event_crc32": 3745476147,
+    "event_sha256": "CD30BC5A5B01058D9FCEE7CF5A4383711C02E8B79E601260120E7AFC7FF545E5",
+    "identity_match": true,
+    "storage_ready": true,
+    "storage_error_count": 0,
+    "event_export_error_count": 0,
+    "model_valid": true,
+    "pending_install": false
+  },
+  "pending": [
+    "independent board power-control fixture",
+    "phase-marked fault-injection points for each segment",
+    "100 physical power-loss rounds and post-boot readback",
+    "reviewer approval of final G2 evidence"
+  ],
+  "evidence": {
+    "readme": "evidence/hardware-bringup/2026-08-18/core-acceptance-g2/README.md",
+    "readback_tool": "scripts/hardware_acceptance_readback.py"
+  }
+}

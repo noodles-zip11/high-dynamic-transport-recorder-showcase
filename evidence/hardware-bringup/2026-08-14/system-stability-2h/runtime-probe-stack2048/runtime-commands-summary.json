@@ -1,0 +1,53 @@
+{
+  "port": "COM7",
+  "baud": 115200,
+  "format": "8N1",
+  "commands": [
+    {
+      "command": "help",
+      "bytes": 1335,
+      "prompt_seen": true,
+      "text": "help\r\nRT-Thread shell commands:\r\nevent            - event capture control: status arm trigger_test export clear\r\nsysinfo          - show transport recorder system information\r\nlog              - event log status and explicit format\r\nreboot           - Reboot System\r\npin              - pin [option]\r\nclear            - clear the terminal screen\r\nversion          - show RT-Thread version information\r\nconsole          - console setting\r\nlist             - list objects\r\nhelp             - RT-Thread shell help\r\nps               - List threads in the system\r\nfree             - Show the memory usage in the system\r\nbacktrace        - print backtrace of a thread\r\nmemcheck         - check memory data\r\nmemtrace         - dump memory trace information\r\n\r\nmsh >\r\nmsh >imu services=308 samples=9856 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=308 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=359 samples=11488 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=359 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    },
+    {
+      "command": "ps",
+      "bytes": 1528,
+      "prompt_seen": true,
+      "text": "ps\r\nthread       pri  status      sp     stack size max used left tick   error  tcb addr   usage\r\n------------ ---  ------- ---------- ----------  ------  ---------- ------- ---------- -----\r\nsysreport     12  suspend 0x00000164 0x00000800     57%   0x00000008 EINTRPT 0x2402eec0  N/A\r\nled_hb        20  suspend 0x000000d4 0x00000200     48%   0x0000000a EINTRPT 0x2402ec00  N/A\r\nevent          9  suspend 0x000000dc 0x00000800     14%   0x00000008 EINTRPT 0x2402e340  N/A\r\nimu_acq        8  suspend 0x000000cc 0x00000800     16%   0x00000004 EINTRPT 0x2402da80  N/A\r\nterp_rx       18  suspend 0x000000bc 0x00000800     11%   0x0000000a EINTRPT 0x2402d1c0  N/A\r\ntshell        20  running 0x00000224 0x00000800     27%   0x00000001 OK      0x2402c4e0  N/A\r\ntidle0        31  ready   0x0000005c 0x00000400     25%   0x00000006 OK      0x2402ac08  N/A\r\ntimer          4  suspend 0x000000b4 0x00000200     35%   0x00000009 EINTRPT 0x2402b3f4  N/A\r\nmsh >\r\nmsh >imu services=410 samples=13120 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=410 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=461 samples=14752 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=461 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    },
+    {
+      "command": "list",
+      "bytes": 971,
+      "prompt_seen": true,
+      "text": "list\r\nUsage: list [options]\r\n[options]:\r\n    thread           - list threads\r\n    timer            - list timers\r\n    sem              - list semaphores\r\n    event            - list events\r\n    mutex            - list mutexs\r\n    mailbox          - list mailboxs\r\n    msgqueue         - list message queues\r\n    mempool          - list memory pools\r\n    device           - list devices\r\nmsh >\r\nmsh >imu services=513 samples=16384 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=512 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=564 samples=18048 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=564 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    },
+    {
+      "command": "list_thread",
+      "bytes": 630,
+      "prompt_seen": true,
+      "text": "list_thread\r\nlist_thread: command not found.\r\nmsh >\r\nmsh >imu services=615 samples=19680 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=615 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=666 samples=21312 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=666 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    },
+    {
+      "command": "sysinfo",
+      "bytes": 795,
+      "prompt_seen": true,
+      "text": "sysinfo\r\nfirmware_version=phase08-terp-uart3\r\ngit_revision_or_local=local\r\nbuild_time=Aug 14 2026 19:23:23\r\nsysclk_hz=240000000\r\nrt_tick_hz=1000\r\nreset_reason=0x01fe0000\r\nheap_free_bytes=331024\r\nthread_count=8\r\nmsh >\r\nmsh >imu services=717 samples=22944 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=717 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=769 samples=24576 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=768 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    },
+    {
+      "command": "event status",
+      "bytes": 669,
+      "prompt_seen": true,
+      "text": "event status\r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nmsh >\r\nmsh >imu services=820 samples=26240 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=820 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=871 samples=27872 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=871 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    },
+    {
+      "command": "log status",
+      "bytes": 668,
+      "prompt_seen": true,
+      "text": "log status\r\nlog state=1 events=100 next_id=101 next_offset=0x003ea000 jedec=ef4017\r\nmsh >\r\nmsh >imu services=922 samples=29504 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=922 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\nimu services=973 samples=31136 fifo_max_bytes=512 fifo_empty=0 fifo_count_err=0 fifo_capacity_err=0 fifo_read_err=0 fifo_parse_err=0 dma_start_err=0 dma_timeout=0 dma_complete_err=0 pool_backpressure=0 blocks=973 \r\nevent state=0 pretrigger_blocks=25 busy=0 export_err=0 resource_err=0\r\n"
+    }
+  ],
+  "raw_bytes": 6881,
+  "sysreport_thread_seen": true,
+  "imu_report_seen": true,
+  "startup_failure_seen": false
+}

@@ -1,0 +1,162 @@
+git version 2.54.0.windows.1
+PowerShell 7.6.4
+Python: 3.12.10
+pytest 8.4.2
+SCons by Steven Knight et al.:
+	SCons: v4.10.1.055b01f429d58b686701a56df863a817c36bb103, Sun, 16 Nov 2025 14:18:20 -0700, by bdbaddog on M1Dog2021
+arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614
+gcc.exe (GCC) 15.2.0
+ARM GCC: C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe
+Native GCC: C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin\gcc.exe
+RTT_ROOT: LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard
+Environment self-check (HostOnly): PASS
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��-worktrees\hardware-2h-run-20260821\firmware'
+Newlib version: 4.4.0
+CC build\kernel\components\libc\compilers\common\cctype.o
+CC build\kernel\components\libc\compilers\common\cstdlib.o
+CC build\kernel\components\libc\compilers\common\cstring.o
+CC build\kernel\components\libc\compilers\common\ctime.o
+CC build\kernel\components\libc\compilers\common\cunistd.o
+CC build\kernel\components\libc\compilers\common\cwchar.o
+CC build\kernel\components\libc\compilers\newlib\syscalls.o
+CC build\kernel\libcpu\arm\common\atomic_arm.o
+CC build\kernel\libcpu\arm\common\div0.o
+CC build\kernel\libcpu\arm\common\showmem.o
+AS build\kernel\libcpu\arm\cortex-m7\context_gcc.o
+CC build\kernel\libcpu\arm\cortex-m7\cpu_cache.o
+CC build\kernel\libcpu\arm\cortex-m7\cpuport.o
+CC build\kernel\src\klibc\kerrno.o
+CC build\kernel\src\klibc\kstdio.o
+CC build\kernel\src\klibc\kstring.o
+CC build\kernel\src\klibc\rt_vsnprintf_tiny.o
+CC build\kernel\src\klibc\rt_vsscanf.o
+CC build\bsp\openmv4_h743\board.o
+CC build\bsp\openmv4_h743\dma_buffer.o
+CC build\bsp\openmv4_h743\imu_spi.o
+CC build\bsp\openmv4_h743\sht4x_i2c.o
+CC build\bsp\openmv4_h743\stm32h7xx_hal_msp.o
+CC build\bsp\openmv4_h743\u8_nor_spi.o
+CC build\external\bsp\stm32\libraries\HAL_Drivers\drivers\drv_gpio.c.o
+CC build\external\bsp\stm32\libraries\HAL_Drivers\drivers\drv_usart.c.o
+CC build\external\bsp\stm32\libraries\HAL_Drivers\drv_common.c.o
+AS build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_cmsis_driver-latest\Source\Templates\gcc\startup_stm32h743xx.s.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_cmsis_driver-latest\Source\Templates\system_stm32h7xx.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_cortex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_dma.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_dma_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_flash.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_flash_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_gpio.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_i2c.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_mdma.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_pwr.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_pwr_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_qspi.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_rcc.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_rcc_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_spi.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_uart.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_uart_ex.c.o
+CC build\components\ota\ota_crc32.o
+CC build\components\ota\ota_package.o
+CC build\components\ota\ota_sha256.o
+CC build\components\ota\ota_slots.o
+CC build\components\ota\ota_state.o
+CC build\app\acquisition\imu_acquisition.o
+CC build\app\acquisition\imu_acquisition_service.o
+CC build\app\acquisition\imu_acquisition_stats.o
+CC build\app\ai_inference\ai_features.o
+CC build\app\ai_inference\ai_inference_service.o
+CC build\app\ai_inference\ai_model_data.o
+CC build\app\ai_inference\ai_result_sidecar.o
+CC build\app\ai_inference\ai_runtime.o
+CC build\app\diagnostics\phase11_qspi_hil.o
+CC build\app\diagnostics\system_report_format.o
+CC build\app\diagnostics\uart3_echo.o
+app\ai_inference\ai_runtime.c: In function 'ai_runtime_infer':
+app\ai_inference\ai_runtime.c:354:43: warning: 'probabilities' may be used uninitialized [-Wmaybe-uninitialized]
+  354 |     prediction->confidence = probabilities[best_class] / probability_sum;
+      |                              ~~~~~~~~~~~~~^~~~~~~~~~~~
+app\ai_inference\ai_runtime.c:285:11: note: 'probabilities' declared here
+  285 |     float probabilities[AI_MODEL_MAX_CLASSES];
+      |           ^~~~~~~~~~~~~
+CC build\app\diagnostics\uart3_echo_service.o
+CC build\app\environment\environment_service.o
+CC build\app\event\event_assembler.o
+CC build\app\event\event_export_debug.o
+CC build\app\event\event_service.o
+CC build\app\event\pretrigger_ring.o
+CC build\app\event\trigger_detector.o
+CC build\app\health\health_service.o
+CC build\app\main.o
+CC build\app\ota\ota_download_service.o
+CC build\app\ota\ota_model_lifecycle.o
+CC build\app\ota\ota_model_package.o
+CC build\app\ota\ota_qspi_candidate.o
+CC build\app\ota\ota_state_app_store.o
+CC build\app\pipeline\sample_block_pool.o
+CC build\app\reset_power\reset_power_service.o
+CC build\app\runtime\app_runtime.o
+CC build\app\storage\storage_format_confirmation.o
+CC build\app\storage\storage_service.o
+CC build\app\time\monotonic_clock.o
+CC build\app\time\time_service.o
+CC build\app\transport\terp_service.o
+CC build\app\transport\terp_uart3.o
+CC build\components\protocol\terp_codec.o
+CC build\components\protocol\terp_device.o
+CC build\components\protocol\terp_parser.o
+CC build\components\storage\event_log.o
+CC build\components\storage\nor_flash_w25q.o
+CC build\drivers\icm45686\icm45686.o
+CC build\drivers\icm45686\icm45686_fifo.o
+CC build\drivers\sht4x\sht4x.o
+CC build\kernel\components\drivers\core\device.o
+CC build\kernel\components\drivers\ipc\completion_comm.o
+CC build\kernel\components\drivers\ipc\completion_up.o
+CC build\kernel\components\drivers\ipc\condvar.o
+CC build\kernel\components\drivers\ipc\dataqueue.o
+CC build\kernel\components\drivers\ipc\pipe.o
+CC build\kernel\components\drivers\ipc\ringblk_buf.o
+CC build\kernel\components\drivers\ipc\ringbuffer.o
+CC build\kernel\components\drivers\ipc\waitqueue.o
+CC build\kernel\components\drivers\ipc\workqueue.o
+CC build\kernel\components\drivers\pin\dev_pin.o
+CC build\kernel\components\drivers\serial\dev_serial.o
+CC build\kernel\components\finsh\cmd.o
+CC build\kernel\components\finsh\msh.o
+CC build\kernel\components\finsh\msh_parse.o
+CC build\kernel\components\finsh\shell.o
+CC build\kernel\src\clock.o
+CC build\kernel\src\components.o
+CC build\kernel\src\cpu_up.o
+CC build\kernel\src\defunct.o
+CC build\kernel\src\idle.o
+CC build\kernel\src\ipc.o
+CC build\kernel\src\irq.o
+CC build\kernel\src\kservice.o
+CC build\kernel\src\mem.o
+CC build\kernel\src\mempool.o
+CC build\kernel\src\object.o
+CC build\kernel\src\scheduler_comm.o
+CC build\kernel\src\scheduler_up.o
+CC build\kernel\src\thread.o
+CC build\kernel\src\timer.o
+Building compilation database compile_commands.json
+LINK build\transport_recorder.elf
+Memory region         Used Size  Region Size  %age Used
+             ROM:      128952 B      1664 KB      7.57%
+             RAM:      193676 B       512 KB     36.94%
+        D2_SRAM1:        2144 B       128 KB      1.64%
+arm-none-eabi-objcopy -O binary build\transport_recorder.elf build/transport_recorder.bin
+arm-none-eabi-size build\transport_recorder.elf
+   text	   data	    bss	    dec	    hex	filename
+ 127580	   1372	 194448	 323400	  4ef48	build\transport_recorder.elf
+Memory map: PASS (application Flash/vector 0x08020000, AXI SRAM heap, D2 DMA 32-byte aligned)
+ICM45686 alignment gate: PASS (inlined read_reg: 4 byte loads; no halfword loads)
+   text	   data	    bss	    dec	    hex	filename
+ 127580	   1372	 194448	 323400	  4ef48	LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.elf
+Firmware artifacts: PASS (LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.elf, LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.bin, LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\hardware-2h-run-20260821\firmware\build\transport_recorder.map)
+Build identity: profile=Release revision=ee588c47ffaf07436626b00f4a3884c908a5138f serial=recorder-001
+Application vector and memory map: PASS

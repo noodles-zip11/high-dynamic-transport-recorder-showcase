@@ -1,0 +1,37 @@
+{
+  "schema": "g3-two-hour-monitor-summary-20260821-v1",
+  "status": "COMPLETED_STRICT_FAIL_POOL_BACKPRESSURE",
+  "pass_candidate": false,
+  "strict_gate_result": "FAIL_POOL_BACKPRESSURE_OBSERVED",
+  "duration_seconds_requested": 7200.0,
+  "t0_started_at_utc": "2026-08-21T10:34:00.767179+00:00",
+  "ended_at_utc": "2026-08-21T12:34:00.791932+00:00",
+  "heartbeat_count": 130,
+  "model_switch_count": 4,
+  "event_trigger_count": 2,
+  "trace_event_id": 39,
+  "anomalies": [],
+  "strict_review_findings": [
+    "pool_backpressure counter reached 26; strict G3 requires zero",
+    "pool minimum is unavailable/default zero because the runtime health input is not wired"
+  ],
+  "stop_reason": null,
+  "logs": {
+    "uart1_raw": {
+      "bytes": 3853533,
+      "sha256": "0261BD98532609D10521449DE7DB2C1E6DA20C8047CBED1A3371931EF9F68FE0"
+    },
+    "uart1_console": {
+      "bytes": 3890496,
+      "sha256": "15D5A40A650EB6AF55E49E33C272A9E68123343959BC45E5B2CED6DC5AE1C877"
+    },
+    "uart3_raw": {
+      "bytes": 648544,
+      "sha256": "B02C40333C462BBDA857BD2B75537F3803CE23FE4595CE03B0225E8613539176"
+    },
+    "uart3_frames": {
+      "bytes": 229825,
+      "sha256": "3A4A186A37A2D59552814C3B96AC1F4132EF4FE68B34BCD65AF87A3C37C59431"
+    }
+  }
+}

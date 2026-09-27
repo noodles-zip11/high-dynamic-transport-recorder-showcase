@@ -1,0 +1,75 @@
+git version 2.54.0.windows.1
+PowerShell 7.6.4
+Python: 3.12.10
+pytest 8.4.2
+SCons by Steven Knight et al.:
+	SCons: v4.10.1.055b01f429d58b686701a56df863a817c36bb103, Sun, 16 Nov 2025 14:18:20 -0700, by bdbaddog on M1Dog2021
+arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614
+gcc.exe (GCC) 15.2.0
+ARM GCC: C:\ST\STM32CubeCLT_1.18.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe
+Native GCC: C:\Program Files\JetBrains\CLion 2026.1.3\bin\mingw\bin\gcc.exe
+RTT_ROOT: LOCAL_USER_HOME\Desktop\RT-Thread\rt-thread-standard
+Environment self-check (HostOnly): PASS
+scons: Entering directory `LOCAL_USER_HOME\Desktop\�߶�̬�����¼���¼��\firmware'
+Newlib version: 4.4.0
+CC build\kernel\libcpu\arm\cortex-m7\cpu_cache.o
+CC build\bsp\openmv4_h743\board.o
+CC build\bsp\openmv4_h743\dma_buffer.o
+CC build\bsp\openmv4_h743\imu_spi.o
+CC build\bsp\openmv4_h743\sht4x_i2c.o
+CC build\bsp\openmv4_h743\stm32h7xx_hal_msp.o
+CC build\bsp\openmv4_h743\u8_nor_spi.o
+CC build\external\bsp\stm32\libraries\HAL_Drivers\drivers\drv_gpio.c.o
+CC build\external\bsp\stm32\libraries\HAL_Drivers\drivers\drv_usart.c.o
+CC build\external\bsp\stm32\libraries\HAL_Drivers\drv_common.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_cmsis_driver-latest\Source\Templates\system_stm32h7xx.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_cortex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_dma.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_dma_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_flash.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_flash_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_gpio.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_i2c.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_mdma.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_pwr.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_pwr_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_qspi.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_rcc.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_rcc_ex.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_spi.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_uart.c.o
+CC build\external\bsp\stm32\stm32h743-atk-apollo\packages\stm32h7_hal_driver-latest\Src\stm32h7xx_hal_uart_ex.c.o
+CC build\components\ota\ota_crc32.o
+CC build\components\ota\ota_package.o
+CC build\components\ota\ota_sha256.o
+CC build\components\ota\ota_slots.o
+CC build\components\ota\ota_state.o
+CC build\app\acquisition\imu_acquisition.o
+CC build\app\diagnostics\phase11_qspi_hil.o
+CC build\app\diagnostics\uart3_echo.o
+CC build\app\diagnostics\uart3_echo_service.o
+CC build\app\ota\ota_download_service.o
+CC build\app\ota\ota_qspi_candidate.o
+CC build\app\ota\ota_state_app_store.o
+CC build\app\runtime\app_runtime.o
+CC build\app\transport\terp_service.o
+CC build\app\transport\terp_uart3.o
+CC build\components\protocol\terp_codec.o
+CC build\components\protocol\terp_device.o
+CC build\components\protocol\terp_parser.o
+LINK build\transport_recorder.elf
+Building compilation database compile_commands.json
+Memory region         Used Size  Region Size  %age Used
+             ROM:      176824 B      1664 KB     10.38%
+             RAM:      186064 B       512 KB     35.49%
+        D2_SRAM1:        2144 B       128 KB      1.64%
+arm-none-eabi-objcopy -O binary build\transport_recorder.elf build/transport_recorder.bin
+arm-none-eabi-size build\transport_recorder.elf
+   text	   data	    bss	    dec	    hex	filename
+ 175292	   1532	 186676	 363500	  58bec	build\transport_recorder.elf
+Memory map: PASS (application Flash/vector 0x08020000, AXI SRAM heap, D2 DMA 32-byte aligned)
+   text	   data	    bss	    dec	    hex	filename
+ 175292	   1532	 186676	 363500	  58bec	LOCAL_USER_HOME\Desktop\高动态运输事件记录器\firmware\build\transport_recorder.elf
+Firmware artifacts: PASS (LOCAL_USER_HOME\Desktop\高动态运输事件记录器\firmware\build\transport_recorder.elf, LOCAL_USER_HOME\Desktop\高动态运输事件记录器\firmware\build\transport_recorder.bin, LOCAL_USER_HOME\Desktop\高动态运输事件记录器\firmware\build\transport_recorder.map)
+Application vector and memory map: PASS

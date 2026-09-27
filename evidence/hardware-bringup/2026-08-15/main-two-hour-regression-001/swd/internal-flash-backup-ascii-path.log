@@ -1,0 +1,68 @@
+[2026-08-15T18:17:53.0737990+08:00] backup 1 path=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-1.bin
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+
+
+Log output file:   LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-1.log
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+UPLOADING ...
+  File          : LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-1.bin
+  Size          : 2097152 Bytes
+  Address:      : 0x8000000
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+Data read successfully
+Time elapsed during read operation is: 00:00:15.776
+backup1_exit_code=0
+[2026-08-15T18:18:09.0268384+08:00] backup 2 path=LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-2.bin
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+
+
+Log output file:   LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-2.log
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.22V
+SWD freq    : 4000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+UPLOADING ...
+  File          : LOCAL_USER_HOME\Desktop\hw_regression_backup_20260815\internal-flash-before-2.bin
+  Size          : 2097152 Bytes
+  Address:      : 0x8000000
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+Data read successfully
+Time elapsed during read operation is: 00:00:15.810
+backup2_exit_code=0

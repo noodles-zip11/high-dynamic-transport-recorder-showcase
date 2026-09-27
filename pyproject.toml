@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transport-recorder"
+version = "0.1.0"
+description = "TERP tooling and desktop event replay for the transport event recorder"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy==2.5.1",
+    "pyqtgraph==0.14.0",
+    "PySide6==6.11.1",
+    "pyserial==3.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest-qt==4.5.0"]
+
+[tool.setuptools]
+package-dir = {"" = "host"}
+
+[tool.setuptools.packages.find]
+where = ["host"]

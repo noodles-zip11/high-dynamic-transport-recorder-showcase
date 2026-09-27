@@ -1,0 +1,10 @@
+captured_at=2026-08-15T20:25:23.9395090+08:00
+COMMAND=info --port COM7 --json
+TERP response timed out
+exit=2
+COMMAND=health --port COM7 --json
+TERP response timed out
+exit=2
+COMMAND=events list --port COM7 --json
+TERP response timed out
+exit=2

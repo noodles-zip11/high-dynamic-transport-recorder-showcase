@@ -1,0 +1,62 @@
+from building import DefineGroup, GetCurrentDir, Glob
+from SCons.Script import Import
+
+
+Import("env")
+
+current_dir = GetCurrentDir()
+drivers_dir = current_dir + "/../drivers/icm45686"
+storage_components_dir = current_dir + "/../components/storage"
+protocol_components_dir = current_dir + "/../components/protocol"
+ota_components_dir = current_dir + "/../components/ota"
+module_dirs = [
+    current_dir + "/acquisition",
+    current_dir + "/pipeline",
+    current_dir + "/reliability",
+    current_dir + "/event",
+    current_dir + "/environment",
+    current_dir + "/health",
+    current_dir + "/reset_power",
+    current_dir + "/time",
+    current_dir + "/storage",
+    current_dir + "/diagnostics",
+    current_dir + "/ota",
+    current_dir + "/runtime",
+    current_dir + "/transport",
+    current_dir + "/ai_inference",
+    current_dir + "/power",
+]
+sources = Glob("*.c")
+
+for module_dir in ("acquisition", "pipeline", "event", "environment", "health", "reset_power", "time", "storage", "diagnostics", "ota", "runtime", "transport", "ai_inference", "power"):
+    module_sources = Glob(module_dir + "/*.c")
+    if module_dir == "event" and not env.get(
+        "TRANSPORT_RELIABILITY_EVIDENCE_ENABLED", False
+    ):
+        module_sources = [
+            source for source in module_sources
+            if not str(source).endswith("event_quality.c")
+        ]
+    sources += module_sources
+
+if env.get("TRANSPORT_RELIABILITY_EVIDENCE_ENABLED", False):
+    reliability_sources = [
+        source for source in Glob("reliability/*.c")
+        if not str(source).endswith("fault_injection.c")
+    ]
+    sources += reliability_sources
+
+if env.get("TRANSPORT_FAULT_INJECTION_ENABLED", False):
+    sources.append("reliability/fault_injection.c")
+
+group = DefineGroup(
+    "Applications",
+    sources,
+    depend=[""],
+    CPPPATH=[current_dir] + module_dirs + [drivers_dir, storage_components_dir,
+             protocol_components_dir, ota_components_dir],
+    # RT-Thread's FinSH export macro intentionally erases command signatures.
+    LOCAL_CFLAGS=" -Wall -Wextra -Wno-cast-function-type -DTRANSPORT_AI_INFERENCE_ENABLED",
+)
+
+Return("group")

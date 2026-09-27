@@ -1,0 +1,31 @@
+SHT40 HV1 30-minute long-run decode
+date=2026-08-12
+image_sha256=902AAF95F1418CE307BD072964A03194FB2D5E2079A65C5EF812609AA0360701
+uart_raw=sht40-hv1-longrun-uart3-raw.log
+swd_raw=sht40-hv1-longrun-swd-result-raw.log
+
+uart_capture_header=present
+uart_start_lines=1
+uart_progress_lines=30
+uart_result_lines=1
+uart_progress_interval_seconds=60
+uart_progress_elapsed_seconds=60..1800 contiguous
+uart_final=HV1 RESULT elapsed_s=1800 attempts=1800 writes=1800 reads=1800 success=1800 errors=0 completed=1 temp_centi=2796 rh_milli=40904
+
+swd_signature=0x53444C32 (SDL2)
+imu_start_result=0
+sht_i2c_init_result=0
+sht_probe_result=0
+sht_init_result=0
+sht_measurement_attempt_count=1800
+sht_write_count=1800
+sht_read_count=1800
+sht_measurement_count=1800
+sht_measurement_error_count=0
+sht_last_temperature_centi_c=2796 (27.96 C)
+sht_last_humidity_milli_rh=40904 (40.904 %RH)
+completed=1
+
+acceptance=PASS for full H5 SHT40 30-minute gate
+power_cycle=not performed
+note=UART3 START/PROGRESS/RESULT and SWD result block agree on all acceptance counters.

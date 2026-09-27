@@ -1,0 +1,18 @@
+* text=auto
+
+*.c text eol=lf
+*.h text eol=lf
+*.py text eol=lf
+SConstruct text eol=lf
+SConscript text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=crlf
+
+# Hardware capture streams are evidence bytes, not source text.
+evidence/hardware-bringup/**/*.bin binary
+evidence/hardware-bringup/**/*.log binary
+evidence/hardware-bringup/**/*-raw.txt binary

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-08-14T05:02:57.905+00:00",
+  "finished_utc": "2026-08-14T05:12:11.806+00:00",
+  "port": "COM7",
+  "baud": 115200,
+  "format": "8N1",
+  "target_boots": 10,
+  "boot_count": 10,
+  "msh_prompt_count": 28,
+  "error_marker_count": 0,
+  "error_markers": [],
+  "bytes_captured": 4466,
+  "serial_reconnect_count": 31,
+  "duration_seconds": 553.906,
+  "raw_output": "LOCAL_USER_HOME\\Desktop\\高动态运输事件记录器-worktrees\\hardware-bringup\\evidence\\hardware-bringup\\2026-08-14\\cold-boot-10\\attempt-5\\uart1-cold-boot-raw.bin",
+  "events_output": "LOCAL_USER_HOME\\Desktop\\高动态运输事件记录器-worktrees\\hardware-bringup\\evidence\\hardware-bringup\\2026-08-14\\cold-boot-10\\attempt-5\\events.jsonl"
+}

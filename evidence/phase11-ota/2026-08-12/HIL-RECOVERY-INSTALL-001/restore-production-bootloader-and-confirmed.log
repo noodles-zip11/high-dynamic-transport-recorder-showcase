@@ -1,0 +1,148 @@
+
+Algorithm : SHA256
+Hash      : C51871F417CE0E09B8E0489FBDF7295A8BC96F086308E05172EF97D0BC5A23E7
+Path      : LOCAL_USER_HOME\Desktop\高动态运输事件记录器-worktrees\ota\bootloader\build\bootloader.bin
+
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Opening and parsing file: bootloader.bin
+
+
+Memory Programming ...
+  File          : bootloader.bin
+  Size          : 24.30 KB
+  Address       : 0x08000000
+
+
+
+Erasing memory corresponding to sector 0:
+Erasing internal memory sector 0
+Download in Progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+File download complete
+Time elapsed during download operation: 00:00:01.189
+
+
+
+Verifying ...
+
+
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Download verified successfully
+
+
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+Opening and parsing file: restore-confirmed-after-full-recovery.hex
+
+
+Memory Programming ...
+  File          : restore-confirmed-after-full-recovery.hex
+  Size          : 64.00 B
+  Address       : 0x081C0000
+
+
+
+Erasing memory corresponding to sector 0:
+Erasing internal memory sector 14
+Download in Progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+File download complete
+Time elapsed during download operation: 00:00:00.960
+
+
+
+Verifying ...
+
+
+Read progress:
+�������������������������������������������������� 50%
+�������������������������������������������������� 100%
+
+Download verified successfully
+
+
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0
+      -------------------------------------------------------------------
+
+ST-LINK SN  : DEVICE_SERIAL_REDACTED__
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+BL Version  : 0x92
+
+
+Reading 32-bit memory content
+  Size          : 4 Bytes
+  Address:      : 0x08000000
+
+0x08000000 : 24080000
+
+
+
+Reading 32-bit memory content
+  Size          : 48 Bytes
+  Address:      : 0x081C0000
+
+0x081C0000 : 5453544F 00300001 0000000C 00000004
+0x081C0010 : 00000002 00000000 00000000 00000000
+0x081C0020 : 00000000 00000000 BAD0D577 5A3CC3A5
+
+Reading 32-bit memory content
+  Size          : 48 Bytes
+  Address:      : 0x081E0000
+
+0x081E0000 : 5453544F 00300001 0000000B 00000003
+0x081E0010 : 00000002 00000000 00000000 00000000
+0x081E0020 : 00000000 00000000 064C34B1 5A3CC3A5

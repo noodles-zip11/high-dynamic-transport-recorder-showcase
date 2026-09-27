@@ -1,0 +1,37 @@
+{
+  "schema": "main-post-merge-verification-1",
+  "main_commit": "7b5f77d",
+  "firmware_bin_sha256": "0803D60D87F4CB0BCEA817FEA1177AC66DC3245A048B8710ED08883482FF800C",
+  "program_address": "0x08020000",
+  "program_verify": "PASS",
+  "port": "COM7",
+  "power_cycle_after_program": true,
+  "terp": {
+    "info_exit": 0,
+    "health_exit": 0,
+    "events_list_exit": 0,
+    "storage_ready": true,
+    "storage_error_count": 0,
+    "event_export_error_count": 0,
+    "event_id": 2,
+    "record_bytes": 38560,
+    "listed_record_crc32": 2376085022,
+    "host_full_record_crc32": 2376085022,
+    "host_payload_crc32": 2985594667,
+    "download_sha256": "DB96D6E27F887B18E8F5250BA825B1F93632E8D876056DCC79A6416CFC143E54",
+    "format_version": 3,
+    "sample_count": 2400,
+    "sample_rate_hz": 1600,
+    "data_loss_samples": 0,
+    "imu_transport_error_count": 0,
+    "imu_dma_error_count": 0,
+    "host_decode": "PASS"
+  },
+  "local_software": {
+    "host_pytest": "118 passed",
+    "ai_pytest": "1 passed",
+    "firmware_build": "PASS"
+  },
+  "core_chain_status": "PASS",
+  "formal_hardware_contract_status": "INCOMPLETE"
+}
